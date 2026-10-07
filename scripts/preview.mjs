@@ -1,0 +1,12 @@
+import { readFileSync, readdirSync, mkdirSync, writeFileSync } from "node:fs";
+const root = new URL("../", import.meta.url);
+const read = p => readFileSync(new URL(p, root), "utf8");
+const assets = Object.fromEntries(readdirSync(new URL("public/assets/", root)).filter(n=>n.endsWith(".svg")).map(n=>[n.slice(0,-4),"data:image/svg+xml;charset=utf-8,"+encodeURIComponent(read("public/assets/"+n))]));
+let html=read("docs/index.html");
+html=html.replace(/<link rel="manifest"[^>]*>/,"");
+html=html.replace(/href="\.\/assets\/logo.svg"/,()=> 'href="'+assets.logo+'"');
+html=html.replace(/<link[^>]+href="([^"]+\.css)"[^>]*>/g,(_,p)=>"<style>"+read("docs/"+p)+"</style>");
+html=html.replace(/<script[^>]+src="([^"]+\.js)"[^>]*><\/script>/g,(_,p)=>'<script>window.explorerAssets='+JSON.stringify(assets).replaceAll("<","\\u003c")+';</script><script type="module">'+read("docs/"+p).replaceAll("</script","<\\/script")+"</script>");
+mkdirSync(new URL("preview/",root),{recursive:true});
+writeFileSync(new URL("preview/standalone.html",root),html);
+console.log("Created preview/standalone.html (all illustrations and code included)");
