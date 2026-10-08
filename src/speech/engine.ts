@@ -83,7 +83,6 @@ export function createSpeech(platform: SpeechPlatform | null, gap = 600) {
     emit({status: 'playing'});
     if (!utterance) { speakCurrent(generation); return; }
     try {
-      platform?.synth.resume();
       // Engines that do not resume reliably restart only the current sentence, never the whole page.
       const current = utterance;
       resumeTimer = setTimeout(()=>{
@@ -93,6 +92,7 @@ export function createSpeech(platform: SpeechPlatform | null, gap = 600) {
         speakCurrent(generation);
       },1800);
       watchdog = setTimeout(()=>{if(state.status==='playing' && utterance===current)fail();},Math.max(30000,current.text.length*1200/state.rate));
+      platform?.synth.resume();
     } catch { generation++; utterance=null; try { platform?.synth.cancel(); } catch { /* optional */ } speakCurrent(generation); }
   }
   refreshVoices();

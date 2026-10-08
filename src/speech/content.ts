@@ -7,6 +7,6 @@ export function plainSegments(text: string, id: string): Segment[] {
 }
 export function textSegments(text: string, id: string, translations?: Translations, mode: 'bilingual' | 'english' = 'bilingual'): Segment[] {
   const pairs=translations?.[text];
-  if (!pairs) return plainSegments(text,id);
+  if (!pairs) return plainSegments(text,id).filter(s=>mode!=='english'||s.lang==='en-US');
   return pairs.flatMap((p,i)=>[ {text:p.en,lang:'en-US' as const,id:id+'-'+i+'-en'}, ...(mode==='bilingual'?[{text:p.zh,lang:'zh-TW' as const,id:id+'-'+i+'-zh'}]:[]) ]);
 }

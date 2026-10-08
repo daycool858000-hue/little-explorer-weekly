@@ -20,10 +20,10 @@ export function SpokenText({text,id,translations}: {text: string;id: string;tran
   if(!pairs)return <span data-speech-id={id}>{text}</span>;
   return <span className="speech-pairs">{pairs.map((p,i)=><span className="speech-pair" key={i}><span className="speech-en" lang="en-US" data-speech-id={id+'-'+i+'-en'}>{p.en}</span>{chinese&&<span className="speech-zh" lang="zh-TW" data-speech-id={id+'-'+i+'-zh'}>{p.zh}</span>}</span>)}</span>;
 }
-export function SpeakButton({label,segments,icon=false}: {label: string;segments: Segment[];icon?: boolean}) {
+export function SpeakButton({label,segments,icon=false,beforePlay}: {label: string;segments: Segment[];icon?: boolean;beforePlay?: ()=>void}) {
   const {supported}=useSpeech();
   if(!supported)return null;
-  return <button type="button" className={'speech-button'+(icon?' speech-icon':'')} aria-label={label} title={label} onClick={()=>speech.play(segments)}><span aria-hidden="true">🔊</span>{!icon&&' '+label}</button>;
+  return <button type="button" className={'speech-button'+(icon?' speech-icon':'')} aria-label={label} title={label} onClick={()=>{beforePlay?.();speech.play(segments);}}><span aria-hidden="true">🔊</span>{!icon&&' '+label}</button>;
 }
 export function SpeechControls({english=false}: {english?: boolean}) {
   const state=useSpeech(), prefs=useSpeechPreferences();

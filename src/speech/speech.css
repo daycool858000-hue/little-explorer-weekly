@@ -18,7 +18,7 @@
 .c-option-row > label, .c-option-row > .c-order { flex: 1; min-width: 0; }
 .c-options .c-option-row label { margin: 0; }
 .c-option-row .speech-button { border-color: transparent; background: transparent; }
-.c-order > .speech-pairs { flex: 1; text-align: left; }
+.c-order > .speech-pairs, .c-order > [data-speech-id] { flex: 1; text-align: left; font-weight: 400; }
 .c-order > .speech-pairs .speech-pair { display: block; }
 .c-task h1 .speech-zh { font-size: .55em; }
 .c-question h2 .speech-zh { font-size: .8em; }
