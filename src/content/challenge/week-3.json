@@ -1,0 +1,595 @@
+{
+  "id": "week-3",
+  "number": 3,
+  "title": "資訊是真的嗎？",
+  "description": "看圖表、找證據，也練習說還不能確定。",
+  "units": [
+    {
+      "id": "chart-math",
+      "category": "數學挑戰",
+      "title": "一半的人，是哪些人？",
+      "description": "圖表的數字和標題，都值得檢查。",
+      "visual": {
+        "title": "五年甲班上學方式調查",
+        "headers": [
+          "方式",
+          "人數"
+        ],
+        "rows": [
+          [
+            "步行",
+            "20"
+          ],
+          [
+            "自行車",
+            "10"
+          ],
+          [
+            "公車",
+            "10"
+          ]
+        ],
+        "note": "共 40 人，每人只選一種方式。這是練習資料。",
+        "bars": true
+      },
+      "skills": [
+        "找資訊",
+        "算一算",
+        "做判斷"
+      ],
+      "takeaways": [
+        "百分率需要知道全部是多少。",
+        "圖表的調查範圍不能任意放大。",
+        "圖表有人數，不一定有原因。"
+      ],
+      "steps": [
+        {
+          "kind": "read",
+          "title": "先看調查範圍",
+          "text": "小記者拿到這張圖表，準備寫一個標題。調查對象只有五年甲班，不是全校。",
+          "prompt": "先看情境，準備好再往下。",
+          "hints": [],
+          "explanation": "線索準備好了，接著只處理一個問題。",
+          "id": "s1"
+        },
+        {
+          "kind": "number",
+          "title": "把人數變成百分率",
+          "text": "",
+          "prompt": "步行的 20 人，占全班 40 人的百分之多少？",
+          "answer": 50,
+          "hints": [
+            "百分率表示每一百份中的幾份。",
+            "用步行人數除以全班人數，再乘以 100。"
+          ],
+          "explanation": "20 ÷ 40 × 100 = 50%。",
+          "unit": "%",
+          "id": "s2"
+        },
+        {
+          "kind": "number",
+          "title": "兩種方式合起來",
+          "text": "",
+          "prompt": "搭公車或騎自行車的人，合計占全班百分之多少？",
+          "answer": 50,
+          "hints": [
+            "先把兩種方式的人數加起來。",
+            "合計人數再除以四十，換成百分率。"
+          ],
+          "explanation": "(10 + 10) ÷ 40 × 100 = 50%。",
+          "unit": "%",
+          "id": "s3"
+        },
+        {
+          "kind": "choice",
+          "title": "找出標題的問題",
+          "text": "",
+          "prompt": "「全校一半學生走路上學」這個標題，可以由這份資料支持嗎？",
+          "answer": 1,
+          "options": [
+            "可以，圖上就是一半",
+            "不可以，調查範圍只有一班"
+          ],
+          "hints": [
+            "數字正確，也要看它描述的是誰。",
+            "想想五年甲班是否等於全校。"
+          ],
+          "explanation": "50% 是這個班的結果，不能直接改成全校的結果。",
+          "id": "s4"
+        },
+        {
+          "kind": "choice",
+          "title": "讀圖，不猜原因",
+          "text": "",
+          "prompt": "圖表能直接告訴我們哪件事？",
+          "answer": 2,
+          "options": [
+            "步行的人一定住最近",
+            "搭公車的人都不喜歡運動",
+            "自行車和公車的人數相同",
+            "下個月比例一定不變"
+          ],
+          "hints": [
+            "人數資料沒有記錄動機或未來。",
+            "比較兩根同長的長條及它們的數字。"
+          ],
+          "explanation": "自行車與公車都是十人。其他說法需要額外資料。",
+          "id": "s5"
+        },
+        {
+          "kind": "order",
+          "title": "排好百分率算法",
+          "text": "",
+          "prompt": "依正確順序點選三張卡。",
+          "answer": [
+            1,
+            2,
+            0
+          ],
+          "options": [
+            "乘以 100，寫成百分率",
+            "找出部分人數和總人數",
+            "部分人數除以總人數"
+          ],
+          "hints": [
+            "先確認誰是全部，再開始算。",
+            "除法先得到比例，之後才換成百分率。"
+          ],
+          "explanation": "找部分與全部 → 部分除以全部 → 乘以 100，寫成百分率。",
+          "id": "s6"
+        }
+      ]
+    },
+    {
+      "id": "message-english",
+      "category": "英文探索",
+      "title": "Which message is newer?",
+      "description": "從更新訊息找出改變與缺少的資訊。",
+      "visual": {
+        "title": "Class messages",
+        "headers": [
+          "Message",
+          "Text"
+        ],
+        "rows": [
+          [
+            "Old · Monday 9:00 a.m.",
+            "Our visit is on Tuesday at 2:00 p.m."
+          ],
+          [
+            "Update · Monday 4:00 p.m.",
+            "Our visit is on Wednesday at 2:00 p.m. The bus leaves school at 1:30 p.m. Bring water."
+          ]
+        ],
+        "note": "這是虛構的班級訊息；Update 是更新訊息。",
+        "bars": false
+      },
+      "skills": [
+        "找關鍵字",
+        "讀懂情境",
+        "表達意思"
+      ],
+      "takeaways": [
+        "先確認哪則訊息是更新版。",
+        "發布、出發與活動時間不一樣。",
+        "沒有寫的資訊，可以主動詢問。"
+      ],
+      "steps": [
+        {
+          "kind": "read",
+          "title": "Read the update",
+          "text": "Leo sees two messages about the same visit.\nHe wants to write the correct day in his notebook.",
+          "prompt": "先看情境，準備好再往下。",
+          "hints": [],
+          "explanation": "線索準備好了，接著只處理一個問題。",
+          "id": "s1"
+        },
+        {
+          "kind": "choice",
+          "title": "Find the changed information",
+          "text": "",
+          "prompt": "更新訊息改了哪一項？",
+          "answer": 0,
+          "options": [
+            "The day of the visit.",
+            "The price of lunch.",
+            "The name of the school."
+          ],
+          "hints": [
+            "對照兩則訊息都提到的內容。",
+            "注意 Tuesday 和 Wednesday 這兩個字。"
+          ],
+          "explanation": "日期從 Tuesday 改成 Wednesday；參訪開始時間仍是 2:00 p.m.。",
+          "id": "s2"
+        },
+        {
+          "kind": "choice",
+          "title": "When does the bus leave?",
+          "text": "",
+          "prompt": "巴士從學校出發的時間是哪個？",
+          "answer": 1,
+          "options": [
+            "2:00 p.m.",
+            "1:30 p.m.",
+            "4:00 p.m."
+          ],
+          "hints": [
+            "發訊息的時間不是出發時間。",
+            "找 leaves school 後面的時間。"
+          ],
+          "explanation": "The bus leaves school at 1:30 p.m.；4:00 p.m. 是更新訊息的發布時間。",
+          "id": "s3"
+        },
+        {
+          "kind": "select",
+          "title": "What is clearly stated?",
+          "text": "",
+          "prompt": "選出更新訊息明確要求或說明的兩件事。",
+          "answer": [
+            0,
+            2
+          ],
+          "options": [
+            "Bring water.",
+            "Bring three books.",
+            "The visit is on Wednesday.",
+            "The trip is free."
+          ],
+          "hints": [
+            "只選文字中真的出現的要求或資訊。",
+            "free 表示免費，看看訊息是否有談費用。"
+          ],
+          "explanation": "更新訊息說要帶水、星期三參訪；沒有要求三本書，也沒有說免費。",
+          "id": "s4"
+        },
+        {
+          "kind": "choice",
+          "title": "Do we know the return time?",
+          "text": "",
+          "prompt": "What time will they be back at school?",
+          "answer": 2,
+          "options": [
+            "1:30 p.m.",
+            "2:00 p.m.",
+            "The messages don't say."
+          ],
+          "hints": [
+            "back at school 問的是回到學校。",
+            "出發時間和參訪時間都不是回程時間。"
+          ],
+          "explanation": "The messages don't say. 這兩則訊息沒有提供回到學校的時間。",
+          "id": "s5"
+        },
+        {
+          "kind": "reflect",
+          "title": "Ask for the missing information",
+          "text": "沒有唯一答案。選一個方向，看看它的取捨。",
+          "prompt": "你想確認回程，會選哪個問法？",
+          "options": [
+            "“What time will we be back?”",
+            "“Will we be back before four?”"
+          ],
+          "replies": [
+            "這是開放的時間問題，適合想知道完整回程安排。",
+            "這是確認四點之前能否回來；若你的安排以四點為界，也很實用。"
+          ],
+          "hints": [
+            "先想想你最在意的條件。",
+            "不同條件可能讓人選擇不同的做法。"
+          ],
+          "explanation": "把理由說清楚，比選得一樣更重要。",
+          "id": "s6"
+        }
+      ]
+    },
+    {
+      "id": "evidence-reading",
+      "category": "閱讀推理",
+      "title": "操場濕了，一定下過雨？",
+      "description": "看見現象，先別急著鎖定原因。",
+      "visual": {
+        "title": "早上 09:00 的觀察筆記",
+        "headers": [
+          "編號",
+          "記錄"
+        ],
+        "rows": [
+          [
+            "1",
+            "操場東側地面是濕的"
+          ],
+          [
+            "2",
+            "西側地面是乾的"
+          ],
+          [
+            "3",
+            "器材室旁放著水管"
+          ],
+          [
+            "4",
+            "沒有人記錄昨晚的天氣"
+          ]
+        ],
+        "note": "這是虛構觀察情境，不是天氣新聞。",
+        "bars": false
+      },
+      "skills": [
+        "找資訊",
+        "分辨推論",
+        "檢查證據"
+      ],
+      "takeaways": [
+        "觀察和原因推論要分開。",
+        "有工具不代表工具剛被使用。",
+        "資訊不足時，可以說還不能確定。"
+      ],
+      "steps": [
+        {
+          "kind": "read",
+          "title": "一個說法出現了",
+          "text": "小哲說：「地面濕了，昨晚一定下雨。」小寧提醒：先分清楚看見了什麼，以及猜了什麼。",
+          "prompt": "先看情境，準備好再往下。",
+          "hints": [],
+          "explanation": "線索準備好了，接著只處理一個問題。",
+          "id": "s1"
+        },
+        {
+          "kind": "select",
+          "title": "找出直接觀察",
+          "text": "",
+          "prompt": "哪些是筆記中的直接觀察？選兩項。",
+          "answer": [
+            0,
+            2
+          ],
+          "options": [
+            "東側地面濕了",
+            "昨晚一定下雨",
+            "器材室旁有水管",
+            "一定有人剛洗操場"
+          ],
+          "hints": [
+            "直接觀察是看到的狀態，不是替狀態安排原因。",
+            "「一定」後面的原因，筆記有真的觀察到嗎？"
+          ],
+          "explanation": "濕地面與水管是記錄中的現象；下雨或清洗都還是原因猜測。",
+          "id": "s2"
+        },
+        {
+          "kind": "choice",
+          "title": "推論夠穩嗎？",
+          "text": "",
+          "prompt": "只看目前四項線索，能確定昨晚下過雨嗎？",
+          "answer": 2,
+          "options": [
+            "能確定有下雨",
+            "能確定沒下雨",
+            "還不能確定"
+          ],
+          "hints": [
+            "地面濕可能不只一個原因。",
+            "沒記錄天氣，也沒有直接看見地面怎麼變濕。"
+          ],
+          "explanation": "還不能確定。雨、澆水、清洗或其他情況都可能造成濕地面。",
+          "id": "s3"
+        },
+        {
+          "kind": "choice",
+          "title": "多想一個解釋",
+          "text": "",
+          "prompt": "哪一項是另一個合理的「可能解釋」，但還需要查證？",
+          "answer": 1,
+          "options": [
+            "濕地面證明一定有雨",
+            "有人可能用水清洗東側",
+            "水管在旁邊就證明剛清洗過"
+          ],
+          "hints": [
+            "找有提出可能、又沒有直接當成事實的句子。",
+            "看到工具存在，不等於看到它被使用。"
+          ],
+          "explanation": "清洗是可能解釋；有水管不能單獨證明清洗真的發生。",
+          "id": "s4"
+        },
+        {
+          "kind": "choice",
+          "title": "哪個資料更直接？",
+          "text": "",
+          "prompt": "若要查證「昨晚是否下雨」，下一步最有幫助的是？",
+          "answer": 0,
+          "options": [
+            "查附近可靠的逐時降雨紀錄",
+            "看誰說話最大聲",
+            "只再摸一次濕地面"
+          ],
+          "hints": [
+            "要找與時間、地點和降雨直接相關的記錄。",
+            "重複看同一現象，不一定增加原因的證據。"
+          ],
+          "explanation": "附近逐時降雨紀錄較直接；仍要注意測站距離與操場不一定完全相同。",
+          "id": "s5"
+        },
+        {
+          "kind": "reflect",
+          "title": "怎樣說比較準確？",
+          "text": "沒有唯一答案。選一個方向，看看它的取捨。",
+          "prompt": "在查到新資料前，你偏向怎麼描述？",
+          "options": [
+            "「東側濕了，原因還不確定。」",
+            "「可能下過雨，也可能有人用水。」"
+          ],
+          "replies": [
+            "先報告觀察、保留原因，是謹慎的表達。",
+            "列出其他可能，也能提醒大家還要找證據；不要把可能當成確定。"
+          ],
+          "hints": [
+            "先想想你最在意的條件。",
+            "不同條件可能讓人選擇不同的做法。"
+          ],
+          "explanation": "把理由說清楚，比選得一樣更重要。",
+          "id": "s6"
+        }
+      ]
+    },
+    {
+      "id": "experiment-mix",
+      "category": "綜合挑戰",
+      "title": "紙飛機飛得遠，原因找到了嗎？",
+      "description": "平均數算得對，結論還要再檢查。",
+      "visual": {
+        "title": "第一輪試飛記錄",
+        "headers": [
+          "折法",
+          "兩次距離",
+          "投擲者",
+          "出手高度"
+        ],
+        "rows": [
+          [
+            "A",
+            "3 m、5 m",
+            "小青",
+            "1 m"
+          ],
+          [
+            "B",
+            "6 m、4 m",
+            "小柏",
+            "2 m"
+          ]
+        ],
+        "note": "相同大小的紙，但投擲者與出手高度不同；資料為練習情境。",
+        "bars": false
+      },
+      "skills": [
+        "找資訊",
+        "算一算",
+        "做判斷"
+      ],
+      "takeaways": [
+        "平均數描述一組資料，不代表每一次。",
+        "比較原因時，要注意其他條件。",
+        "新資料可能讓我們修改原本的想法。"
+      ],
+      "steps": [
+        {
+          "kind": "read",
+          "title": "先算，再問能不能比",
+          "text": "大家想知道哪種折法比較會飛。除了折法，兩組還有其他不同條件。",
+          "prompt": "先看情境，準備好再往下。",
+          "hints": [],
+          "explanation": "線索準備好了，接著只處理一個問題。",
+          "id": "s1"
+        },
+        {
+          "kind": "number",
+          "title": "算 B 的平均",
+          "text": "",
+          "prompt": "B 的兩次飛行距離是 6 m、4 m，平均多少公尺？",
+          "answer": 5,
+          "hints": [
+            "平均要把總距離分給試飛次數。",
+            "先加上兩次距離，再除以 2。"
+          ],
+          "explanation": "(6 + 4) ÷ 2 = 5 m；A 的平均是 4 m。",
+          "unit": "m",
+          "id": "s2"
+        },
+        {
+          "kind": "choice",
+          "title": "可以直接下結論嗎？",
+          "text": "",
+          "prompt": "現在能說「一定是 B 的折法造成飛得比較遠」嗎？",
+          "answer": 1,
+          "options": [
+            "可以，平均較大就證明了",
+            "還不能，其他條件也不同"
+          ],
+          "hints": [
+            "看看除了折法，表中還有哪些欄不同。",
+            "投擲者與高度也可能影響結果。"
+          ],
+          "explanation": "還不能確定原因。平均較大是這輪結果，但投擲者與高度不同，不能只歸因於折法。",
+          "id": "s3"
+        },
+        {
+          "kind": "select",
+          "title": "下一輪控制條件",
+          "text": "",
+          "prompt": "想比較折法，應盡量讓哪些條件相同？選三項。",
+          "answer": [
+            0,
+            1,
+            3
+          ],
+          "options": [
+            "紙張大小與材料",
+            "出手高度",
+            "兩架都改成同一折法",
+            "同一投擲者與投擲方式"
+          ],
+          "hints": [
+            "只保留你真正想比較的那個不同。",
+            "這次要比較折法，所以其他可能影響的條件應盡量一致。"
+          ],
+          "explanation": "紙張、高度與投擲方式應盡量一致；折法是這次刻意比較的條件。",
+          "id": "s4"
+        },
+        {
+          "kind": "number",
+          "title": "新資料再算一次",
+          "text": "",
+          "prompt": "第二輪 A：4、5、6 m；B：5、5、5 m。兩組平均距離相差多少公尺？",
+          "answer": 0,
+          "hints": [
+            "分別計算兩組的平均，不只看最遠的一次。",
+            "每組都把三次距離相加，再除以三。"
+          ],
+          "explanation": "A 平均 (4+5+6)÷3=5 m；B 平均也是 5 m，平均相差 0 m。",
+          "unit": "m",
+          "visual": {
+            "title": "第二輪 · 其他條件盡量一致",
+            "headers": [
+              "折法",
+              "三次距離"
+            ],
+            "rows": [
+              [
+                "A",
+                "4 m、5 m、6 m"
+              ],
+              [
+                "B",
+                "5 m、5 m、5 m"
+              ]
+            ],
+            "note": "",
+            "bars": false
+          },
+          "id": "s5"
+        },
+        {
+          "kind": "reflect",
+          "title": "接著想研究什麼？",
+          "text": "沒有唯一答案。選一個方向，看看它的取捨。",
+          "prompt": "平均相同，也不代表每次表現都相同。你想接著看哪件事？",
+          "options": [
+            "增加試飛次數",
+            "比較每次距離的變動"
+          ],
+          "replies": [
+            "多做幾次能看結果是否穩定，仍要維持相同的比較條件。",
+            "這三次 B 的數字相同，A 有變化；樣本還少，不宜說 B 永遠穩定。"
+          ],
+          "hints": [
+            "先想想你最在意的條件。",
+            "不同條件可能讓人選擇不同的做法。"
+          ],
+          "explanation": "把理由說清楚，比選得一樣更重要。",
+          "id": "s6"
+        }
+      ]
+    }
+  ]
+}
