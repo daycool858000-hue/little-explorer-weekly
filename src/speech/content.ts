@@ -4,7 +4,8 @@ export type Translations = Record<string, Pair[]>;
 // Context determines language, not a single unit letter embedded in Chinese.
 export function plainSegments(text: string, id: string, numericLanguage:'zh-TW'|'en-US'='zh-TW'): Segment[] {
   if(!text.trim())return [];
-  const lang=/[\u3400-\u9fff]/.test(text)?'zh-TW':/[A-Za-z]/.test(text)?'en-US':numericLanguage;
+  const technical=/^[A-Z]$/.test(text.trim())||/^(?:NT\$|US\$|[$€¥])?\s*[-+]?\d+(?:[.,]\d+)*(?:\s*(?:mL|L|km|m|cm|mm|kg|g|%))?\s*$/.test(text);
+  const lang=/[\u3400-\u9fff]/.test(text)?'zh-TW':technical?numericLanguage:/[A-Za-z]/.test(text)?'en-US':numericLanguage;
   return [{text:text.trim(),lang,id}];
 }
 export function textSegments(text: string, id: string, translations?: Translations, mode: 'bilingual' | 'english' = 'bilingual'): Segment[] {

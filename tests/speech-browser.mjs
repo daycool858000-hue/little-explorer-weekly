@@ -5,6 +5,7 @@ import {createServer} from 'node:http';
 import {resolve,extname,sep} from 'node:path';
 import {dataSegments} from '../src/speech/challenge.ts';
 import {textSegments,plainSegments} from '../src/speech/content.ts';
+import {normalizeSpeech} from '../src/speech/normalize.ts';
 const issues=[1,2,3,4].map(n=>JSON.parse(readFileSync('src/content/challenge/week-'+n+'.json','utf8')));
 const originals=[1,2,3,4].flatMap(n=>JSON.parse(readFileSync('src/content/week-'+n+'.json','utf8')).articles);
 const root=resolve('docs'),base=process.env.BASE_URL||'http://127.0.0.1:4187/little-explorer-weekly/';
@@ -20,19 +21,19 @@ async function setup(width,mode='mock'){
  await context.addInitScript(({mode})=>{
   if(mode==='absent'){Object.defineProperty(window,'speechSynthesis',{value:undefined});return;}
   const nativeTimeout=window.setTimeout.bind(window);
-  // Accelerate only the inter-sentence gap. Engine tests independently verify 600 ms.
-  window.setTimeout=(fn,ms,...args)=>nativeTimeout(fn,ms===600?1:ms,...args);
+  // Accelerate only speech gaps. Engine tests verify the real contextual delays.
+  window.setTimeout=(fn,ms,...args)=>nativeTimeout(fn,[100,240,400].includes(ms)?1:ms,...args);
   const state={calls:[],cancelCount:0,pauseCount:0,resumeCount:0,auto:false,current:null,voices:[],events:{}};
   const synth={speaking:false,paused:false,pending:false,
    getVoices(){if(mode==='throw')throw Error('unavailable');return state.voices;},
    addEventListener(n,f){state.events[n]=f;},removeEventListener(n){delete state.events[n];},
    cancel(){state.cancelCount++;const old=state.current;state.current=null;this.speaking=false;this.paused=false;nativeTimeout(()=>old?.onerror?.({error:'canceled'}),0);},
    pause(){state.pauseCount++;this.paused=true;},resume(){state.resumeCount++;this.paused=false;state.current?.onresume?.();},
-   speak(u){if(mode==='throw')throw Error('unavailable');state.current=u;this.speaking=true;state.calls.push({text:u.text,lang:u.lang,voice:u.voice?.lang||null,rate:u.rate});u.onstart?.();if(state.auto)nativeTimeout(()=>{if(state.current===u&&!this.paused)state.finish();},2);}
+   speak(u){if(mode==='throw')throw Error('unavailable');state.current=u;this.speaking=true;state.calls.push({text:u.text,lang:u.lang,voice:u.voice?.lang||null,voiceName:u.voice?.name||null,rate:u.rate});u.onstart?.();if(state.auto)nativeTimeout(()=>{if(state.current===u&&!this.paused)state.finish();},2);}
   };
   state.finish=()=>{const current=state.current;state.current=null;synth.speaking=false;current?.onend?.();};
   state.error=()=>state.current?.onerror?.({error:'synthesis-failed'});
-  state.refresh=()=>{state.voices=[{lang:'en-US',name:'English',localService:true},{lang:'zh-TW',name:'Taiwan',localService:true}];state.events.voiceschanged?.();};
+  state.refresh=()=>{state.voices=[{lang:'en-US',name:'English Basic',localService:true},{lang:'zh-TW',name:'Taiwan Basic',localService:true},{lang:'en-US',name:'English Natural',localService:false},{lang:'zh-TW',name:'Taiwan Enhanced',localService:false}];state.events.voiceschanged?.();};
   window.__tts=state;Object.defineProperty(window,'speechSynthesis',{value:synth});Object.defineProperty(window,'SpeechSynthesisUtterance',{value:class{constructor(text){this.text=text;}}});
  },{mode});
  const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});page.on('response',r=>{if(r.status()>=400)broken.push(r.url());});
@@ -42,28 +43,31 @@ async function route(page,hash){await page.evaluate(()=>{if(window.__tts){window
 async function layout(page,label){
  await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));
  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),label+' overflow');
- const small=await page.locator('.speech-button,.speech-controls button,.speech-controls select').evaluateAll(els=>els.filter(e=>e.getBoundingClientRect().height<44||e.getBoundingClientRect().width<44).map(e=>e.outerHTML));assert.deepEqual(small,[],label+' audio touch size');
+ const small=await page.locator('.speech-button,.speech-controls button,.speech-controls select').evaluateAll(els=>els.filter(e=>!e.closest('details:not([open])')&&(e.getBoundingClientRect().height<44||e.getBoundingClientRect().width<44)).map(e=>e.outerHTML));assert.deepEqual(small,[],label+' audio touch size');
 }
 async function read(page,label,expected){
  await page.evaluate(()=>{window.__tts.calls=[];window.__tts.auto=true;});
  await page.getByRole('button',{name:label,exact:true}).click();
  await page.waitForFunction(()=>window.__tts.calls.length>0&&!document.querySelector('[aria-label="暫停朗讀"]')&&!window.__tts.current);
  const calls=await page.evaluate(()=>window.__tts.calls);
- assert.deepEqual(calls.map(x=>({text:x.text,lang:x.lang})),expected.map(x=>({text:x.text,lang:x.lang})),label);
+ assert.deepEqual(calls.map(x=>({text:x.text,lang:x.lang})),expected.map(x=>({text:normalizeSpeech(x.text,x.lang),lang:x.lang})),label);
  assert.ok(calls.every(x=>x.voice===x.lang),label+' matching voices');
  return calls;
 }
 try{
  for(const width of [375,390,768,1024,1440]){
   const {context,page}=await setup(width);let pages=0,steps=0;
-  await route(page,'#read/water/0');assert.equal(await page.evaluate(()=>window.__tts.calls.length),0,'no autoplay');
+  await route(page,'#read/water/0');assert.equal(await page.evaluate(()=>window.__tts.calls.length),0,'no autoplay');assert.equal(await page.getByLabel('朗讀語速',{exact:true}).inputValue(),'1.2');
   await page.getByRole('button',{name:'聽這一頁',exact:true}).focus();await page.keyboard.press('Enter');await page.locator('.speech-highlight').first().waitFor();
   await page.getByRole('button',{name:'暫停朗讀',exact:true}).click();assert.equal(await page.evaluate(()=>window.__tts.pauseCount),1);
   await page.getByRole('button',{name:'繼續朗讀',exact:true}).click();assert.ok(await page.evaluate(()=>window.__tts.resumeCount>0));
   await page.getByRole('button',{name:'重新播放',exact:true}).click();assert.equal(await page.evaluate(()=>window.__tts.calls.length),2);
-  await page.getByLabel('朗讀語速',{exact:true}).selectOption('0.8');await page.getByRole('button',{name:'重新播放',exact:true}).click();assert.equal(await page.evaluate(()=>window.__tts.calls.at(-1).rate),.8);
+  for(const rate of [.9,1.2,1.5,1.8]){await page.getByLabel('朗讀語速',{exact:true}).selectOption(String(rate));await page.getByRole('button',{name:'重新播放',exact:true}).click();assert.equal(await page.evaluate(()=>window.__tts.calls.at(-1).rate),rate);}
+  assert.equal(await page.evaluate(()=>window.__tts.calls.at(-1).voiceName),'Taiwan Enhanced');
+  await page.locator('.speech-voices summary').click();await layout(page,'expanded voice controls '+width);
+  await page.getByLabel('中文聲音',{exact:true}).selectOption('zh-TW|Taiwan Basic');await page.getByRole('button',{name:'重新播放',exact:true}).click();assert.equal(await page.evaluate(()=>window.__tts.calls.at(-1).voiceName),'Taiwan Basic');
   const cancels=await page.evaluate(()=>window.__tts.cancelCount);await page.getByRole('button',{name:'下一頁 →',exact:true}).click();await page.waitForFunction(n=>window.__tts.cancelCount>n,cancels);assert.equal(await page.locator('.speech-highlight').count(),0);
-  await page.reload();assert.equal(await page.getByLabel('朗讀語速',{exact:true}).inputValue(),'0.8');await page.getByLabel('朗讀語速',{exact:true}).selectOption('1');
+  await page.reload();await page.evaluate(()=>window.__tts.refresh());assert.equal(await page.getByLabel('朗讀語速',{exact:true}).inputValue(),'1.8');await page.locator('.speech-voices summary').click();assert.equal(await page.getByLabel('中文聲音',{exact:true}).inputValue(),'zh-TW|Taiwan Basic');await page.getByLabel('中文聲音',{exact:true}).selectOption('');await page.getByLabel('朗讀語速',{exact:true}).selectOption('1.2');
   for(const a of width===375?originals:[originals[0]])for(const [n,p]of a.pages.entries()){
    await route(page,'#read/'+a.id+'/'+n);assert.equal(await page.evaluate(()=>window.__tts.calls.length),0);
    await read(page,'聽這一頁',[...plainSegments(a.title,'article-title'),...plainSegments(p.title,'article-page-title'),...p.text.flatMap((t,i)=>plainSegments(t,'article-paragraph-'+i))]);
@@ -75,7 +79,12 @@ try{
    if(width!==375&&unit.category!=='英文探索'&&![0,3,4].includes(index))continue;
    await route(page,'#challenge/'+issue.id+'/'+unit.id+'/'+(index+1));await page.locator('.c-task').waitFor();assert.equal(await page.evaluate(()=>window.__tts.calls.length),0);
    const saved=await page.evaluate(()=>localStorage.getItem('explorer-challenge-v1'));
-   await read(page,'聽資料',dataSegments(unit,index,'bilingual'));await read(page,'聽題目',textSegments(s.prompt,'step-prompt',unit.translations));
+   const dataCalls=await read(page,'聽資料',dataSegments(unit,index,'bilingual'));
+   if(unit.id==='menu-english')assert.ok(dataCalls.some(c=>c.text==='A sandwich costs eighty-five New Taiwan dollars.'&&c.lang==='en-US'));
+   if(unit.id==='chart-math')assert.ok(dataCalls.some(c=>c.text==='步行的人有二十人。'&&c.lang==='zh-TW'));
+   const questionCalls=await read(page,'聽題目',textSegments(s.prompt,'step-prompt',unit.translations));
+   if(unit.id==='market-math'&&index===1)assert.deepEqual(questionCalls.map(c=>[c.text,c.lang]),[['兩瓶果汁共有 一點五公升,換成多少 毫升?','zh-TW']]);
+   assert.ok(!dataCalls.some(c=>/NT\$|\d|\bmL\b|\bkm\b/.test(c.text)),'engine receives normalized facts');
    for(const [i,option]of (s.options||[]).entries())await read(page,'朗讀選項 '+(i+1),textSegments(option,'option-'+i,unit.translations));
    assert.equal(await page.evaluate(()=>localStorage.getItem('explorer-challenge-v1')),saved,'listening does not answer or change progress');
    assert.equal(await page.locator('.c-options input:checked').count(),0,'speaker does not select option');

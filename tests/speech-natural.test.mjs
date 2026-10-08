@@ -28,6 +28,7 @@ test('actual utterances contain the expected money, units, clocks and arithmetic
 test('contextual language keeps Chinese units together and never drops numeric-only English',()=>{
  const text='兩瓶果汁共有 1.5 L，換成多少 mL？';assert.deepEqual(plainSegments(text,'x'),[{text,lang:'zh-TW',id:'x'}]);
  assert.equal(textSegments('200','n',undefined,'english')[0].lang,'en-US');assert.equal(normalizeSpeech('1.5 L','en-US'),'one point five liters');
+ for(const value of ['1.5 L','200 mL','A','NT$200']){assert.equal(plainSegments(value,'x')[0].lang,'zh-TW');assert.equal(textSegments(value,'x',undefined,'english')[0].lang,'en-US');}
  assert.equal(numberWords('10001','zh-TW'),'一萬零一');assert.equal(numberWords('1000001','en-US'),'one million one');assert.equal(numberWords('0.05','zh-TW'),'零點零五');
 });
 test('new rates default to 1.2; saved rates and display/language choices are retained',()=>{
@@ -52,6 +53,10 @@ test('table narratives keep every numeric fact and note across all seventeen dis
   tables++;const segments=tableSegments(unit,visual,'bilingual');const spoken=segments.map(s=>normalizeSpeech(s.text,s.lang)).join(' ');
   assert.ok(segments.length>1,unit.id);assert.ok(!segments.some(s=>s.id?.startsWith('visual-header-')),'no isolated headers');
   if(visual.note)assert.ok(segments.some(s=>s.id?.startsWith('visual-note')),'note retained');
+  const language=unit.category==='英文探索'?'en-US':'zh-TW';
+  const clean=s=>s.replace(/[\s，,。.!?;；:：「」“”'’]/g,'').toLowerCase();
+  const narrative=clean(segments.filter(s=>s.lang===language).map(s=>normalizeSpeech(s.text,s.lang)).join(' '));
+  for(const row of visual.rows)for(const cell of row.slice(1))assert.ok(narrative.includes(clean(normalizeSpeech(cell,language))),unit.id+' missing cell meaning: '+cell);
   for(const row of visual.rows)for(const cell of row){
    const values=cell.match(/NT\$\d+(?:\.\d+)?|\d{1,2}:\d{2}(?:\s*[ap]\.m\.)?|\d+(?:\.\d+)?\s*(?:mL|km|cm|m|L|%|元)|\d+(?:\.\d+)?/g)||[];
    for(const value of values){const lang=unit.category==='英文探索'?'en-US':'zh-TW';assert.ok(spoken.includes(normalizeSpeech(value,lang)),unit.id+' missing '+value+' in '+spoken);}
