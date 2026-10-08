@@ -14,6 +14,12 @@
 .speech-en { white-space: pre-line; }
 .speech-zh { margin-top: .22em; font-size: .86em; font-weight: 400; color: #52695e; line-height: 1.65; }
 .speech-notice { flex-basis: 100%; margin: 4px 0; font-size: 14px; line-height: 1.6; }
+.speech-voices { flex-basis:100%; min-width:0; }
+.speech-voices summary { cursor:pointer; min-height:44px; display:flex; align-items:center; text-decoration:underline; }
+.speech-voices label { display:flex; flex-wrap:wrap; margin:8px 0; }
+.speech-voices select { width:100%; max-width:480px; min-width:0; }
+.speech-voices small { display:block; flex-basis:100%; }
+.speech-voices p { font-size:14px; }
 .c-option-row { display: flex; align-items: stretch; gap: 8px; min-width: 0; }
 .c-option-row > label, .c-option-row > .c-order { flex: 1; min-width: 0; }
 .c-options .c-option-row label { margin: 0; }

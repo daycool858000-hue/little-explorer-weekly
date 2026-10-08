@@ -39,7 +39,7 @@ test('voices load late; language selection never borrows the opposite-language v
  const f=fake(t);const zh={lang:'zh-TW',localService:true,name:'Taiwan'},en={lang:'en-US',localService:true,name:'English'},cn={lang:'zh-CN',name:'Chinese'};
  f.setVoices([cn,en,zh]);f.events.voiceschanged();
  f.engine.play([{text:'Hello.',lang:'en-US',id:'en'},{text:'你好。',lang:'zh-TW',id:'zh'}]);
- assert.equal(f.spoken()[0].voice,en);assert.equal(f.engine.getSnapshot().active,'en');f.spoken()[0].onend();t.mock.timers.tick(599);assert.equal(f.spoken().length,1);t.mock.timers.tick(1);assert.equal(f.spoken()[1].voice,zh);assert.equal(f.engine.getSnapshot().active,'zh');
+ assert.equal(f.spoken()[0].voice,en);assert.equal(f.engine.getSnapshot().active,'en');f.spoken()[0].onend();t.mock.timers.tick(399);assert.equal(f.spoken().length,1);t.mock.timers.tick(1);assert.equal(f.spoken()[1].voice,zh);assert.equal(f.engine.getSnapshot().active,'zh');
  assert.equal(chooseVoice([zh],'en-US'),undefined);assert.equal(chooseVoice([{lang:'en-GB',name:'UK'}],'en-US').name,'UK');
 });
 test('pause, resume, replay, speed and cancellation discard stale callbacks',t=>{
@@ -60,3 +60,4 @@ test('missing API, throwing API, error event and no-start timeout fall back with
  const bad=createSpeech({synth:{getVoices(){throw Error();},cancel(){throw Error();},speak(){throw Error();}},make:text=>({text})});assert.doesNotThrow(()=>bad.play([{text:'hi',lang:'en-US'}]));assert.equal(bad.getSnapshot().status,'error');bad.dispose();
  const stuck=createSpeech({synth:{getVoices:()=>[],cancel(){},speak(){}},make:text=>({text})});stuck.play([{text:'hi',lang:'en-US'}]);t.mock.timers.tick(8000);assert.equal(stuck.getSnapshot().status,'error');stuck.dispose();
 });
+
