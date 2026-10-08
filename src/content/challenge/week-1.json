@@ -281,7 +281,227 @@
           "explanation": "把理由說清楚，比選得一樣更重要。",
           "id": "s6"
         }
-      ]
+      ],
+      "translations": {
+        "Read the order": [
+          {
+            "en": "Read the order",
+            "zh": "讀讀點餐內容"
+          }
+        ],
+        "What does Mia want?": [
+          {
+            "en": "What does Mia want?",
+            "zh": "Mia 想要什麼？"
+          }
+        ],
+        "How much is it?": [
+          {
+            "en": "How much is it?",
+            "zh": "總共多少錢？"
+          }
+        ],
+        "Enough money?": [
+          {
+            "en": "Enough money?",
+            "zh": "錢夠嗎？"
+          }
+        ],
+        "Ask politely": [
+          {
+            "en": "Ask politely",
+            "zh": "禮貌地提出請求"
+          }
+        ],
+        "先看情境，準備好再往下。": [
+          {
+            "en": "Read the situation. Continue when you are ready.",
+            "zh": "先看情境，準備好再往下。"
+          }
+        ],
+        "沒有唯一答案。選一個方向，看看它的取捨。": [
+          {
+            "en": "There is more than one possible answer. Choose an idea and think about its trade-offs.",
+            "zh": "沒有唯一答案。選一個方向，看看它的取捨。"
+          }
+        ],
+        "Mia 的點餐清單": [
+          {
+            "en": "Mia's order",
+            "zh": "Mia 的點餐清單"
+          }
+        ],
+        "Sunny Café · Menu": [
+          {
+            "en": "Sunny Café · Menu",
+            "zh": "陽光咖啡館・菜單"
+          }
+        ],
+        "Item": [
+          {
+            "en": "Item",
+            "zh": "品項"
+          }
+        ],
+        "Price": [
+          {
+            "en": "Price",
+            "zh": "價格"
+          }
+        ],
+        "Sandwich": [
+          {
+            "en": "Sandwich",
+            "zh": "三明治"
+          }
+        ],
+        "Tea": [
+          {
+            "en": "Tea",
+            "zh": "茶"
+          }
+        ],
+        "Milk": [
+          {
+            "en": "Milk",
+            "zh": "牛奶"
+          }
+        ],
+        "Apple": [
+          {
+            "en": "Apple",
+            "zh": "蘋果"
+          }
+        ],
+        "NT$85": [
+          {
+            "en": "NT$85",
+            "zh": "新臺幣 85 元"
+          }
+        ],
+        "NT$30": [
+          {
+            "en": "NT$30",
+            "zh": "新臺幣 30 元"
+          }
+        ],
+        "NT$40": [
+          {
+            "en": "NT$40",
+            "zh": "新臺幣 40 元"
+          }
+        ],
+        "NT$20": [
+          {
+            "en": "NT$20",
+            "zh": "新臺幣 20 元"
+          }
+        ],
+        "Mia has NT$200. She wants one sandwich and two drinks.\nMia: “Two teas, please.”": [
+          {
+            "en": "Mia has NT$200.",
+            "zh": "Mia 有 200 元。"
+          },
+          {
+            "en": "She wants one sandwich and two drinks.",
+            "zh": "她想買一個三明治和兩杯飲料。"
+          },
+          {
+            "en": "Mia: “Two teas, please.”",
+            "zh": "Mia：「請給我兩杯茶。」"
+          }
+        ],
+        "選出她這次要買的兩種品項。": [
+          {
+            "en": "Choose the two kinds of items she wants to buy.",
+            "zh": "選出她這次要買的兩種品項。"
+          }
+        ],
+        "一個 sandwich 加兩杯 tea，總共多少元？": [
+          {
+            "en": "How much are one sandwich and two teas?",
+            "zh": "一個三明治加兩杯茶，總共多少元？"
+          }
+        ],
+        "Does Mia have enough money?": [
+          {
+            "en": "Does Mia have enough money?",
+            "zh": "Mia 的錢夠嗎？"
+          }
+        ],
+        "Yes, she does.": [
+          {
+            "en": "Yes, she does.",
+            "zh": "是的，她的錢夠。"
+          }
+        ],
+        "No, she doesn't.": [
+          {
+            "en": "No, she doesn't.",
+            "zh": "不，她的錢不夠。"
+          }
+        ],
+        "如果想再要一杯水，哪句話最符合這個情境？": [
+          {
+            "en": "You want some water. Which sentence fits this situation?",
+            "zh": "如果想再要一杯水，哪句話最符合這個情境？"
+          }
+        ],
+        "Where is my school?": [
+          {
+            "en": "Where is my school?",
+            "zh": "我的學校在哪裡？"
+          }
+        ],
+        "I have two brothers.": [
+          {
+            "en": "I have two brothers.",
+            "zh": "我有兩個兄弟。"
+          }
+        ],
+        "Can I have some water, please?": [
+          {
+            "en": "Can I have some water, please?",
+            "zh": "可以給我一些水嗎？"
+          }
+        ],
+        "聽不清楚時": [
+          {
+            "en": "When you can't hear clearly",
+            "zh": "聽不清楚時"
+          }
+        ],
+        "店員問了你沒聽懂的問題，你想先用哪一句？": [
+          {
+            "en": "You don't understand the clerk's question. What would you say first?",
+            "zh": "店員問了你沒聽懂的問題，你想先用哪一句？"
+          }
+        ],
+        "“Can you say that again, please?”": [
+          {
+            "en": "“Can you say that again, please?”",
+            "zh": "「可以再說一次嗎？」"
+          }
+        ],
+        "“Can you speak slowly, please?”": [
+          {
+            "en": "“Can you speak slowly, please?”",
+            "zh": "「可以說慢一點嗎？」"
+          }
+        ],
+        "NT$": [
+          {
+            "en": "NT$",
+            "zh": "新臺幣"
+          }
+        ],
+        "練習菜單，所有價格都以新臺幣計。": [
+          {
+            "en": "Practice menu. All prices are in New Taiwan dollars.",
+            "zh": "練習菜單，所有價格都以新臺幣計。"
+          }
+        ]
+      }
     },
     {
       "id": "notice-reading",

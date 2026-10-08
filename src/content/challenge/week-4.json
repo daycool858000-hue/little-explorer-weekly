@@ -290,7 +290,245 @@
           "explanation": "把理由說清楚，比選得一樣更重要。",
           "id": "s6"
         }
-      ]
+      ],
+      "translations": {
+        "Read the team plan": [
+          {
+            "en": "Read the team plan",
+            "zh": "讀讀小組計畫"
+          }
+        ],
+        "Who brings the cups?": [
+          {
+            "en": "Who brings the cups?",
+            "zh": "誰負責帶杯子？"
+          }
+        ],
+        "Do we have twelve?": [
+          {
+            "en": "Do we have twelve?",
+            "zh": "我們有十二個嗎？"
+          }
+        ],
+        "Ask for help": [
+          {
+            "en": "Ask for help",
+            "zh": "請別人幫忙"
+          }
+        ],
+        "First, next, finally": [
+          {
+            "en": "First, next, finally",
+            "zh": "首先、接著、最後"
+          }
+        ],
+        "A teammate is away": [
+          {
+            "en": "A teammate is away",
+            "zh": "一位組員不在"
+          }
+        ],
+        "先看情境，準備好再往下。": [
+          {
+            "en": "Read the situation. Continue when you are ready.",
+            "zh": "先看情境，準備好再往下。"
+          }
+        ],
+        "沒有唯一答案。選一個方向，看看它的取捨。": [
+          {
+            "en": "There is more than one possible answer. Choose an idea and think about its trade-offs.",
+            "zh": "沒有唯一答案。選一個方向，看看它的取捨。"
+          }
+        ],
+        "Let's work together": [
+          {
+            "en": "Let's work together",
+            "zh": "一起合作吧"
+          }
+        ],
+        "Planting day · Team plan": [
+          {
+            "en": "Planting day · Team plan",
+            "zh": "種植日・小組計畫"
+          }
+        ],
+        "Name": [
+          {
+            "en": "Name",
+            "zh": "名字"
+          }
+        ],
+        "Task": [
+          {
+            "en": "Task",
+            "zh": "任務"
+          }
+        ],
+        "Mina": [
+          {
+            "en": "Mina",
+            "zh": "米娜"
+          }
+        ],
+        "Leo": [
+          {
+            "en": "Leo",
+            "zh": "里歐"
+          }
+        ],
+        "Ben": [
+          {
+            "en": "Ben",
+            "zh": "班"
+          }
+        ],
+        "Amy": [
+          {
+            "en": "Amy",
+            "zh": "艾咪"
+          }
+        ],
+        "Bring eight cups.": [
+          {
+            "en": "Bring eight cups.",
+            "zh": "帶八個杯子。"
+          }
+        ],
+        "Bring four more cups.": [
+          {
+            "en": "Bring four more cups.",
+            "zh": "另外再帶四個杯子。"
+          }
+        ],
+        "Make labels.": [
+          {
+            "en": "Make labels.",
+            "zh": "製作標籤。"
+          }
+        ],
+        "Count the seeds.": [
+          {
+            "en": "Count the seeds.",
+            "zh": "數一數種子。"
+          }
+        ],
+        "We need twelve cups. First, put soil in the cups. Next, add seeds. Finally, water them.": [
+          {
+            "en": "We need twelve cups.",
+            "zh": "我們需要十二個杯子。"
+          },
+          {
+            "en": "First, put soil in the cups.",
+            "zh": "首先，把土放進杯子裡。"
+          },
+          {
+            "en": "Next, add seeds.",
+            "zh": "接著，放入種子。"
+          },
+          {
+            "en": "Finally, water them.",
+            "zh": "最後，幫它們澆水。"
+          }
+        ],
+        "The team is getting ready for planting day.\nEveryone has a job. They need to check the supplies before they start.": [
+          {
+            "en": "The team is getting ready for planting day.",
+            "zh": "這個小組正在準備種植日活動。"
+          },
+          {
+            "en": "Everyone has a job.",
+            "zh": "每個人都有負責的工作。"
+          },
+          {
+            "en": "They need to check the supplies before they start.",
+            "zh": "開始之前，他們需要確認用品是否備齊。"
+          }
+        ],
+        "選出負責帶杯子的兩位同學。": [
+          {
+            "en": "Choose the two classmates who will bring cups.",
+            "zh": "選出負責帶杯子的兩位同學。"
+          }
+        ],
+        "Mina 和 Leo 帶的杯子加起來共有幾個？": [
+          {
+            "en": "How many cups do Mina and Leo bring in total?",
+            "zh": "Mina 和 Leo 帶的杯子加起來共有幾個？"
+          }
+        ],
+        "Mina 想請 Leo 帶四個杯子，哪句最適合？": [
+          {
+            "en": "Mina wants Leo to bring four cups. Which sentence fits best?",
+            "zh": "Mina 想請 Leo 帶四個杯子，哪句最適合？"
+          }
+        ],
+        "I can run fast.": [
+          {
+            "en": "I can run fast.",
+            "zh": "我跑得很快。"
+          }
+        ],
+        "Can you bring four cups, please?": [
+          {
+            "en": "Can you bring four cups, please?",
+            "zh": "可以請你帶四個杯子嗎？"
+          }
+        ],
+        "Where is my pencil?": [
+          {
+            "en": "Where is my pencil?",
+            "zh": "我的鉛筆在哪裡？"
+          }
+        ],
+        "依照表格下方的指示，排出種植步驟。": [
+          {
+            "en": "Put the planting steps in order, using the directions below the table.",
+            "zh": "依照表格下方的指示，排出種植步驟。"
+          }
+        ],
+        "Add seeds.": [
+          {
+            "en": "Add seeds.",
+            "zh": "放入種子。"
+          }
+        ],
+        "Water them.": [
+          {
+            "en": "Water them.",
+            "zh": "幫它們澆水。"
+          }
+        ],
+        "Put soil in the cups.": [
+          {
+            "en": "Put soil in the cups.",
+            "zh": "把土放進杯子裡。"
+          }
+        ],
+        "Ben 今天沒來，你會先怎麼說？": [
+          {
+            "en": "Ben is away today. What would you say first?",
+            "zh": "Ben 今天沒來，你會先怎麼說？"
+          }
+        ],
+        "“Who can help with the labels?”": [
+          {
+            "en": "“Who can help with the labels?”",
+            "zh": "「誰可以幫忙處理標籤？」"
+          }
+        ],
+        "“I can help with the labels.”": [
+          {
+            "en": "“I can help with the labels.”",
+            "zh": "「我可以幫忙處理標籤。」"
+          }
+        ],
+        "cups": [
+          {
+            "en": "cups",
+            "zh": "個杯子"
+          }
+        ]
+      }
     },
     {
       "id": "plans-reading",

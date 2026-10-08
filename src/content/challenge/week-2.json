@@ -294,7 +294,267 @@
           "explanation": "把理由說清楚，比選得一樣更重要。",
           "id": "s6"
         }
-      ]
+      ],
+      "translations": {
+        "Read the plan": [
+          {
+            "en": "Read the plan",
+            "zh": "讀讀這個計畫"
+          }
+        ],
+        "What does “by” mean here?": [
+          {
+            "en": "What does “by” mean here?",
+            "zh": "這裡的 by 是什麼意思？"
+          }
+        ],
+        "Don't forget the walk": [
+          {
+            "en": "Don't forget the walk",
+            "zh": "別忘了步行時間"
+          }
+        ],
+        "Which buses work?": [
+          {
+            "en": "Which buses work?",
+            "zh": "哪些車班可行？"
+          }
+        ],
+        "Put the trip in order": [
+          {
+            "en": "Put the trip in order",
+            "zh": "把行程排好順序"
+          }
+        ],
+        "先看情境，準備好再往下。": [
+          {
+            "en": "Read the situation. Continue when you are ready.",
+            "zh": "先看情境，準備好再往下。"
+          }
+        ],
+        "沒有唯一答案。選一個方向，看看它的取捨。": [
+          {
+            "en": "There is more than one possible answer. Choose an idea and think about its trade-offs.",
+            "zh": "沒有唯一答案。選一個方向，看看它的取捨。"
+          }
+        ],
+        "Can we get there by 9:40?": [
+          {
+            "en": "Can we get there by 9:40?",
+            "zh": "我們能在九點四十分前到嗎？"
+          }
+        ],
+        "Bus schedule": [
+          {
+            "en": "Bus schedule",
+            "zh": "公車時刻表"
+          }
+        ],
+        "Bus": [
+          {
+            "en": "Bus",
+            "zh": "車班"
+          }
+        ],
+        "Leaves school": [
+          {
+            "en": "Leaves school",
+            "zh": "從學校出發"
+          }
+        ],
+        "Arrives at stop": [
+          {
+            "en": "Arrives at stop",
+            "zh": "到達站牌"
+          }
+        ],
+        "A": [
+          {
+            "en": "A",
+            "zh": "A 班車"
+          }
+        ],
+        "B": [
+          {
+            "en": "B",
+            "zh": "B 班車"
+          }
+        ],
+        "C": [
+          {
+            "en": "C",
+            "zh": "C 班車"
+          }
+        ],
+        "9:00": [
+          {
+            "en": "9:00",
+            "zh": "九點"
+          }
+        ],
+        "9:20": [
+          {
+            "en": "9:20",
+            "zh": "九點二十分"
+          }
+        ],
+        "9:15": [
+          {
+            "en": "9:15",
+            "zh": "九點十五分"
+          }
+        ],
+        "9:35": [
+          {
+            "en": "9:35",
+            "zh": "九點三十五分"
+          }
+        ],
+        "9:30": [
+          {
+            "en": "9:30",
+            "zh": "九點三十分"
+          }
+        ],
+        "9:50": [
+          {
+            "en": "9:50",
+            "zh": "九點五十分"
+          }
+        ],
+        "From the stop to the museum: a five-minute walk. Buses are on time in this task.": [
+          {
+            "en": "From the stop to the museum: a five-minute walk.",
+            "zh": "從站牌走到博物館需要五分鐘。"
+          },
+          {
+            "en": "Buses are on time in this task.",
+            "zh": "這個任務假設公車都準時。"
+          }
+        ],
+        "We need to be at the museum by 9:40.\nThe museum opens at 9:30. We walk from the bus stop to the museum.": [
+          {
+            "en": "We need to be at the museum by 9:40.",
+            "zh": "我們最晚要在九點四十分到博物館。"
+          },
+          {
+            "en": "The museum opens at 9:30.",
+            "zh": "博物館九點三十分開門。"
+          },
+          {
+            "en": "We walk from the bus stop to the museum.",
+            "zh": "我們從公車站牌走到博物館。"
+          }
+        ],
+        "句子中的 by 9:40，最接近哪個意思？": [
+          {
+            "en": "What does “by 9:40” mean in this sentence?",
+            "zh": "句子中的 by 9:40，最接近哪個意思？"
+          }
+        ],
+        "一定只能在 9:40 到": [
+          {
+            "en": "We must arrive exactly at 9:40.",
+            "zh": "一定只能在 9:40 到"
+          }
+        ],
+        "最晚在 9:40 到": [
+          {
+            "en": "We must arrive no later than 9:40.",
+            "zh": "最晚在 9:40 到"
+          }
+        ],
+        "9:40 以後才出發": [
+          {
+            "en": "We leave after 9:40.",
+            "zh": "9:40 以後才出發"
+          }
+        ],
+        "搭 Bus B 到站後，還要走幾分鐘才到博物館？": [
+          {
+            "en": "After Bus B arrives at the stop, how many minutes do we walk to the museum?",
+            "zh": "搭 B 班公車到站後，還要走幾分鐘才到博物館？"
+          }
+        ],
+        "哪些車班能讓你最晚 9:40 到博物館？": [
+          {
+            "en": "Which buses can get you to the museum by 9:40?",
+            "zh": "哪些車班能讓你最晚 9:40 到博物館？"
+          }
+        ],
+        "Bus A": [
+          {
+            "en": "Bus A",
+            "zh": "A 班公車"
+          }
+        ],
+        "Bus B": [
+          {
+            "en": "Bus B",
+            "zh": "B 班公車"
+          }
+        ],
+        "Bus C": [
+          {
+            "en": "Bus C",
+            "zh": "C 班公車"
+          }
+        ],
+        "按行程先後點選三句。": [
+          {
+            "en": "Tap the three sentences in the order of the trip.",
+            "zh": "按行程先後點選三句。"
+          }
+        ],
+        "Walk to the museum.": [
+          {
+            "en": "Walk to the museum.",
+            "zh": "走到博物館。"
+          }
+        ],
+        "Get on the bus at school.": [
+          {
+            "en": "Get on the bus at school.",
+            "zh": "在學校上公車。"
+          }
+        ],
+        "Get off at the museum stop.": [
+          {
+            "en": "Get off at the museum stop.",
+            "zh": "在博物館站下車。"
+          }
+        ],
+        "早到還是剛好？": [
+          {
+            "en": "Early or just in time?",
+            "zh": "早到還是剛好？"
+          }
+        ],
+        "A 會提早到，B 剛好趕上。你比較在意什麼？": [
+          {
+            "en": "Bus A gets there early. Bus B gets there just in time. What matters more to you?",
+            "zh": "A 會提早到，B 剛好趕上。你比較在意什麼？"
+          }
+        ],
+        "多一點時間，不怕小延誤": [
+          {
+            "en": "More time to allow for small delays",
+            "zh": "多一點時間，不怕小延誤"
+          }
+        ],
+        "少等候，但留意實際路況": [
+          {
+            "en": "Less waiting, while watching the traffic",
+            "zh": "少等候，但留意實際路況"
+          }
+        ],
+        "minutes": [
+          {
+            "en": "minutes",
+            "zh": "分鐘"
+          }
+        ]
+      }
     },
     {
       "id": "transfer-reading",

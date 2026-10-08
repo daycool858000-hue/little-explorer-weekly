@@ -280,7 +280,237 @@
           "explanation": "把理由說清楚，比選得一樣更重要。",
           "id": "s6"
         }
-      ]
+      ],
+      "translations": {
+        "Read the update": [
+          {
+            "en": "Read the update",
+            "zh": "讀讀更新訊息"
+          }
+        ],
+        "Find the changed information": [
+          {
+            "en": "Find the changed information",
+            "zh": "找出改變的資訊"
+          }
+        ],
+        "When does the bus leave?": [
+          {
+            "en": "When does the bus leave?",
+            "zh": "巴士幾點出發？"
+          }
+        ],
+        "What is clearly stated?": [
+          {
+            "en": "What is clearly stated?",
+            "zh": "哪些資訊寫得很清楚？"
+          }
+        ],
+        "Do we know the return time?": [
+          {
+            "en": "Do we know the return time?",
+            "zh": "我們知道回程時間嗎？"
+          }
+        ],
+        "Ask for the missing information": [
+          {
+            "en": "Ask for the missing information",
+            "zh": "詢問缺少的資訊"
+          }
+        ],
+        "先看情境，準備好再往下。": [
+          {
+            "en": "Read the situation. Continue when you are ready.",
+            "zh": "先看情境，準備好再往下。"
+          }
+        ],
+        "沒有唯一答案。選一個方向，看看它的取捨。": [
+          {
+            "en": "There is more than one possible answer. Choose an idea and think about its trade-offs.",
+            "zh": "沒有唯一答案。選一個方向，看看它的取捨。"
+          }
+        ],
+        "Which message is newer?": [
+          {
+            "en": "Which message is newer?",
+            "zh": "哪則訊息比較新？"
+          }
+        ],
+        "Class messages": [
+          {
+            "en": "Class messages",
+            "zh": "班級訊息"
+          }
+        ],
+        "Message": [
+          {
+            "en": "Message",
+            "zh": "訊息"
+          }
+        ],
+        "Text": [
+          {
+            "en": "Text",
+            "zh": "內容"
+          }
+        ],
+        "Old · Monday 9:00 a.m.": [
+          {
+            "en": "Old · Monday 9:00 a.m.",
+            "zh": "舊訊息・星期一上午九點"
+          }
+        ],
+        "Update · Monday 4:00 p.m.": [
+          {
+            "en": "Update · Monday 4:00 p.m.",
+            "zh": "更新訊息・星期一下午四點"
+          }
+        ],
+        "Our visit is on Tuesday at 2:00 p.m.": [
+          {
+            "en": "Our visit is on Tuesday at 2:00 p.m.",
+            "zh": "我們星期二下午兩點參訪。"
+          }
+        ],
+        "Our visit is on Wednesday at 2:00 p.m. The bus leaves school at 1:30 p.m. Bring water.": [
+          {
+            "en": "Our visit is on Wednesday at 2:00 p.m.",
+            "zh": "我們星期三下午兩點參訪。"
+          },
+          {
+            "en": "The bus leaves school at 1:30 p.m.",
+            "zh": "巴士下午一點三十分從學校出發。"
+          },
+          {
+            "en": "Bring water.",
+            "zh": "請帶水。"
+          }
+        ],
+        "Leo sees two messages about the same visit.\nHe wants to write the correct day in his notebook.": [
+          {
+            "en": "Leo sees two messages about the same visit.",
+            "zh": "Leo 看到兩則關於同一次參訪的訊息。"
+          },
+          {
+            "en": "He wants to write the correct day in his notebook.",
+            "zh": "他想把正確的參訪日寫在筆記本裡。"
+          }
+        ],
+        "更新訊息改了哪一項？": [
+          {
+            "en": "What changed in the update?",
+            "zh": "更新訊息改了哪一項？"
+          }
+        ],
+        "The day of the visit.": [
+          {
+            "en": "The day of the visit.",
+            "zh": "參訪的日期。"
+          }
+        ],
+        "The price of lunch.": [
+          {
+            "en": "The price of lunch.",
+            "zh": "午餐的價格。"
+          }
+        ],
+        "The name of the school.": [
+          {
+            "en": "The name of the school.",
+            "zh": "學校的名稱。"
+          }
+        ],
+        "巴士從學校出發的時間是哪個？": [
+          {
+            "en": "What time does the bus leave school?",
+            "zh": "巴士從學校出發的時間是哪個？"
+          }
+        ],
+        "2:00 p.m.": [
+          {
+            "en": "2:00 p.m.",
+            "zh": "下午兩點"
+          }
+        ],
+        "1:30 p.m.": [
+          {
+            "en": "1:30 p.m.",
+            "zh": "下午一點三十分"
+          }
+        ],
+        "4:00 p.m.": [
+          {
+            "en": "4:00 p.m.",
+            "zh": "下午四點"
+          }
+        ],
+        "選出更新訊息明確要求或說明的兩件事。": [
+          {
+            "en": "Choose two things clearly stated or requested in the update.",
+            "zh": "選出更新訊息明確要求或說明的兩件事。"
+          }
+        ],
+        "Bring water.": [
+          {
+            "en": "Bring water.",
+            "zh": "請帶水。"
+          }
+        ],
+        "Bring three books.": [
+          {
+            "en": "Bring three books.",
+            "zh": "請帶三本書。"
+          }
+        ],
+        "The visit is on Wednesday.": [
+          {
+            "en": "The visit is on Wednesday.",
+            "zh": "參訪在星期三。"
+          }
+        ],
+        "The trip is free.": [
+          {
+            "en": "The trip is free.",
+            "zh": "這趟行程免費。"
+          }
+        ],
+        "What time will they be back at school?": [
+          {
+            "en": "What time will they be back at school?",
+            "zh": "他們幾點會回到學校？"
+          }
+        ],
+        "The messages don't say.": [
+          {
+            "en": "The messages don't say.",
+            "zh": "訊息沒有說。"
+          }
+        ],
+        "你想確認回程，會選哪個問法？": [
+          {
+            "en": "You want to check the return time. Which question would you ask?",
+            "zh": "你想確認回程，會選哪個問法？"
+          }
+        ],
+        "“What time will we be back?”": [
+          {
+            "en": "“What time will we be back?”",
+            "zh": "「我們幾點會回來？」"
+          }
+        ],
+        "“Will we be back before four?”": [
+          {
+            "en": "“Will we be back before four?”",
+            "zh": "「我們會在四點以前回來嗎？」"
+          }
+        ],
+        "這是虛構的班級訊息；Update 是更新訊息。": [
+          {
+            "en": "These class messages are fictional. “Update” means new information.",
+            "zh": "這是虛構的班級訊息；Update 是更新訊息。"
+          }
+        ]
+      }
     },
     {
       "id": "evidence-reading",
