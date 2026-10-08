@@ -38,16 +38,16 @@ try{
    for(const unit of issue.units){
     await page.goto(base+'#challenge/'+issue.id+'/'+unit.id+'/1');
     for(const [index,s]of unit.steps.entries()){
-     await page.waitForFunction(t=>document.querySelector('main h1')?.textContent===t,s.title);await layout(page,unit.id+'/'+s.id+'/'+width);assert.match(await page.locator('.c-progress').innerText(),new RegExp((index+1)+' / 6'));
+     await page.waitForFunction(t=>document.querySelector('main h1')?.getAttribute('data-original')===t,s.title);await layout(page,unit.id+'/'+s.id+'/'+width);assert.match(await page.locator('.c-progress').innerText(),new RegExp((index+1)+' / 6'));
      if(index===0&&unit===issues[0].units[0])await page.screenshot({path:output+'/task-'+width+'.png',fullPage:true});
      if(unit.id==='solutions-mix'&&index===0)await page.screenshot({path:output+'/comparison-'+width+'.png',fullPage:true});
-     if(index===3){await page.getByRole('link',{name:'← 上一步',exact:true}).click();await page.waitForFunction(t=>document.querySelector('main h1')?.textContent===t,unit.steps[2].title);await page.locator('main .c-primary').click();await page.waitForFunction(t=>document.querySelector('main h1')?.textContent===t,s.title);}
+     if(index===3){await page.getByRole('link',{name:'← 上一步',exact:true}).click();await page.waitForFunction(t=>document.querySelector('main h1')?.getAttribute('data-original')===t,unit.steps[2].title);await page.locator('main .c-primary').click();await page.waitForFunction(t=>document.querySelector('main h1')?.getAttribute('data-original')===t,s.title);}
      if(s.hints.length){await page.getByRole('button',{name:'給我一個提示',exact:true}).click();assert.ok((await page.locator('.c-hints').innerText()).includes(s.hints[0]));await page.getByRole('button',{name:'再給我一個提示',exact:true}).click();assert.ok((await page.locator('.c-hints').innerText()).includes(s.hints[1]));}
      const tryWrong=width===375&&!wrongCoverage.has(s.kind)&&['number','choice','select','order'].includes(s.kind);
      await answer(page,s,tryWrong);await page.locator('main .c-primary').click();
      if(tryWrong){wrongCoverage.add(s.kind);assert.match(await page.locator('.c-feedback').innerText(),/再看看這個線索/);await page.locator('main .c-primary').click();assert.match(await page.locator('.c-feedback').innerText(),/查看解法/);await page.getByRole('button',{name:'看看解法',exact:true}).click();assert.match(await page.locator('.c-feedback').innerText(),/原來關鍵在這裡/);}
      else assert.match(await page.locator('.c-feedback').innerText(),/找到了|準備好了|這個方向有它的理由/);
-     if(index===2){await page.reload();await page.locator('.c-feedback').waitFor();assert.equal(await page.locator('main h1').innerText(),s.title);await page.getByRole('link',{name:'挑戰版首頁',exact:true}).click();await page.locator('.c-intro .c-primary').click();await page.locator('.c-feedback').waitFor();assert.equal(await page.locator('main h1').innerText(),s.title);}
+     if(index===2){await page.reload();await page.locator('.c-feedback').waitFor();assert.equal(await page.locator('main h1').getAttribute('data-original'),s.title);await page.getByRole('link',{name:'挑戰版首頁',exact:true}).click();await page.locator('.c-intro .c-primary').click();await page.locator('.c-feedback').waitFor();assert.equal(await page.locator('main h1').getAttribute('data-original'),s.title);}
      await page.locator('main .c-primary').click();steps++;
     }
     await page.locator('.c-complete').waitFor();assert.match(await page.locator('.c-complete').innerText(),/今天帶走三件事/);await page.locator('.c-complete .c-primary').click();await page.locator('.c-unit-card').first().waitFor();
@@ -64,3 +64,4 @@ try{
  assert.deepEqual(errors,[]);assert.deepEqual(broken,[]);assert.deepEqual(external,[]);assert.equal(wrongCoverage.size,4);
  const report={base,checkedAt:new Date().toISOString(),results,wrongAnswerTypes:[...wrongCoverage],errors,broken,external,checks:['separate original storage unchanged','all 96 steps complete at each width','both hints','retry twice then solution','back and next','reload and resume','completion and return to contents','original font/warm/bookmark preserved','missing route','storage blocked and corrupt']};writeFileSync(output+'/report.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
 }finally{await browser.close();if(server)server.close();}
+

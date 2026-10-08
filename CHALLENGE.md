@@ -38,3 +38,38 @@
 瀏覽器測試需要 Playwright Chromium（`npx playwright install chromium`）。挑戰版測試可設定 `BASE_URL` 為公開網址，檢查部署版本。
 
 `tests/fixtures/original.json` 保護原版文字、圖片、CSS 與閱讀實作。不要為了讓測試通過而重新產生這份基準。
+
+## 英文雙語內容怎麼填
+
+英文探索的單元多一個 `translations` 欄位。左邊填原本欄位的完整文字，右邊放一組或多組英文／中文句子。例如：
+
+```json
+"translations": {
+  "Mia has NT$200. She wants two drinks.": [
+    { "en": "Mia has NT$200.", "zh": "Mia 有 200 元。" },
+    { "en": "She wants two drinks.", "zh": "她想買兩杯飲料。" }
+  ],
+  "Can you say that again, please?": [
+    { "en": "Can you say that again, please?", "zh": "可以再說一次嗎？" }
+  ]
+}
+```
+
+情境、標題、題目、指示、選項、表格標題、欄位、每格資料及備註都可用相同方式填寫。左邊必須和原本內容完全相同；同一段有多句時，請一組一組配對，保留英文原句。不要自動用句點切句，因為 `p.m.` 之類的縮寫也有句點。
+
+原本就是中文的指示，也可用原中文作為左邊的索引，右邊 `en` 放自然英文、`zh` 放原中文。中文只翻譯題意，不加「看哪一列」或答案提示；原本提示仍放在 `hints`。新增第 5 期同樣只要填 JSON，朗讀與雙語畫面會自動套用。
+
+## 朗讀的使用方式
+
+- 原版文章：按「聽這一頁」，只念目前頁面的標題與內容；最後一頁可另外按「聽題目」，不念選項或解答。
+- 挑戰版：可以分開聽資料、題目，或按選項旁的喇叭。聽資料會展開前面的情境，資料表也一直可看。按喇叭不會替你選答案。
+- 播放後可暫停、繼續、重新播放或停止。切頁、換單元、回首頁都會停止。全站不自動播放。
+- 語速有 0.8×、1×、1.2×，預設 1×。
+- 英文預設一句英文、停約 0.6 秒、再一句中文。可改成「只聽英文」。中文輔助開關只控制畫面，不會偷偷改變朗讀模式。
+- 英文與中文各自使用不同語言的 SpeechSynthesisUtterance，優先選 en-US 與 zh-TW。實際聲音與可用語言由裝置提供；沒有指定 voice 時交給瀏覽器依語言選擇。若無法發聲，文字、翻譯、作答、提示與進度仍可使用。
+- 偏好獨立保存在 `explorer-speech-v1`，不修改原版或挑戰版的進度。部分手機語音引擎續播不穩定時，會從目前的短句／段落重新接上。
+
+共用程式位於 `src/speech/`，沒有外部 TTS、金鑰、帳號或付費服務。語音介面依照 [SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) 與 [SpeechSynthesisUtterance](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance) 使用。
+
+`npm run test:speech` 執行可重現的語音瀏覽器模擬；也可以設定 `BASE_URL` 檢查公開網站。模擬會核對 utterance 文字、語言、voice、順序及控制事件，不能代替實體 iPhone／Android 的聲音測試。
+
