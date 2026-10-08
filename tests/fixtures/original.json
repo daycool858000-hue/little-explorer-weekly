@@ -1,0 +1,30 @@
+{
+  "commit": "1fde2e1ab76c5c6bfe6435900b6dbc49d95b4413",
+  "files": {
+    "src/App.tsx": "0c569f98072bba4046590a482230a1716e769da6920a8e5a887a3870da34903b",
+    "src/styles.css": "8fc6f499170d82583915d0d34ede110cbc8047a9ea6e6f0472b37ed0080bdcd4",
+    "src/library.ts": "ccbcf639e0489bc4233bd3ae5f9f73e52cef404f7168b4320fdcaabc5ad563d3",
+    "src/content/week-1.json": "9d6e4b14d607a15dde182eda798fd64638c4c56d49a19b91e7cffcd4033b17c5",
+    "src/content/week-2.json": "f5ed552e2cb00b6dc8499b5e6e5afb69f403373326e7710274ba4f02f45d341b",
+    "src/content/week-3.json": "5deb2a61a6c1a8b039177a55f9aec97f6187015169aed1028d7bfeaa9103968d",
+    "src/content/week-4.json": "80586c12e80a3582aaa27f3544b6bfe23fa0ea9e74bf8edf6843d99410c36e0c",
+    "public/assets/ants.svg": "145e9869a4640d785aeb5e582dd10c5459e238a81dfb5d5fcd7ba056b6366b9b",
+    "public/assets/binary.svg": "874f8fa2c8d52fa4b65b82431b626f1b1d2c51f06851891381933bc5ec6b61f3",
+    "public/assets/bread.svg": "a50f802b64456ce28d982cff0e9550705d4869d47ab06291dcb884ac2f337ab8",
+    "public/assets/bridges.svg": "39232c36dd0324ffa49ac9c565f6f9c3319a2d4987be9439657c5f21cae13603",
+    "public/assets/coral.svg": "011e7ae7054bdc6e9ac4a0c5189db5d9fb0cb18c6527a9d8c6f5a1fc908420ea",
+    "public/assets/culture.svg": "b51c1111bff00a6af0e3733737a75d69d787334a10d735c0504b0b24c3abdcef",
+    "public/assets/feelings.svg": "5b66a85cc4b18568c072e3cb396604fa68a92bd3bb3fc73c2218a76b9970e452",
+    "public/assets/fox.svg": "5e0d3b231976d69bc1b348dfb8dfa7d53df7f1c9524ab0e41a386ad01ea21a5c",
+    "public/assets/hero.svg": "5e0d3b231976d69bc1b348dfb8dfa7d53df7f1c9524ab0e41a386ad01ea21a5c",
+    "public/assets/library.svg": "e565ae391bb6623d59b71824629a2b609ee3fb35df685285b66cc2338bada02d",
+    "public/assets/logo.svg": "edfa6a742510feb9c7915c580c4fb417e49106e5460a9c767f3d0cc4bdc041f6",
+    "public/assets/maps.svg": "855c1d66e3eb81edfe2352be493f2647b2917309d1c99993d0fdeb5618931571",
+    "public/assets/moon.svg": "5047cc0b60afc52c9fa49c3b538a62932c6418723c54cce46b7391f053ac4fdd",
+    "public/assets/printing.svg": "863da584c271474a14b84c5f9ca6d265c36dd7a4d7999c213e3abc7acc40eb10",
+    "public/assets/seed.svg": "a372445ca37561fa979a7c8ff5f313cf093d15ab903c99994befc09b6e89d54e",
+    "public/assets/shadows.svg": "fe187977e6689b1b5df6f5d7de9bea8c7cbb0adc725268257fefde1e10045af9",
+    "public/assets/taiwan.svg": "e7320edb4f9f6bb60eed34f77885b5e0ea4cded0375a1b9e17fe5768ce4b01d0",
+    "public/assets/water.svg": "dc3e5f96d15c6ccd57ee30291020ff2cbf7a222f5610d1cc7f45eb4e752dbc9d"
+  }
+}
