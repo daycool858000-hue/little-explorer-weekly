@@ -345,6 +345,9 @@ export default function Magazine() {
               </div>
             </>
           )}
+          {/* challenge-entry:start */}
+          {!issue && !shelf && <a className="challenge-entry" href="#challenge"><span><strong>五六年級挑戰版</strong><small>動動腦，把學到的東西拿來用。</small></span><span aria-hidden="true">探索新任務 →</span></a>}
+          {/* challenge-entry:end */}
           {!issue && !shelf ? <section className="issue-library" aria-labelledby="issue-title">
             <div className="library-heading"><div><span className="section-kicker">你的每週探索任務</span><h2 id="issue-title">這個月，想先翻哪一期？</h2></div></div>
             <button className="latest-issue" onClick={() => goIssue(issues[issues.length - 1].id)}>本週最新一期 · 第 {issues[issues.length - 1].number} 週：{issues[issues.length - 1].title} →</button>

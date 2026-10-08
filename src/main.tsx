@@ -1,5 +1,5 @@
 import { createRoot } from "react-dom/client";
-import Magazine from "./App";
+import Root from "./Root";
 import "./styles.css";
-createRoot(document.getElementById("root")!).render(<Magazine />);
+createRoot(document.getElementById("root")!).render(<Root />);
 
