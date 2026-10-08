@@ -6,6 +6,6 @@
 - [x] Language-first voices, no local-service quality assumption, optional voice controls.
 - [x] Assert actual engine utterances, table completeness, all content unchanged.
 - [x] Lint / tests / build / five-size browser regression and speech checks.
-- [ ] Commit / GitHub Actions / Pages / anonymous public checks.
+- [x] Commit / GitHub Actions / Pages / anonymous public checks.
 
 No learning content, question, answer or progress-key modifications. Physical phone audio quality requires real-device listening; mocked speech tests are not a physical test.
