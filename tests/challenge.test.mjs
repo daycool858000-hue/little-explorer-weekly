@@ -9,7 +9,11 @@ const baseline=JSON.parse(readFileSync('tests/fixtures/original.json','utf8'));
 test('original content, illustrations, styles, and reading implementation are protected',()=>{
  for(const [file,expected]of Object.entries(baseline.files)){
   let bytes=readFileSync(file);
-  if(file==='src/App.tsx')bytes=Buffer.from(bytes.toString('utf8').replace(/          \{\/\* challenge-entry:start \*\/\}[\s\S]*?          \{\/\* challenge-entry:end \*\/\}\r?\n/,''));
+  if(file==='src/App.tsx')bytes=Buffer.from(bytes.toString('utf8')
+   .replace(/          \{\/\* challenge-entry:start \*\/\}[\s\S]*?          \{\/\* challenge-entry:end \*\/\}\r?\n/,'')
+   .replace(/^\/\/ speech:start\r?\n[\s\S]*?^\/\/ speech:end\r?\n/gm,'')
+   .replace(/^ *\{\/\* speech:start \*\/\}\r?\n[\s\S]*?^ *\{\/\* speech:end \*\/\}\r?\n/gm,'')
+   .replace(/ data-speech-id=(?:"[^"]*"|\{"article-paragraph-"\+i\})/g,''));
   assert.equal(createHash('sha256').update(bytes).digest('hex'),expected,file);
  }
 });

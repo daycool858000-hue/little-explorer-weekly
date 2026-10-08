@@ -1,0 +1,27 @@
+.speech-panel { margin: 18px 0 24px; padding: 12px 14px; border: 1px solid #ccd6c8; border-radius: 14px; background: #f4f6ef; }
+.speech-buttons, .speech-controls, .speech-language { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 12px; }
+.speech-controls { margin-top: 8px; font-size: 15px; color: #42564c; }
+.speech-controls label { display: inline-flex; gap: 8px; align-items: center; }
+.speech-controls button, .speech-controls select, .speech-button { min-height: 44px; min-width: 44px; padding: 8px 12px; border: 1px solid #b7c8b8; border-radius: 9px; color: #285442; background: #fffef9; font: inherit; cursor: pointer; }
+.speech-button { font-size: 16px; }
+.speech-controls select { max-width: 100%; }
+.speech-language { flex-basis: 100%; }
+.speech-icon { flex: 0 0 44px; width: 44px; padding: 8px; align-self: center; }
+.speech-controls button:focus-visible, .speech-controls select:focus-visible, .speech-button:focus-visible { outline: 3px solid #906b12; outline-offset: 3px; }
+.speech-highlight { background: #f3e4ab !important; color: #243f36 !important; border-radius: 4px; box-shadow: 0 0 0 3px #f3e4ab; }
+.speech-pairs, .speech-pair, .speech-en, .speech-zh { display: block; }
+.speech-pair + .speech-pair { margin-top: .55em; }
+.speech-en { white-space: pre-line; }
+.speech-zh { margin-top: .22em; font-size: .86em; font-weight: 400; color: #52695e; line-height: 1.65; }
+.speech-notice { flex-basis: 100%; margin: 4px 0; font-size: 14px; line-height: 1.6; }
+.c-option-row { display: flex; align-items: stretch; gap: 8px; min-width: 0; }
+.c-option-row > label, .c-option-row > .c-order { flex: 1; min-width: 0; }
+.c-options .c-option-row label { margin: 0; }
+.c-option-row .speech-button { border-color: transparent; background: transparent; }
+.c-order > .speech-pairs { flex: 1; text-align: left; }
+.c-order > .speech-pairs .speech-pair { display: block; }
+.c-task h1 .speech-zh { font-size: .55em; }
+.c-question h2 .speech-zh { font-size: .8em; }
+.c-information .speech-zh { font-size: .85em; }
+.c-information .speech-en { overflow-wrap: anywhere; }
+@media (max-width: 480px) { .speech-panel { padding: 10px; } .speech-controls { gap: 8px; } .c-option-row { gap: 4px; } .c-option-row .speech-button { padding: 6px; } }

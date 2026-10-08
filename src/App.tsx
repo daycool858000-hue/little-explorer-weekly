@@ -1,5 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { articles, issues } from "./library";
+// speech:start
+import { ArticleAudio, ArticleQuestionAudio } from './speech/ArticleAudio';
+// speech:end
 
 const asset = (name: string) => (window as Window & { explorerAssets?: Record<string, string> }).explorerAssets?.[name] ?? "assets/" + name + ".svg";
 type Memory = {
@@ -193,7 +196,7 @@ export default function Magazine() {
               {memory.saved.includes(article.id) ? "★ 已收藏" : "☆ 收藏"}
             </button>
           </div>
-          <h1>{article.title}</h1>
+          <h1 data-speech-id="article-title">{article.title}</h1>
           <p className="article-deck">{article.subtitle}</p>
           <img
             className="reader-art"
@@ -218,12 +221,15 @@ export default function Magazine() {
               </button>
             ))}
           </div>
+          {/* speech:start */}
+          <ArticleAudio title={article.title} page={article.pages[page]} />
+          {/* speech:end */}
           <article className="reading-body" style={{ fontSize: memory.size }}>
-            <h2 tabIndex={-1} ref={readingHeading}>
+            <h2 tabIndex={-1} ref={readingHeading} data-speech-id="article-page-title">
               {article.pages[page].title}
             </h2>
             {article.pages[page].text.map((p, i) => (
-              <p key={i}>{p}</p>
+              <p key={i} data-speech-id={"article-paragraph-"+i}>{p}</p>
             ))}
           </article>
           <details className="word-box">
@@ -233,7 +239,10 @@ export default function Magazine() {
           {page === article.pages.length - 1 && (
             <section className="quiz" aria-labelledby="quiz-title">
               <span className="section-kicker">猜猜看 · 可以再試一次</span>
-              <h2 id="quiz-title">{article.question}</h2>
+              <h2 id="quiz-title" data-speech-id="article-question">{article.question}</h2>
+              {/* speech:start */}
+              <ArticleQuestionAudio question={article.question} />
+              {/* speech:end */}
               <div className="options">
                 {article.options.map((option, i) => (
                   <button

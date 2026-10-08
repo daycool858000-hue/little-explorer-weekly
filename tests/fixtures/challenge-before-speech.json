@@ -1,0 +1,2399 @@
+[
+  {
+    "id": "week-1",
+    "number": 1,
+    "title": "生活裡的數字",
+    "description": "從菜單到採買，把數字變成有用的決定。",
+    "units": [
+      {
+        "id": "market-math",
+        "category": "數學挑戰",
+        "title": "一百元的果汁任務",
+        "description": "先對單位，再決定買幾瓶。",
+        "visual": {
+          "title": "班遊採買卡",
+          "headers": [
+            "項目",
+            "資訊"
+          ],
+          "rows": [
+            [
+              "人數與份量",
+              "6 人，每人至少 200 mL"
+            ],
+            [
+              "果汁",
+              "每瓶 750 mL，48 元"
+            ],
+            [
+              "優惠",
+              "買 2 瓶，兩瓶合計打九折"
+            ],
+            [
+              "預算",
+              "100 元"
+            ]
+          ],
+          "note": "練習情境：金額保留小數，不計其他費用。",
+          "bars": false
+        },
+        "skills": [
+          "找資訊",
+          "算一算",
+          "做判斷"
+        ],
+        "takeaways": [
+          "計算前先統一容量單位。",
+          "九折是原價乘以 0.9。",
+          "數量、商品金額與剩餘預算都要核對。"
+        ],
+        "steps": [
+          {
+            "kind": "read",
+            "title": "帶著任務進商店",
+            "text": "你負責替六位同學買果汁。大家喝得到、錢也夠，才算完成採買。",
+            "prompt": "先看情境，準備好再往下。",
+            "hints": [],
+            "explanation": "線索準備好了，接著只處理一個問題。",
+            "id": "s1"
+          },
+          {
+            "kind": "number",
+            "title": "先統一單位",
+            "text": "",
+            "prompt": "兩瓶果汁共有 1.5 L，換成多少 mL？",
+            "answer": 1500,
+            "hints": [
+              "先想想 1 L 和 mL 的關係。",
+              "1 L 是 1000 mL，把公升數乘以 1000。"
+            ],
+            "explanation": "1.5 × 1000 = 1500 mL。",
+            "unit": "mL",
+            "id": "s2"
+          },
+          {
+            "kind": "choice",
+            "title": "份量夠不夠",
+            "text": "",
+            "prompt": "至少要買幾瓶，才能讓六人各喝到 200 mL？",
+            "answer": 1,
+            "options": [
+              "1 瓶",
+              "2 瓶",
+              "3 瓶"
+            ],
+            "hints": [
+              "先算六人總共需要多少。",
+              "需要 6 × 200 mL，再和每瓶 750 mL 比較。"
+            ],
+            "explanation": "需要 1200 mL。一瓶只有 750 mL，兩瓶共有 1500 mL，因此至少兩瓶。",
+            "id": "s3"
+          },
+          {
+            "kind": "number",
+            "title": "九折怎麼算",
+            "text": "",
+            "prompt": "買兩瓶打九折後，商品金額是多少元？",
+            "answer": 86.4,
+            "hints": [
+              "九折是付原價的 90%，不是減掉 90 元。",
+              "先算兩瓶原價，再乘以 0.9。"
+            ],
+            "explanation": "48 × 2 × 0.9 = 86.4 元。",
+            "unit": "元",
+            "id": "s4"
+          },
+          {
+            "kind": "number",
+            "title": "最後核對預算",
+            "text": "",
+            "prompt": "100 元預算減去商品金額，還剩多少元？",
+            "answer": 13.6,
+            "hints": [
+              "剩餘預算是原本預算減掉商品金額。",
+              "用 100 減掉打折後的兩瓶總價。"
+            ],
+            "explanation": "100 − 86.4 = 13.6 元。份量和預算都符合。",
+            "unit": "元",
+            "id": "s5"
+          },
+          {
+            "kind": "reflect",
+            "title": "你會怎麼安排剩下的果汁？",
+            "text": "沒有唯一答案。選一個方向，看看它的取捨。",
+            "prompt": "還剩 300 mL。先選一個做法，再想想需要確認什麼。",
+            "options": [
+              "詢問是否有人想多喝一些",
+              "先保留給晚一點需要的人"
+            ],
+            "replies": [
+              "先確認每個人都分到基本份量，再問意願。",
+              "要確認保存方式與多久後會喝，不能只顧分配。"
+            ],
+            "hints": [
+              "先想想你最在意的條件。",
+              "不同條件可能讓人選擇不同的做法。"
+            ],
+            "explanation": "把理由說清楚，比選得一樣更重要。",
+            "id": "s6"
+          }
+        ]
+      },
+      {
+        "id": "menu-english",
+        "category": "英文探索",
+        "title": "Mia 的點餐清單",
+        "description": "用菜單和一句對話找出需要的資訊。",
+        "visual": {
+          "title": "Sunny Café · Menu",
+          "headers": [
+            "Item",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Sandwich",
+              "NT$85"
+            ],
+            [
+              "Tea",
+              "NT$30"
+            ],
+            [
+              "Milk",
+              "NT$40"
+            ],
+            [
+              "Apple",
+              "NT$20"
+            ]
+          ],
+          "note": "練習菜單，所有價格都以新臺幣計。",
+          "bars": false
+        },
+        "skills": [
+          "找關鍵字",
+          "讀懂情境",
+          "表達意思"
+        ],
+        "takeaways": [
+          "菜單能幫忙理解品項與價格。",
+          "one、two 等數量詞會改變總價。",
+          "遇到不懂的話，可以禮貌請對方再說一次。"
+        ],
+        "steps": [
+          {
+            "kind": "read",
+            "title": "Read the order",
+            "text": "Mia has NT$200. She wants one sandwich and two drinks.\nMia: “Two teas, please.”",
+            "prompt": "先看情境，準備好再往下。",
+            "hints": [],
+            "explanation": "線索準備好了，接著只處理一個問題。",
+            "id": "s1"
+          },
+          {
+            "kind": "select",
+            "title": "What does Mia want?",
+            "text": "",
+            "prompt": "選出她這次要買的兩種品項。",
+            "answer": [
+              0,
+              2
+            ],
+            "options": [
+              "Sandwich",
+              "Milk",
+              "Tea",
+              "Apple"
+            ],
+            "hints": [
+              "先找食物，再看 Mia 指定的飲料。",
+              "drinks 指飲料；Mia 的對話說明她選哪一種。"
+            ],
+            "explanation": "她要一個 sandwich 和兩杯 tea；two 說的是杯數，不是兩種飲料。",
+            "id": "s2"
+          },
+          {
+            "kind": "number",
+            "title": "How much is it?",
+            "text": "",
+            "prompt": "一個 sandwich 加兩杯 tea，總共多少元？",
+            "answer": 145,
+            "hints": [
+              "別漏掉 two teas 裡的 two。",
+              "先算兩杯茶，再加上三明治的價格。"
+            ],
+            "explanation": "85 + 2 × 30 = 145 元。",
+            "unit": "NT$",
+            "id": "s3"
+          },
+          {
+            "kind": "choice",
+            "title": "Enough money?",
+            "text": "",
+            "prompt": "Does Mia have enough money?",
+            "answer": 0,
+            "options": [
+              "Yes, she does.",
+              "No, she doesn't."
+            ],
+            "hints": [
+              "enough 在這裡問的是「夠不夠」。",
+              "比較她帶的 200 元和剛算出的總價。"
+            ],
+            "explanation": "Yes, she does. 200 元足夠支付 145 元，還有 55 元。",
+            "id": "s4"
+          },
+          {
+            "kind": "choice",
+            "title": "Ask politely",
+            "text": "",
+            "prompt": "如果想再要一杯水，哪句話最符合這個情境？",
+            "answer": 2,
+            "options": [
+              "Where is my school?",
+              "I have two brothers.",
+              "Can I have some water, please?"
+            ],
+            "hints": [
+              "先找出和飲料有關的句子。",
+              "Can I have ...? 常用來提出請求。"
+            ],
+            "explanation": "Can I have some water, please? 可以用來禮貌地請求一些水。",
+            "id": "s5"
+          },
+          {
+            "kind": "reflect",
+            "title": "聽不清楚時",
+            "text": "沒有唯一答案。選一個方向，看看它的取捨。",
+            "prompt": "店員問了你沒聽懂的問題，你想先用哪一句？",
+            "options": [
+              "“Can you say that again, please?”",
+              "“Can you speak slowly, please?”"
+            ],
+            "replies": [
+              "請對方再說一次，適合漏聽了幾個字時。",
+              "請對方說慢一點，適合跟不上速度時。"
+            ],
+            "hints": [
+              "先想想你最在意的條件。",
+              "不同條件可能讓人選擇不同的做法。"
+            ],
+            "explanation": "把理由說清楚，比選得一樣更重要。",
+            "id": "s6"
+          }
+        ]
+      },
+      {
+        "id": "notice-reading",
+        "category": "閱讀推理",
+        "title": "公告裡藏著哪些限制？",
+        "description": "先看清楚，再決定能不能參加。",
+        "visual": {
+          "title": "紙橋工作坊 · 練習公告",
+          "headers": [
+            "欄位",
+            "內容"
+          ],
+          "rows": [
+            [
+              "時間",
+              "星期六 09:30～11:00"
+            ],
+            [
+              "地點",
+              "教學大樓 2 樓手作教室"
+            ],
+            [
+              "對象",
+              "五、六年級，限 20 人"
+            ],
+            [
+              "報名",
+              "星期四 16:00 截止"
+            ],
+            [
+              "確認",
+              "收到確認訊息才算報名完成"
+            ],
+            [
+              "攜帶",
+              "自己的水壺"
+            ]
+          ],
+          "note": "",
+          "bars": false
+        },
+        "skills": [
+          "找資訊",
+          "分辨推論",
+          "檢查證據"
+        ],
+        "takeaways": [
+          "時間、地點與限制要分開找。",
+          "沒有寫的事，不能直接當成沒有。",
+          "一個現象可能有不只一種原因。"
+        ],
+        "steps": [
+          {
+            "kind": "read",
+            "title": "先看公告",
+            "text": "小晴想參加工作坊。她已填表，但還沒收到確認訊息。以下只根據這張公告判斷。",
+            "prompt": "先看情境，準備好再往下。",
+            "hints": [],
+            "explanation": "線索準備好了，接著只處理一個問題。",
+            "id": "s1"
+          },
+          {
+            "kind": "select",
+            "title": "找出寫明的資訊",
+            "text": "",
+            "prompt": "哪些是公告明確寫出的資訊？選兩項。",
+            "answer": [
+              0,
+              2
+            ],
+            "options": [
+              "星期六早上活動",
+              "每人會拿到獎品",
+              "在 2 樓手作教室",
+              "下雨一定取消"
+            ],
+            "hints": [
+              "只選可以直接在公告找到的內容。",
+              "找時間與地點欄，不要補上公告沒寫的安排。"
+            ],
+            "explanation": "星期六與 2 樓教室有明確記載；獎品和下雨取消沒有寫。",
+            "id": "s2"
+          },
+          {
+            "kind": "choice",
+            "title": "填表就能去嗎？",
+            "text": "",
+            "prompt": "小晴填了表但未收到確認訊息，現在能確定已報名完成嗎？",
+            "answer": 1,
+            "options": [
+              "能確定",
+              "還不能確定"
+            ],
+            "hints": [
+              "留意公告用「才算」連接了哪個條件。",
+              "填表和收到確認訊息是兩件事。"
+            ],
+            "explanation": "還不能確定。公告說收到確認訊息才算完成報名。",
+            "id": "s3"
+          },
+          {
+            "kind": "choice",
+            "title": "資訊足夠嗎？",
+            "text": "",
+            "prompt": "活動結束後會提供午餐嗎？",
+            "answer": 2,
+            "options": [
+              "一定會",
+              "一定不會",
+              "公告資訊不足"
+            ],
+            "hints": [
+              "沒有寫出來，不等於一定沒有。",
+              "看看時間欄是否真的有說明供餐安排。"
+            ],
+            "explanation": "公告沒有供餐資訊；結束時間不能證明一定有或沒有午餐。",
+            "id": "s4"
+          },
+          {
+            "kind": "select",
+            "title": "事實還是猜測？",
+            "text": "",
+            "prompt": "選出可由公告直接支持的兩句話。",
+            "answer": [
+              1,
+              3
+            ],
+            "options": [
+              "工作坊一定非常有趣",
+              "名額上限是 20 人",
+              "沒收到訊息就是被拒絕",
+              "要自己帶水壺"
+            ],
+            "hints": [
+              "感覺與原因猜測不一定是公告事實。",
+              "分別核對名額欄和攜帶欄。"
+            ],
+            "explanation": "20 人上限和自備水壺是明確資訊；有趣與被拒絕都不能直接確定。",
+            "id": "s5"
+          },
+          {
+            "kind": "reflect",
+            "title": "還有其他解釋嗎？",
+            "text": "沒有唯一答案。選一個方向，看看它的取捨。",
+            "prompt": "小晴還沒收到訊息。哪一種可能值得先查證？",
+            "options": [
+              "主辦單位還在處理表單",
+              "填表時聯絡資訊可能有誤"
+            ],
+            "replies": [
+              "可以查看公告是否另有確認時間，再禮貌詢問進度。",
+              "可以先核對自己填的資料；這仍是可能，不是已證明的原因。"
+            ],
+            "hints": [
+              "先想想你最在意的條件。",
+              "不同條件可能讓人選擇不同的做法。"
+            ],
+            "explanation": "把理由說清楚，比選得一樣更重要。",
+            "id": "s6"
+          }
+        ]
+      },
+      {
+        "id": "budget-mix",
+        "category": "綜合挑戰",
+        "title": "幫八個人準備文具",
+        "description": "同樣完成任務，也可能有不同好選擇。",
+        "visual": {
+          "title": "採買方案",
+          "headers": [
+            "方案",
+            "內容與價格"
+          ],
+          "rows": [
+            [
+              "A",
+              "8 組套裝，每組有筆記本與鉛筆；共 232 元"
+            ],
+            [
+              "B",
+              "筆記本每本 20 元；鉛筆每枝 6 元"
+            ],
+            [
+              "C",
+              "8 本筆記本，共 160 元"
+            ]
+          ],
+          "note": "任務：8 人各一本筆記本、一枝鉛筆；預算 240 元。",
+          "bars": false
+        },
+        "skills": [
+          "找資訊",
+          "算一算",
+          "做判斷"
+        ],
+        "takeaways": [
+          "低價不代表完整符合需求。",
+          "比較方案時也要考慮時間。",
+          "買完還要核對數量與找零。"
+        ],
+        "steps": [
+          {
+            "kind": "read",
+            "title": "先抓住目的",
+            "text": "你不是只找最便宜的數字，而是要讓八個人都拿到需要的東西。價格都已含稅，沒有其他費用。",
+            "prompt": "先看情境，準備好再往下。",
+            "hints": [],
+            "explanation": "線索準備好了，接著只處理一個問題。",
+            "id": "s1"
+          },
+          {
+            "kind": "select",
+            "title": "需要核對什麼？",
+            "text": "",
+            "prompt": "選出這次採買必須符合的三個條件。",
+            "answer": [
+              0,
+              1,
+              3
+            ],
+            "options": [
+              "8 本筆記本",
+              "8 枝鉛筆",
+              "包裝一定要藍色",
+              "不超過 240 元"
+            ],
+            "hints": [
+              "把任務句中的數量和預算找出來。",
+              "不要把自己喜歡的外觀加成必要條件。"
+            ],
+            "explanation": "需要 8 本、8 枝，並且不超過 240 元；包裝顏色沒有被指定。",
+            "id": "s2"
+          },
+          {
+            "kind": "number",
+            "title": "算出 B 方案",
+            "text": "",
+            "prompt": "用 B 方案各買 8 個，總共多少元？",
+            "answer": 208,
+            "hints": [
+              "一本和一枝可以先算成一人份。",
+              "先算 20 + 6，再乘以 8。"
+            ],
+            "explanation": "(20 + 6) × 8 = 208 元。",
+            "unit": "元",
+            "id": "s3"
+          },
+          {
+            "kind": "select",
+            "title": "哪些方案完整達標？",
+            "text": "",
+            "prompt": "不另外補買東西，選出符合全部條件的方案。",
+            "answer": [
+              0,
+              1
+            ],
+            "options": [
+              "A",
+              "B",
+              "C"
+            ],
+            "hints": [
+              "不只看預算，也要檢查兩種文具有沒有都有。",
+              "C 的說明中只有筆記本。"
+            ],
+            "explanation": "A 為 232 元，B 為 208 元，兩者都有 8 人份文具。C 缺少鉛筆。",
+            "id": "s4"
+          },
+          {
+            "kind": "reflect",
+            "title": "選 A 還是 B？",
+            "text": "沒有唯一答案。選一個方向，看看它的取捨。",
+            "prompt": "A 已經分成八套，B 要自己分裝。你偏向哪個？",
+            "options": [
+              "選 B，省下 24 元",
+              "選 A，省下分裝時間"
+            ],
+            "replies": [
+              "若時間充足，省下的錢可以保留；仍要確認有時間分裝。",
+              "若準備時間很少，花較多錢換取方便也有理由。"
+            ],
+            "hints": [
+              "先想想你最在意的條件。",
+              "不同條件可能讓人選擇不同的做法。"
+            ],
+            "explanation": "把理由說清楚，比選得一樣更重要。",
+            "id": "s5"
+          },
+          {
+            "kind": "order",
+            "title": "排好採買順序",
+            "text": "",
+            "prompt": "依合理的做事順序，依次點選四張卡。",
+            "answer": [
+              2,
+              0,
+              3,
+              1
+            ],
+            "options": [
+              "比較完整方案",
+              "核對收到的數量與找零",
+              "確認需要的品項與數量",
+              "付款購買"
+            ],
+            "hints": [
+              "先知道需要什麼，才知道比較什麼。",
+              "付款前先比較；收到東西後再核對。"
+            ],
+            "explanation": "先確認需求 → 比較方案 → 付款購買 → 核對數量與找零。",
+            "id": "s6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "week-2",
+    "number": 2,
+    "title": "時間與距離",
+    "description": "把時刻、路線和緩衝時間接起來。",
+    "units": [
+      {
+        "id": "walk-math",
+        "category": "數學挑戰",
+        "title": "九百公尺要走多久？",
+        "description": "把距離、時間和停留分開算。",
+        "visual": {
+          "title": "步行計畫",
+          "headers": [
+            "項目",
+            "資訊"
+          ],
+          "rows": [
+            [
+              "距離",
+              "家到集合點 0.9 km"
+            ],
+            [
+              "步行速率",
+              "每分鐘 60 m，保持不變"
+            ],
+            [
+              "出發",
+              "08:10"
+            ],
+            [
+              "途中停留",
+              "休息 5 分鐘"
+            ],
+            [
+              "集合",
+              "08:30"
+            ]
+          ],
+          "note": "練習模型；不考慮其他等候或延誤。",
+          "bars": false
+        },
+        "skills": [
+          "找資訊",
+          "算一算",
+          "做判斷"
+        ],
+        "takeaways": [
+          "距離和速率的單位要一致。",
+          "總時間包含走路與停留。",
+          "剛好到達不等於有緩衝。"
+        ],
+        "steps": [
+          {
+            "kind": "read",
+            "title": "走路時間不是全部時間",
+            "text": "小宇要走到集合點。途中會休息五分鐘，這段時間雖然沒有前進，也要算進行程。",
+            "prompt": "先看情境，準備好再往下。",
+            "hints": [],
+            "explanation": "線索準備好了，接著只處理一個問題。",
+            "id": "s1"
+          },
+          {
+            "kind": "number",
+            "title": "先換距離單位",
+            "text": "",
+            "prompt": "0.9 km 是多少公尺？",
+            "answer": 900,
+            "hints": [
+              "速率使用公尺，距離也要改成公尺。",
+              "1 km 是 1000 m，用公里數乘以 1000。"
+            ],
+            "explanation": "0.9 × 1000 = 900 m。",
+            "unit": "m",
+            "id": "s2"
+          },
+          {
+            "kind": "number",
+            "title": "真正走路的時間",
+            "text": "",
+            "prompt": "以每分鐘 60 m 走完 900 m，需要幾分鐘？",
+            "answer": 15,
+            "hints": [
+              "每過一分鐘，就走掉 60 m。",
+              "用總距離除以每分鐘走的距離。"
+            ],
+            "explanation": "900 ÷ 60 = 15 分鐘。",
+            "unit": "分鐘",
+            "id": "s3"
+          },
+          {
+            "kind": "choice",
+            "title": "先不算休息",
+            "text": "",
+            "prompt": "08:10 出發，只算走路，會在幾點到達？",
+            "answer": 1,
+            "options": [
+              "08:15",
+              "08:25",
+              "08:30",
+              "08:40"
+            ],
+            "hints": [
+              "把剛算出的步行時間加到出發時間。",
+              "從 08:10 往後數 15 分鐘。"
+            ],
+            "explanation": "08:10 + 15 分鐘 = 08:25。",
+            "id": "s4"
+          },
+          {
+            "kind": "choice",
+            "title": "把休息加回來",
+            "text": "",
+            "prompt": "加入五分鐘休息後，這個計畫有留下緩衝時間嗎？",
+            "answer": 1,
+            "options": [
+              "有五分鐘緩衝",
+              "沒有，剛好在 08:30 到",
+              "有十五分鐘緩衝"
+            ],
+            "hints": [
+              "休息時間不能再當成緩衝時間。",
+              "把步行與休息相加，再與 08:30 比較。"
+            ],
+            "explanation": "15 + 5 = 20 分鐘，08:10 出發會剛好在 08:30 到，沒有多餘時間。",
+            "id": "s5"
+          },
+          {
+            "kind": "reflect",
+            "title": "讓計畫更從容",
+            "text": "沒有唯一答案。選一個方向，看看它的取捨。",
+            "prompt": "如果實際走路可能遇到紅燈，你會怎麼調整？",
+            "options": [
+              "提早出發",
+              "保留原路線，但先查清楚等候情況"
+            ],
+            "replies": [
+              "提早出發能留下緩衝；要先和同行的大人確認時間。",
+              "更清楚的資訊有助估計，但仍可能有意外延誤，不能保證剛好準時。"
+            ],
+            "hints": [
+              "先想想你最在意的條件。",
+              "不同條件可能讓人選擇不同的做法。"
+            ],
+            "explanation": "把理由說清楚，比選得一樣更重要。",
+            "id": "s6"
+          }
+        ]
+      },
+      {
+        "id": "bus-english",
+        "category": "英文探索",
+        "title": "Can we get there by 9:40?",
+        "description": "從交通短句找出最晚時間。",
+        "visual": {
+          "title": "Bus schedule",
+          "headers": [
+            "Bus",
+            "Leaves school",
+            "Arrives at stop"
+          ],
+          "rows": [
+            [
+              "A",
+              "9:00",
+              "9:20"
+            ],
+            [
+              "B",
+              "9:15",
+              "9:35"
+            ],
+            [
+              "C",
+              "9:30",
+              "9:50"
+            ]
+          ],
+          "note": "From the stop to the museum: a five-minute walk. Buses are on time in this task.",
+          "bars": false
+        },
+        "skills": [
+          "找關鍵字",
+          "讀懂情境",
+          "表達意思"
+        ],
+        "takeaways": [
+          "by 加時間可以表示期限。",
+          "到車站還不一定到目的地。",
+          "早到與少等候各有取捨。"
+        ],
+        "steps": [
+          {
+            "kind": "read",
+            "title": "Read the plan",
+            "text": "We need to be at the museum by 9:40.\nThe museum opens at 9:30. We walk from the bus stop to the museum.",
+            "prompt": "先看情境，準備好再往下。",
+            "hints": [],
+            "explanation": "線索準備好了，接著只處理一個問題。",
+            "id": "s1"
+          },
+          {
+            "kind": "choice",
+            "title": "What does “by” mean here?",
+            "text": "",
+            "prompt": "句子中的 by 9:40，最接近哪個意思？",
+            "answer": 1,
+            "options": [
+              "一定只能在 9:40 到",
+              "最晚在 9:40 到",
+              "9:40 以後才出發"
+            ],
+            "hints": [
+              "這裡在說到達的期限，不是交通工具。",
+              "早一點到也符合這個要求。"
+            ],
+            "explanation": "by 9:40 表示最晚在 9:40 到；可以提早。",
+            "id": "s2"
+          },
+          {
+            "kind": "number",
+            "title": "Don't forget the walk",
+            "text": "",
+            "prompt": "搭 Bus B 到站後，還要走幾分鐘才到博物館？",
+            "answer": 5,
+            "hints": [
+              "到站時間和到博物館時間不同。",
+              "找表格下方 from the stop 的說明。"
+            ],
+            "explanation": "還要走 five minutes，也就是五分鐘。",
+            "unit": "minutes",
+            "id": "s3"
+          },
+          {
+            "kind": "select",
+            "title": "Which buses work?",
+            "text": "",
+            "prompt": "哪些車班能讓你最晚 9:40 到博物館？",
+            "answer": [
+              0,
+              1
+            ],
+            "options": [
+              "Bus A",
+              "Bus B",
+              "Bus C"
+            ],
+            "hints": [
+              "每一班到站時間都要加上步行時間。",
+              "A 到館 9:25；其他車班也用同樣方式計算。"
+            ],
+            "explanation": "A 到館 9:25，B 到館 9:40，都符合。A 需等開館；C 到館 9:55，太晚。",
+            "id": "s4"
+          },
+          {
+            "kind": "order",
+            "title": "Put the trip in order",
+            "text": "",
+            "prompt": "按行程先後點選三句。",
+            "answer": [
+              1,
+              2,
+              0
+            ],
+            "options": [
+              "Walk to the museum.",
+              "Get on the bus at school.",
+              "Get off at the museum stop."
+            ],
+            "hints": [
+              "先上車，才能下車。",
+              "Get on 是上車；get off 是下車。"
+            ],
+            "explanation": "Get on the bus → Get off at the stop → Walk to the museum。",
+            "id": "s5"
+          },
+          {
+            "kind": "reflect",
+            "title": "早到還是剛好？",
+            "text": "沒有唯一答案。選一個方向，看看它的取捨。",
+            "prompt": "A 會提早到，B 剛好趕上。你比較在意什麼？",
+            "options": [
+              "多一點時間，不怕小延誤",
+              "少等候，但留意實際路況"
+            ],
+            "replies": [
+              "A 有較多緩衝，但要等博物館 9:30 開門。",
+              "B 在題目的準時假設下可行；真實生活仍要考慮延誤。"
+            ],
+            "hints": [
+              "先想想你最在意的條件。",
+              "不同條件可能讓人選擇不同的做法。"
+            ],
+            "explanation": "把理由說清楚，比選得一樣更重要。",
+            "id": "s6"
+          }
+        ]
+      },
+      {
+        "id": "transfer-reading",
+        "category": "閱讀推理",
+        "title": "看得到車班，就趕得上嗎？",
+        "description": "把兩張時間表接起來。",
+        "visual": {
+          "title": "轉乘資訊",
+          "headers": [
+            "項目",
+            "時間或條件"
+          ],
+          "rows": [
+            [
+              "學校巴士",
+              "09:00 出發，09:20 到車站"
+            ],
+            [
+              "站內步行",
+              "巴士下車處到列車月臺需 8 分鐘"
+            ],
+            [
+              "列車甲",
+              "09:25 出發"
+            ],
+            [
+              "列車乙",
+              "09:40 出發"
+            ],
+            [
+              "票務",
+              "本表沒有排隊時間資料"
+            ]
+          ],
+          "note": "練習時刻表；不代表真實交通服務。",
+          "bars": false
+        },
+        "skills": [
+          "找資訊",
+          "分辨推論",
+          "檢查證據"
+        ],
+        "takeaways": [
+          "轉乘還要算步行時間。",
+          "預定時刻不等於保證到達。",
+          "資訊不足時，先找出缺少哪一段。"
+        ],
+        "steps": [
+          {
+            "kind": "read",
+            "title": "別把轉乘時間藏起來",
+            "text": "小安說：「巴士 09:20 到，列車甲 09:25 開，還有五分鐘，應該可以。」先檢查這個說法。",
+            "prompt": "先看情境，準備好再往下。",
+            "hints": [],
+            "explanation": "線索準備好了，接著只處理一個問題。",
+            "id": "s1"
+          },
+          {
+            "kind": "choice",
+            "title": "先找明確資訊",
+            "text": "",
+            "prompt": "從巴士下車處走到列車月臺，表上寫需要多久？",
+            "answer": 2,
+            "options": [
+              "5 分鐘",
+              "20 分鐘",
+              "8 分鐘"
+            ],
+            "hints": [
+              "不是兩班車的時間差。",
+              "找「站內步行」那一列。"
+            ],
+            "explanation": "表上明確寫的是八分鐘。",
+            "id": "s2"
+          },
+          {
+            "kind": "choice",
+            "title": "推論能不能趕上",
+            "text": "",
+            "prompt": "假設巴士準時、下車立刻走且不需買票，能趕上列車甲嗎？",
+            "answer": 1,
+            "options": [
+              "可以",
+              "不可以"
+            ],
+            "hints": [
+              "先算到月臺的時間，再與發車時間比較。",
+              "09:20 後還要再加八分鐘。"
+            ],
+            "explanation": "09:28 才到月臺，列車甲 09:25 已出發，因此趕不上。",
+            "id": "s3"
+          },
+          {
+            "kind": "choice",
+            "title": "能保證列車乙嗎？",
+            "text": "",
+            "prompt": "如果還要買票，光靠這張表能保證趕上列車乙嗎？",
+            "answer": 2,
+            "options": [
+              "可以保證",
+              "一定趕不上",
+              "還不能確定"
+            ],
+            "hints": [
+              "想想哪一段時間沒有資料。",
+              "到月臺前還可能有買票與排隊時間，表上沒有提供。"
+            ],
+            "explanation": "缺少買票與排隊所需時間，不能保證。資訊不足也不等於一定趕不上。",
+            "id": "s4"
+          },
+          {
+            "kind": "select",
+            "title": "找出事實，不加猜測",
+            "text": "",
+            "prompt": "哪兩句是表格能直接支持的？",
+            "answer": [
+              0,
+              3
+            ],
+            "options": [
+              "巴士預定 09:20 到",
+              "小安一定會遲到",
+              "列車乙今天一定誤點",
+              "列車乙預定 09:40 開"
+            ],
+            "hints": [
+              "表上列的是預定時刻，不是今天已發生的結果。",
+              "不要把「可能」變成「一定」。"
+            ],
+            "explanation": "兩個預定時刻有資料支持；遲到和誤點的說法都缺乏證據。",
+            "id": "s5"
+          },
+          {
+            "kind": "reflect",
+            "title": "先補哪個資訊？",
+            "text": "沒有唯一答案。選一個方向，看看它的取捨。",
+            "prompt": "如果你負責規劃轉乘，會先確認哪一件事？",
+            "options": [
+              "是否能事先買票",
+              "通常需要多少排隊時間"
+            ],
+            "replies": [
+              "事先買票可能減少現場步驟，但仍要確認適用條件。",
+              "估計排隊時間能幫忙留緩衝；尖峰時段也可能不同。"
+            ],
+            "hints": [
+              "先想想你最在意的條件。",
+              "不同條件可能讓人選擇不同的做法。"
+            ],
+            "explanation": "把理由說清楚，比選得一樣更重要。",
+            "id": "s6"
+          }
+        ]
+      },
+      {
+        "id": "route-mix",
+        "category": "綜合挑戰",
+        "title": "雨天怎麼走才從容？",
+        "description": "時間夠之外，也看看路線條件。",
+        "visual": {
+          "title": "到活動中心的兩條路",
+          "headers": [
+            "路線",
+            "距離",
+            "預估等候",
+            "有遮雨路段"
+          ],
+          "rows": [
+            [
+              "A",
+              "600 m",
+              "4 分鐘",
+              "很少"
+            ],
+            [
+              "B",
+              "840 m",
+              "2 分鐘",
+              "大部分"
+            ]
+          ],
+          "note": "09:40 出發，10:00 集合；每分鐘走 60 m。所有步行路段都開放且有行人通道。",
+          "bars": false
+        },
+        "skills": [
+          "找資訊",
+          "算一算",
+          "做判斷"
+        ],
+        "takeaways": [
+          "總時間包含等候。",
+          "較短不一定最符合當天需求。",
+          "用緩衝時間面對不確定。"
+        ],
+        "steps": [
+          {
+            "kind": "read",
+            "title": "安排一次步行",
+            "text": "兩條路都可以走，但今天預報可能下雨。先算時間，再想想舒適與緩衝。",
+            "prompt": "先看情境，準備好再往下。",
+            "hints": [],
+            "explanation": "線索準備好了，接著只處理一個問題。",
+            "id": "s1"
+          },
+          {
+            "kind": "number",
+            "title": "先算 A 路線",
+            "text": "",
+            "prompt": "A 的步行加預估等候，共需要幾分鐘？",
+            "answer": 14,
+            "hints": [
+              "距離除以速率後，還沒算等候。",
+              "先算 600 ÷ 60，再加上四分鐘。"
+            ],
+            "explanation": "600 ÷ 60 + 4 = 14 分鐘。",
+            "unit": "分鐘",
+            "id": "s2"
+          },
+          {
+            "kind": "number",
+            "title": "再算 B 路線",
+            "text": "",
+            "prompt": "B 的步行加預估等候，共需要幾分鐘？",
+            "answer": 16,
+            "hints": [
+              "兩條路要用相同的計算方式。",
+              "先算 840 ÷ 60，再加上兩分鐘。"
+            ],
+            "explanation": "840 ÷ 60 + 2 = 16 分鐘。",
+            "unit": "分鐘",
+            "id": "s3"
+          },
+          {
+            "kind": "select",
+            "title": "哪些能準時？",
+            "text": "",
+            "prompt": "按照題目的預估時間，09:40 出發，哪些路線能在 10:00 前到？",
+            "answer": [
+              0,
+              1
+            ],
+            "options": [
+              "A 路線",
+              "B 路線",
+              "兩條都不行"
+            ],
+            "hints": [
+              "先算距離集合時間還有多久。",
+              "09:40 到 10:00 有二十分鐘，分別比較兩條路需要的時間。"
+            ],
+            "explanation": "A 預計 09:54 到，B 預計 09:56 到，都能準時。",
+            "id": "s4"
+          },
+          {
+            "kind": "choice",
+            "title": "加上一個意外",
+            "text": "",
+            "prompt": "走 B 時又多等了五分鐘，仍在 09:40 出發，會怎樣？",
+            "answer": 1,
+            "options": [
+              "仍提前四分鐘到",
+              "預計 10:01 到，晚一分鐘",
+              "預計 09:45 到"
+            ],
+            "hints": [
+              "「又多等」表示在原本總時間外再加上去。",
+              "原本十六分鐘，再加五分鐘。"
+            ],
+            "explanation": "16 + 5 = 21 分鐘，09:40 加二十一分鐘是 10:01。",
+            "id": "s5"
+          },
+          {
+            "kind": "reflect",
+            "title": "選路也要說理由",
+            "text": "沒有唯一答案。選一個方向，看看它的取捨。",
+            "prompt": "天氣可能下雨，你會選哪個做法？",
+            "options": [
+              "提早出發，走遮雨較多的 B",
+              "準備雨具，走較短的 A"
+            ],
+            "replies": [
+              "B 遮雨較多；提早出發能增加緩衝，仍要注意路況。",
+              "A 較短；適合的雨具與安全步行也很重要。預報不是一定會發生的結果。"
+            ],
+            "hints": [
+              "先想想你最在意的條件。",
+              "不同條件可能讓人選擇不同的做法。"
+            ],
+            "explanation": "把理由說清楚，比選得一樣更重要。",
+            "id": "s6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "week-3",
+    "number": 3,
+    "title": "資訊是真的嗎？",
+    "description": "看圖表、找證據，也練習說還不能確定。",
+    "units": [
+      {
+        "id": "chart-math",
+        "category": "數學挑戰",
+        "title": "一半的人，是哪些人？",
+        "description": "圖表的數字和標題，都值得檢查。",
+        "visual": {
+          "title": "五年甲班上學方式調查",
+          "headers": [
+            "方式",
+            "人數"
+          ],
+          "rows": [
+            [
+              "步行",
+              "20"
+            ],
+            [
+              "自行車",
+              "10"
+            ],
+            [
+              "公車",
+              "10"
+            ]
+          ],
+          "note": "共 40 人，每人只選一種方式。這是練習資料。",
+          "bars": true
+        },
+        "skills": [
+          "找資訊",
+          "算一算",
+          "做判斷"
+        ],
+        "takeaways": [
+          "百分率需要知道全部是多少。",
+          "圖表的調查範圍不能任意放大。",
+          "圖表有人數，不一定有原因。"
+        ],
+        "steps": [
+          {
+            "kind": "read",
+            "title": "先看調查範圍",
+            "text": "小記者拿到這張圖表，準備寫一個標題。調查對象只有五年甲班，不是全校。",
+            "prompt": "先看情境，準備好再往下。",
+            "hints": [],
+            "explanation": "線索準備好了，接著只處理一個問題。",
+            "id": "s1"
+          },
+          {
+            "kind": "number",
+            "title": "把人數變成百分率",
+            "text": "",
+            "prompt": "步行的 20 人，占全班 40 人的百分之多少？",
+            "answer": 50,
+            "hints": [
+              "百分率表示每一百份中的幾份。",
+              "用步行人數除以全班人數，再乘以 100。"
+            ],
+            "explanation": "20 ÷ 40 × 100 = 50%。",
+            "unit": "%",
+            "id": "s2"
+          },
+          {
+            "kind": "number",
+            "title": "兩種方式合起來",
+            "text": "",
+            "prompt": "搭公車或騎自行車的人，合計占全班百分之多少？",
+            "answer": 50,
+            "hints": [
+              "先把兩種方式的人數加起來。",
+              "合計人數再除以四十，換成百分率。"
+            ],
+            "explanation": "(10 + 10) ÷ 40 × 100 = 50%。",
+            "unit": "%",
+            "id": "s3"
+          },
+          {
+            "kind": "choice",
+            "title": "找出標題的問題",
+            "text": "",
+            "prompt": "「全校一半學生走路上學」這個標題，可以由這份資料支持嗎？",
+            "answer": 1,
+            "options": [
+              "可以，圖上就是一半",
+              "不可以，調查範圍只有一班"
+            ],
+            "hints": [
+              "數字正確，也要看它描述的是誰。",
+              "想想五年甲班是否等於全校。"
+            ],
+            "explanation": "50% 是這個班的結果，不能直接改成全校的結果。",
+            "id": "s4"
+          },
+          {
+            "kind": "choice",
+            "title": "讀圖，不猜原因",
+            "text": "",
+            "prompt": "圖表能直接告訴我們哪件事？",
+            "answer": 2,
+            "options": [
+              "步行的人一定住最近",
+              "搭公車的人都不喜歡運動",
+              "自行車和公車的人數相同",
+              "下個月比例一定不變"
+            ],
+            "hints": [
+              "人數資料沒有記錄動機或未來。",
+              "比較兩根同長的長條及它們的數字。"
+            ],
+            "explanation": "自行車與公車都是十人。其他說法需要額外資料。",
+            "id": "s5"
+          },
+          {
+            "kind": "order",
+            "title": "排好百分率算法",
+            "text": "",
+            "prompt": "依正確順序點選三張卡。",
+            "answer": [
+              1,
+              2,
+              0
+            ],
+            "options": [
+              "乘以 100，寫成百分率",
+              "找出部分人數和總人數",
+              "部分人數除以總人數"
+            ],
+            "hints": [
+              "先確認誰是全部，再開始算。",
+              "除法先得到比例，之後才換成百分率。"
+            ],
+            "explanation": "找部分與全部 → 部分除以全部 → 乘以 100，寫成百分率。",
+            "id": "s6"
+          }
+        ]
+      },
+      {
+        "id": "message-english",
+        "category": "英文探索",
+        "title": "Which message is newer?",
+        "description": "從更新訊息找出改變與缺少的資訊。",
+        "visual": {
+          "title": "Class messages",
+          "headers": [
+            "Message",
+            "Text"
+          ],
+          "rows": [
+            [
+              "Old · Monday 9:00 a.m.",
+              "Our visit is on Tuesday at 2:00 p.m."
+            ],
+            [
+              "Update · Monday 4:00 p.m.",
+              "Our visit is on Wednesday at 2:00 p.m. The bus leaves school at 1:30 p.m. Bring water."
+            ]
+          ],
+          "note": "這是虛構的班級訊息；Update 是更新訊息。",
+          "bars": false
+        },
+        "skills": [
+          "找關鍵字",
+          "讀懂情境",
+          "表達意思"
+        ],
+        "takeaways": [
+          "先確認哪則訊息是更新版。",
+          "發布、出發與活動時間不一樣。",
+          "沒有寫的資訊，可以主動詢問。"
+        ],
+        "steps": [
+          {
+            "kind": "read",
+            "title": "Read the update",
+            "text": "Leo sees two messages about the same visit.\nHe wants to write the correct day in his notebook.",
+            "prompt": "先看情境，準備好再往下。",
+            "hints": [],
+            "explanation": "線索準備好了，接著只處理一個問題。",
+            "id": "s1"
+          },
+          {
+            "kind": "choice",
+            "title": "Find the changed information",
+            "text": "",
+            "prompt": "更新訊息改了哪一項？",
+            "answer": 0,
+            "options": [
+              "The day of the visit.",
+              "The price of lunch.",
+              "The name of the school."
+            ],
+            "hints": [
+              "對照兩則訊息都提到的內容。",
+              "注意 Tuesday 和 Wednesday 這兩個字。"
+            ],
+            "explanation": "日期從 Tuesday 改成 Wednesday；參訪開始時間仍是 2:00 p.m.。",
+            "id": "s2"
+          },
+          {
+            "kind": "choice",
+            "title": "When does the bus leave?",
+            "text": "",
+            "prompt": "巴士從學校出發的時間是哪個？",
+            "answer": 1,
+            "options": [
+              "2:00 p.m.",
+              "1:30 p.m.",
+              "4:00 p.m."
+            ],
+            "hints": [
+              "發訊息的時間不是出發時間。",
+              "找 leaves school 後面的時間。"
+            ],
+            "explanation": "The bus leaves school at 1:30 p.m.；4:00 p.m. 是更新訊息的發布時間。",
+            "id": "s3"
+          },
+          {
+            "kind": "select",
+            "title": "What is clearly stated?",
+            "text": "",
+            "prompt": "選出更新訊息明確要求或說明的兩件事。",
+            "answer": [
+              0,
+              2
+            ],
+            "options": [
+              "Bring water.",
+              "Bring three books.",
+              "The visit is on Wednesday.",
+              "The trip is free."
+            ],
+            "hints": [
+              "只選文字中真的出現的要求或資訊。",
+              "free 表示免費，看看訊息是否有談費用。"
+            ],
+            "explanation": "更新訊息說要帶水、星期三參訪；沒有要求三本書，也沒有說免費。",
+            "id": "s4"
+          },
+          {
+            "kind": "choice",
+            "title": "Do we know the return time?",
+            "text": "",
+            "prompt": "What time will they be back at school?",
+            "answer": 2,
+            "options": [
+              "1:30 p.m.",
+              "2:00 p.m.",
+              "The messages don't say."
+            ],
+            "hints": [
+              "back at school 問的是回到學校。",
+              "出發時間和參訪時間都不是回程時間。"
+            ],
+            "explanation": "The messages don't say. 這兩則訊息沒有提供回到學校的時間。",
+            "id": "s5"
+          },
+          {
+            "kind": "reflect",
+            "title": "Ask for the missing information",
+            "text": "沒有唯一答案。選一個方向，看看它的取捨。",
+            "prompt": "你想確認回程，會選哪個問法？",
+            "options": [
+              "“What time will we be back?”",
+              "“Will we be back before four?”"
+            ],
+            "replies": [
+              "這是開放的時間問題，適合想知道完整回程安排。",
+              "這是確認四點之前能否回來；若你的安排以四點為界，也很實用。"
+            ],
+            "hints": [
+              "先想想你最在意的條件。",
+              "不同條件可能讓人選擇不同的做法。"
+            ],
+            "explanation": "把理由說清楚，比選得一樣更重要。",
+            "id": "s6"
+          }
+        ]
+      },
+      {
+        "id": "evidence-reading",
+        "category": "閱讀推理",
+        "title": "操場濕了，一定下過雨？",
+        "description": "看見現象，先別急著鎖定原因。",
+        "visual": {
+          "title": "早上 09:00 的觀察筆記",
+          "headers": [
+            "編號",
+            "記錄"
+          ],
+          "rows": [
+            [
+              "1",
+              "操場東側地面是濕的"
+            ],
+            [
+              "2",
+              "西側地面是乾的"
+            ],
+            [
+              "3",
+              "器材室旁放著水管"
+            ],
+            [
+              "4",
+              "沒有人記錄昨晚的天氣"
+            ]
+          ],
+          "note": "這是虛構觀察情境，不是天氣新聞。",
+          "bars": false
+        },
+        "skills": [
+          "找資訊",
+          "分辨推論",
+          "檢查證據"
+        ],
+        "takeaways": [
+          "觀察和原因推論要分開。",
+          "有工具不代表工具剛被使用。",
+          "資訊不足時，可以說還不能確定。"
+        ],
+        "steps": [
+          {
+            "kind": "read",
+            "title": "一個說法出現了",
+            "text": "小哲說：「地面濕了，昨晚一定下雨。」小寧提醒：先分清楚看見了什麼，以及猜了什麼。",
+            "prompt": "先看情境，準備好再往下。",
+            "hints": [],
+            "explanation": "線索準備好了，接著只處理一個問題。",
+            "id": "s1"
+          },
+          {
+            "kind": "select",
+            "title": "找出直接觀察",
+            "text": "",
+            "prompt": "哪些是筆記中的直接觀察？選兩項。",
+            "answer": [
+              0,
+              2
+            ],
+            "options": [
+              "東側地面濕了",
+              "昨晚一定下雨",
+              "器材室旁有水管",
+              "一定有人剛洗操場"
+            ],
+            "hints": [
+              "直接觀察是看到的狀態，不是替狀態安排原因。",
+              "「一定」後面的原因，筆記有真的觀察到嗎？"
+            ],
+            "explanation": "濕地面與水管是記錄中的現象；下雨或清洗都還是原因猜測。",
+            "id": "s2"
+          },
+          {
+            "kind": "choice",
+            "title": "推論夠穩嗎？",
+            "text": "",
+            "prompt": "只看目前四項線索，能確定昨晚下過雨嗎？",
+            "answer": 2,
+            "options": [
+              "能確定有下雨",
+              "能確定沒下雨",
+              "還不能確定"
+            ],
+            "hints": [
+              "地面濕可能不只一個原因。",
+              "沒記錄天氣，也沒有直接看見地面怎麼變濕。"
+            ],
+            "explanation": "還不能確定。雨、澆水、清洗或其他情況都可能造成濕地面。",
+            "id": "s3"
+          },
+          {
+            "kind": "choice",
+            "title": "多想一個解釋",
+            "text": "",
+            "prompt": "哪一項是另一個合理的「可能解釋」，但還需要查證？",
+            "answer": 1,
+            "options": [
+              "濕地面證明一定有雨",
+              "有人可能用水清洗東側",
+              "水管在旁邊就證明剛清洗過"
+            ],
+            "hints": [
+              "找有提出可能、又沒有直接當成事實的句子。",
+              "看到工具存在，不等於看到它被使用。"
+            ],
+            "explanation": "清洗是可能解釋；有水管不能單獨證明清洗真的發生。",
+            "id": "s4"
+          },
+          {
+            "kind": "choice",
+            "title": "哪個資料更直接？",
+            "text": "",
+            "prompt": "若要查證「昨晚是否下雨」，下一步最有幫助的是？",
+            "answer": 0,
+            "options": [
+              "查附近可靠的逐時降雨紀錄",
+              "看誰說話最大聲",
+              "只再摸一次濕地面"
+            ],
+            "hints": [
+              "要找與時間、地點和降雨直接相關的記錄。",
+              "重複看同一現象，不一定增加原因的證據。"
+            ],
+            "explanation": "附近逐時降雨紀錄較直接；仍要注意測站距離與操場不一定完全相同。",
+            "id": "s5"
+          },
+          {
+            "kind": "reflect",
+            "title": "怎樣說比較準確？",
+            "text": "沒有唯一答案。選一個方向，看看它的取捨。",
+            "prompt": "在查到新資料前，你偏向怎麼描述？",
+            "options": [
+              "「東側濕了，原因還不確定。」",
+              "「可能下過雨，也可能有人用水。」"
+            ],
+            "replies": [
+              "先報告觀察、保留原因，是謹慎的表達。",
+              "列出其他可能，也能提醒大家還要找證據；不要把可能當成確定。"
+            ],
+            "hints": [
+              "先想想你最在意的條件。",
+              "不同條件可能讓人選擇不同的做法。"
+            ],
+            "explanation": "把理由說清楚，比選得一樣更重要。",
+            "id": "s6"
+          }
+        ]
+      },
+      {
+        "id": "experiment-mix",
+        "category": "綜合挑戰",
+        "title": "紙飛機飛得遠，原因找到了嗎？",
+        "description": "平均數算得對，結論還要再檢查。",
+        "visual": {
+          "title": "第一輪試飛記錄",
+          "headers": [
+            "折法",
+            "兩次距離",
+            "投擲者",
+            "出手高度"
+          ],
+          "rows": [
+            [
+              "A",
+              "3 m、5 m",
+              "小青",
+              "1 m"
+            ],
+            [
+              "B",
+              "6 m、4 m",
+              "小柏",
+              "2 m"
+            ]
+          ],
+          "note": "相同大小的紙，但投擲者與出手高度不同；資料為練習情境。",
+          "bars": false
+        },
+        "skills": [
+          "找資訊",
+          "算一算",
+          "做判斷"
+        ],
+        "takeaways": [
+          "平均數描述一組資料，不代表每一次。",
+          "比較原因時，要注意其他條件。",
+          "新資料可能讓我們修改原本的想法。"
+        ],
+        "steps": [
+          {
+            "kind": "read",
+            "title": "先算，再問能不能比",
+            "text": "大家想知道哪種折法比較會飛。除了折法，兩組還有其他不同條件。",
+            "prompt": "先看情境，準備好再往下。",
+            "hints": [],
+            "explanation": "線索準備好了，接著只處理一個問題。",
+            "id": "s1"
+          },
+          {
+            "kind": "number",
+            "title": "算 B 的平均",
+            "text": "",
+            "prompt": "B 的兩次飛行距離是 6 m、4 m，平均多少公尺？",
+            "answer": 5,
+            "hints": [
+              "平均要把總距離分給試飛次數。",
+              "先加上兩次距離，再除以 2。"
+            ],
+            "explanation": "(6 + 4) ÷ 2 = 5 m；A 的平均是 4 m。",
+            "unit": "m",
+            "id": "s2"
+          },
+          {
+            "kind": "choice",
+            "title": "可以直接下結論嗎？",
+            "text": "",
+            "prompt": "現在能說「一定是 B 的折法造成飛得比較遠」嗎？",
+            "answer": 1,
+            "options": [
+              "可以，平均較大就證明了",
+              "還不能，其他條件也不同"
+            ],
+            "hints": [
+              "看看除了折法，表中還有哪些欄不同。",
+              "投擲者與高度也可能影響結果。"
+            ],
+            "explanation": "還不能確定原因。平均較大是這輪結果，但投擲者與高度不同，不能只歸因於折法。",
+            "id": "s3"
+          },
+          {
+            "kind": "select",
+            "title": "下一輪控制條件",
+            "text": "",
+            "prompt": "想比較折法，應盡量讓哪些條件相同？選三項。",
+            "answer": [
+              0,
+              1,
+              3
+            ],
+            "options": [
+              "紙張大小與材料",
+              "出手高度",
+              "兩架都改成同一折法",
+              "同一投擲者與投擲方式"
+            ],
+            "hints": [
+              "只保留你真正想比較的那個不同。",
+              "這次要比較折法，所以其他可能影響的條件應盡量一致。"
+            ],
+            "explanation": "紙張、高度與投擲方式應盡量一致；折法是這次刻意比較的條件。",
+            "id": "s4"
+          },
+          {
+            "kind": "number",
+            "title": "新資料再算一次",
+            "text": "",
+            "prompt": "第二輪 A：4、5、6 m；B：5、5、5 m。兩組平均距離相差多少公尺？",
+            "answer": 0,
+            "hints": [
+              "分別計算兩組的平均，不只看最遠的一次。",
+              "每組都把三次距離相加，再除以三。"
+            ],
+            "explanation": "A 平均 (4+5+6)÷3=5 m；B 平均也是 5 m，平均相差 0 m。",
+            "unit": "m",
+            "visual": {
+              "title": "第二輪 · 其他條件盡量一致",
+              "headers": [
+                "折法",
+                "三次距離"
+              ],
+              "rows": [
+                [
+                  "A",
+                  "4 m、5 m、6 m"
+                ],
+                [
+                  "B",
+                  "5 m、5 m、5 m"
+                ]
+              ],
+              "note": "",
+              "bars": false
+            },
+            "id": "s5"
+          },
+          {
+            "kind": "reflect",
+            "title": "接著想研究什麼？",
+            "text": "沒有唯一答案。選一個方向，看看它的取捨。",
+            "prompt": "平均相同，也不代表每次表現都相同。你想接著看哪件事？",
+            "options": [
+              "增加試飛次數",
+              "比較每次距離的變動"
+            ],
+            "replies": [
+              "多做幾次能看結果是否穩定，仍要維持相同的比較條件。",
+              "這三次 B 的數字相同，A 有變化；樣本還少，不宜說 B 永遠穩定。"
+            ],
+            "hints": [
+              "先想想你最在意的條件。",
+              "不同條件可能讓人選擇不同的做法。"
+            ],
+            "explanation": "把理由說清楚，比選得一樣更重要。",
+            "id": "s6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "week-4",
+    "number": 4,
+    "title": "一起解決問題",
+    "description": "用不同條件比較方案，提出有理由的選擇。",
+    "units": [
+      {
+        "id": "area-math",
+        "category": "數學挑戰",
+        "title": "替閱讀角鋪好地墊",
+        "description": "從面積到片數，還要考慮備用。",
+        "visual": {
+          "title": "閱讀角設計卡",
+          "headers": [
+            "項目",
+            "資訊"
+          ],
+          "rows": [
+            [
+              "地面",
+              "長 300 cm、寬 200 cm 的長方形"
+            ],
+            [
+              "地墊",
+              "每片 50 cm × 50 cm，35 元"
+            ],
+            [
+              "鋪法",
+              "整齊鋪滿，不重疊、不留縫"
+            ],
+            [
+              "備用",
+              "另外準備至少相當於使用片數 10% 的地墊"
+            ],
+            [
+              "預算",
+              "1000 元"
+            ]
+          ],
+          "note": "沒有家具占用面積；地墊只能整片購買。",
+          "bars": false
+        },
+        "skills": [
+          "找資訊",
+          "算一算",
+          "做判斷"
+        ],
+        "takeaways": [
+          "面積計算前要統一長度單位。",
+          "至少需要的整件商品，有時要向上取整數。",
+          "預算要把備用品一起算進去。"
+        ],
+        "steps": [
+          {
+            "kind": "read",
+            "title": "先分清楚兩種數量",
+            "text": "鋪在地上的片數和另外留著的備用片數不同。先算地面，再計畫購買總數。",
+            "prompt": "先看情境，準備好再往下。",
+            "hints": [],
+            "explanation": "線索準備好了，接著只處理一個問題。",
+            "id": "s1"
+          },
+          {
+            "kind": "number",
+            "title": "地面有多大？",
+            "text": "",
+            "prompt": "300 cm × 200 cm 的地面，面積是多少平方公尺？",
+            "answer": 6,
+            "hints": [
+              "長和寬都先換成公尺。",
+              "100 cm = 1 m；把兩個以公尺表示的長度相乘。"
+            ],
+            "explanation": "300 cm = 3 m，200 cm = 2 m；面積 3 × 2 = 6 平方公尺。",
+            "unit": "平方公尺",
+            "id": "s2"
+          },
+          {
+            "kind": "number",
+            "title": "先算鋪滿的片數",
+            "text": "",
+            "prompt": "只算鋪在地上，需要幾片 50 cm × 50 cm 的地墊？",
+            "answer": 24,
+            "hints": [
+              "可以先算長邊幾片、寬邊幾片。",
+              "用 300 ÷ 50 和 200 ÷ 50，再把兩個結果相乘。"
+            ],
+            "explanation": "長邊六片、寬邊四片，6 × 4 = 24 片。",
+            "unit": "片",
+            "id": "s3"
+          },
+          {
+            "kind": "number",
+            "title": "備用片數不能切小數",
+            "text": "",
+            "prompt": "備用至少是 24 片的 10%，總共最少要買幾片？",
+            "answer": 27,
+            "hints": [
+              "先算備用需求，再想想只能買整片。",
+              "24 的 10% 不是整數；為了「至少」，備用片數要往上取整數。"
+            ],
+            "explanation": "24 × 10% = 2.4 片，備用至少要三整片；共 24 + 3 = 27 片。",
+            "unit": "片",
+            "id": "s4"
+          },
+          {
+            "kind": "choice",
+            "title": "檢查預算",
+            "text": "",
+            "prompt": "買 27 片，每片 35 元，1000 元夠嗎？",
+            "answer": 0,
+            "options": [
+              "夠，共 945 元，剩 55 元",
+              "不夠，共 1080 元",
+              "夠，只需 840 元"
+            ],
+            "hints": [
+              "買的是含備用的總片數，不是只有地上那部分。",
+              "用 27 × 35，再與 1000 比較。"
+            ],
+            "explanation": "27 × 35 = 945 元，1000 − 945 = 55 元。840 元只算了 24 片。",
+            "id": "s5"
+          },
+          {
+            "kind": "reflect",
+            "title": "如果放進書櫃呢？",
+            "text": "沒有唯一答案。選一個方向，看看它的取捨。",
+            "prompt": "日後想放一個書櫃，你會先確認什麼？",
+            "options": [
+              "書櫃占用的位置與面積",
+              "保留的走道是否足夠"
+            ],
+            "replies": [
+              "有家具後，原本鋪滿整個長方形的假設可能要改。",
+              "可以先畫配置圖，和老師確認動線與安全，再決定怎麼調整。"
+            ],
+            "hints": [
+              "先想想你最在意的條件。",
+              "不同條件可能讓人選擇不同的做法。"
+            ],
+            "explanation": "把理由說清楚，比選得一樣更重要。",
+            "id": "s6"
+          }
+        ]
+      },
+      {
+        "id": "team-english",
+        "category": "英文探索",
+        "title": "Let's work together",
+        "description": "把小組訊息變成清楚的行動。",
+        "visual": {
+          "title": "Planting day · Team plan",
+          "headers": [
+            "Name",
+            "Task"
+          ],
+          "rows": [
+            [
+              "Mina",
+              "Bring eight cups."
+            ],
+            [
+              "Leo",
+              "Bring four more cups."
+            ],
+            [
+              "Ben",
+              "Make labels."
+            ],
+            [
+              "Amy",
+              "Count the seeds."
+            ]
+          ],
+          "note": "We need twelve cups. First, put soil in the cups. Next, add seeds. Finally, water them.",
+          "bars": false
+        },
+        "skills": [
+          "找關鍵字",
+          "讀懂情境",
+          "表達意思"
+        ],
+        "takeaways": [
+          "合作訊息要看人物、動作與數量。",
+          "more 可以表示另外增加。",
+          "First、next、finally 能幫忙排順序。"
+        ],
+        "steps": [
+          {
+            "kind": "read",
+            "title": "Read the team plan",
+            "text": "The team is getting ready for planting day.\nEveryone has a job. They need to check the supplies before they start.",
+            "prompt": "先看情境，準備好再往下。",
+            "hints": [],
+            "explanation": "線索準備好了，接著只處理一個問題。",
+            "id": "s1"
+          },
+          {
+            "kind": "select",
+            "title": "Who brings the cups?",
+            "text": "",
+            "prompt": "選出負責帶杯子的兩位同學。",
+            "answer": [
+              0,
+              1
+            ],
+            "options": [
+              "Mina",
+              "Leo",
+              "Ben",
+              "Amy"
+            ],
+            "hints": [
+              "找每一列裡的 cups。",
+              "more 在這裡表示另外再加的杯子。"
+            ],
+            "explanation": "Mina 帶八個，Leo 另外帶四個；兩人一起準備杯子。",
+            "id": "s2"
+          },
+          {
+            "kind": "number",
+            "title": "Do we have twelve?",
+            "text": "",
+            "prompt": "Mina 和 Leo 帶的杯子加起來共有幾個？",
+            "answer": 12,
+            "hints": [
+              "four more 是加上去，不是換成四個。",
+              "把 eight 和 four 轉成數字再相加。"
+            ],
+            "explanation": "Eight plus four is twelve. 8 + 4 = 12，正好符合需求。",
+            "unit": "cups",
+            "id": "s3"
+          },
+          {
+            "kind": "choice",
+            "title": "Ask for help",
+            "text": "",
+            "prompt": "Mina 想請 Leo 帶四個杯子，哪句最適合？",
+            "answer": 1,
+            "options": [
+              "I can run fast.",
+              "Can you bring four cups, please?",
+              "Where is my pencil?"
+            ],
+            "hints": [
+              "找出有說清楚物品和數量的請求。",
+              "Can you ...? 可以用來請別人幫忙。"
+            ],
+            "explanation": "Can you bring four cups, please? 清楚說出希望對方帶什麼、帶多少。",
+            "id": "s4"
+          },
+          {
+            "kind": "order",
+            "title": "First, next, finally",
+            "text": "",
+            "prompt": "依照表格下方的指示，排出種植步驟。",
+            "answer": [
+              2,
+              0,
+              1
+            ],
+            "options": [
+              "Add seeds.",
+              "Water them.",
+              "Put soil in the cups."
+            ],
+            "hints": [
+              "First 表示第一步，finally 表示最後。",
+              "soil 是土；先準備杯中的土，再放種子。"
+            ],
+            "explanation": "Put soil in the cups → Add seeds → Water them。",
+            "id": "s5"
+          },
+          {
+            "kind": "reflect",
+            "title": "A teammate is away",
+            "text": "沒有唯一答案。選一個方向，看看它的取捨。",
+            "prompt": "Ben 今天沒來，你會先怎麼說？",
+            "options": [
+              "“Who can help with the labels?”",
+              "“I can help with the labels.”"
+            ],
+            "replies": [
+              "先問誰可以幫忙，方便大家重新分工。",
+              "主動提出幫忙也可以，記得確認自己原本的任務能完成。"
+            ],
+            "hints": [
+              "先想想你最在意的條件。",
+              "不同條件可能讓人選擇不同的做法。"
+            ],
+            "explanation": "把理由說清楚，比選得一樣更重要。",
+            "id": "s6"
+          }
+        ]
+      },
+      {
+        "id": "plans-reading",
+        "category": "閱讀推理",
+        "title": "兩個閱讀方案，都有理由",
+        "description": "把方案內容和個人偏好分開。",
+        "visual": {
+          "title": "班級閱讀時段 · 提案",
+          "headers": [
+            "條件",
+            "A：安靜閱讀",
+            "B：同伴分享"
+          ],
+          "rows": [
+            [
+              "活動",
+              "10 分鐘各自閱讀",
+              "8 分鐘閱讀＋7 分鐘討論"
+            ],
+            [
+              "總時間",
+              "10 分鐘",
+              "15 分鐘"
+            ],
+            [
+              "材料費",
+              "0 元",
+              "30 元，製作提示卡"
+            ],
+            [
+              "支持者的話",
+              "小柔：我喜歡安靜",
+              "阿凱：分享能讓我想到更多"
+            ]
+          ],
+          "note": "尚未做全班意見調查。",
+          "bars": false
+        },
+        "skills": [
+          "找資訊",
+          "分辨推論",
+          "檢查證據"
+        ],
+        "takeaways": [
+          "先讀完整活動內容，再評論。",
+          "不同限制可能適合不同方案。",
+          "兩個人的意見不能代替全班調查。"
+        ],
+        "steps": [
+          {
+            "kind": "read",
+            "title": "先讀懂，再評論",
+            "text": "有人說 B 根本沒有閱讀，也有人說全班一定都喜歡 A。先用提案內容檢查這些說法。",
+            "prompt": "先看情境，準備好再往下。",
+            "hints": [],
+            "explanation": "線索準備好了，接著只處理一個問題。",
+            "id": "s1"
+          },
+          {
+            "kind": "choice",
+            "title": "找出明確資訊",
+            "text": "",
+            "prompt": "B 方案安排了幾分鐘閱讀？",
+            "answer": 0,
+            "options": [
+              "8 分鐘",
+              "7 分鐘",
+              "15 分鐘",
+              "0 分鐘"
+            ],
+            "hints": [
+              "把閱讀和討論拆開。",
+              "B 的活動列寫了兩段不同的活動。"
+            ],
+            "explanation": "B 有八分鐘閱讀，再加七分鐘討論；不是完全沒有閱讀。",
+            "id": "s2"
+          },
+          {
+            "kind": "choice",
+            "title": "根據條件推論",
+            "text": "",
+            "prompt": "若這次只能用十分鐘，且不能改方案，哪個符合時間限制？",
+            "answer": 0,
+            "options": [
+              "A",
+              "B",
+              "兩個都不符合"
+            ],
+            "hints": [
+              "比較總時間，不只比較閱讀時間。",
+              "十分鐘的限制也包含討論。"
+            ],
+            "explanation": "A 總共十分鐘；B 總共十五分鐘，因此只有 A 符合。",
+            "id": "s3"
+          },
+          {
+            "kind": "choice",
+            "title": "知道全班想法嗎？",
+            "text": "",
+            "prompt": "由兩位支持者的話，能確定全班較喜歡哪個嗎？",
+            "answer": 2,
+            "options": [
+              "確定較喜歡 A",
+              "確定較喜歡 B",
+              "資訊還不足"
+            ],
+            "hints": [
+              "兩位同學是否代表所有同學？",
+              "表格下方說明了調查是否已經進行。"
+            ],
+            "explanation": "還沒有全班調查，不能把兩人的想法當成全班結果。",
+            "id": "s4"
+          },
+          {
+            "kind": "select",
+            "title": "分清楚內容與看法",
+            "text": "",
+            "prompt": "選出兩個可直接核對的方案內容。",
+            "answer": [
+              0,
+              2
+            ],
+            "options": [
+              "A 的材料費是 0 元",
+              "A 對每個人都比較好",
+              "B 的總時間是 15 分鐘",
+              "喜歡 B 的人一定不愛閱讀"
+            ],
+            "hints": [
+              "可以核對的時間與價格，和對人的猜測不同。",
+              "不要用喜歡哪個方案推斷一個人的個性。"
+            ],
+            "explanation": "費用和總時間可以在提案核對；其他兩句是沒有足夠支持的判斷。",
+            "id": "s5"
+          },
+          {
+            "kind": "reflect",
+            "title": "再想一種可能",
+            "text": "沒有唯一答案。選一個方向，看看它的取捨。",
+            "prompt": "同學偏好 B，還可能是因為什麼？",
+            "options": [
+              "想聽到不同的理解",
+              "喜歡用說話整理自己的想法"
+            ],
+            "replies": [
+              "討論可能讓人接觸不同觀點；最好問本人，而不是直接替他下結論。",
+              "說出來可能有助整理；這是合理可能，仍需要聽本人說明。"
+            ],
+            "hints": [
+              "先想想你最在意的條件。",
+              "不同條件可能讓人選擇不同的做法。"
+            ],
+            "explanation": "把理由說清楚，比選得一樣更重要。",
+            "id": "s6"
+          }
+        ]
+      },
+      {
+        "id": "solutions-mix",
+        "category": "綜合挑戰",
+        "title": "選一個走得通的服務計畫",
+        "description": "成本、時間與安全，一起放進決定裡。",
+        "visual": {
+          "title": "社區服務計畫",
+          "headers": [
+            "方案",
+            "單程步行",
+            "活動時間",
+            "材料費",
+            "條件"
+          ],
+          "rows": [
+            [
+              "A 公園整理",
+              "12 分鐘",
+              "20 分鐘",
+              "100 元",
+              "戶外，雨天暫停"
+            ],
+            [
+              "B 室內圖書整理",
+              "6 分鐘",
+              "25 分鐘",
+              "180 元",
+              "室內，可照常進行"
+            ],
+            [
+              "C 河邊步道整理",
+              "8 分鐘",
+              "25 分鐘",
+              "120 元",
+              "步道目前封閉"
+            ]
+          ],
+          "note": "總時間上限 45 分鐘，要含來回；預算 200 元。由老師帶隊。",
+          "bars": false
+        },
+        "skills": [
+          "找資訊",
+          "算一算",
+          "做判斷"
+        ],
+        "takeaways": [
+          "總時間要算來回。",
+          "便宜或快速不能取代安全條件。",
+          "沒有方案符合時，可以修改計畫再評估。"
+        ],
+        "steps": [
+          {
+            "kind": "read",
+            "title": "先把不能妥協的條件找出來",
+            "text": "這次不是找看起來最有趣的活動。先確保預算、時間和安全都符合，再比較偏好。",
+            "prompt": "先看情境，準備好再往下。",
+            "hints": [],
+            "explanation": "線索準備好了，接著只處理一個問題。",
+            "id": "s1"
+          },
+          {
+            "kind": "select",
+            "title": "先檢查限制",
+            "text": "",
+            "prompt": "選出三項必須符合的條件。",
+            "answer": [
+              0,
+              1,
+              3
+            ],
+            "options": [
+              "費用不超過 200 元",
+              "含來回不超過 45 分鐘",
+              "一定要在河邊",
+              "不能走進封閉步道"
+            ],
+            "hints": [
+              "看任務的上限和各方案的開放狀態。",
+              "有些是必要條件，有些只是個人偏好。"
+            ],
+            "explanation": "預算、總時間與開放安全條件都必須符合；沒有規定一定要在河邊。",
+            "id": "s2"
+          },
+          {
+            "kind": "number",
+            "title": "算完整的 B 行程",
+            "text": "",
+            "prompt": "B 的來回步行加活動，共幾分鐘？",
+            "answer": 37,
+            "hints": [
+              "「單程」表示還需要再走回來。",
+              "步行時間乘以二，再加活動時間。"
+            ],
+            "explanation": "6 × 2 + 25 = 37 分鐘。",
+            "unit": "分鐘",
+            "id": "s3"
+          },
+          {
+            "kind": "select",
+            "title": "晴天也要看安全",
+            "text": "",
+            "prompt": "天氣晴朗時，依表格哪些方案符合所有條件？",
+            "answer": [
+              0,
+              1
+            ],
+            "options": [
+              "A",
+              "B",
+              "C"
+            ],
+            "hints": [
+              "三個方案都要檢查來回時間、費用和開放狀態。",
+              "A 共 44 分鐘；B 共 37 分鐘。再看 C 是否開放。"
+            ],
+            "explanation": "A 與 B 的時間及費用都符合。C 雖然 41 分鐘、120 元，但步道封閉，不能選。",
+            "id": "s4"
+          },
+          {
+            "kind": "choice",
+            "title": "下雨時重新判斷",
+            "text": "",
+            "prompt": "如果當天正在下雨，三個方案中哪個仍符合表上條件？",
+            "answer": 1,
+            "options": [
+              "A",
+              "B",
+              "C"
+            ],
+            "hints": [
+              "環境改變後，要重新核對限制。",
+              "看看哪個是室內，也沒有封閉。"
+            ],
+            "explanation": "B 是室內且可照常進行。A 雨天暫停，C 仍封閉。",
+            "id": "s5"
+          },
+          {
+            "kind": "reflect",
+            "title": "預算突然剩 150 元",
+            "text": "沒有唯一答案。選一個方向，看看它的取捨。",
+            "prompt": "又下雨、預算又不足以選 B。你會先提出哪個修正方向？",
+            "options": [
+              "詢問是否能借用材料，降低 B 的費用",
+              "和老師討論改期，再評估戶外方案"
+            ],
+            "replies": [
+              "先詢問能否借用；得到新價格後再檢查，不能直接假設一定免費。",
+              "改期可能增加選項，但也要確認新時間、天氣與帶隊安排。"
+            ],
+            "hints": [
+              "先想想你最在意的條件。",
+              "不同條件可能讓人選擇不同的做法。"
+            ],
+            "explanation": "把理由說清楚，比選得一樣更重要。",
+            "id": "s6"
+          }
+        ]
+      }
+    ]
+  }
+]
