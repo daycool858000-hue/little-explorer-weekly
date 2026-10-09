@@ -18,7 +18,7 @@ export default function Archive() {
   }))) : challengeIssues.flatMap(i => i.units.map(u => ({
     id: u.id, issue: i, title: u.title, category: u.category, description: u.description,
     grade: '五～六年級', href: '#challenge/' + i.id + '/' + u.id + '/1',
-    text: [u.title, u.description, u.category, ...u.steps.flatMap(s => [s.title, s.text, s.prompt])],
+    text: [u.title, u.description, u.category, ...[u.visual, ...u.steps.map(s => s.visual)].filter(v => !!v).flatMap(v => [v.title, v.headers, v.rows, v.note]), ...u.steps.flatMap(s => [s.title, s.text, s.prompt])],
   })));
   const dates = publications.map(i => i.publishedAt?.slice(0, 7)).filter((v): v is string => !!v);
   const shownIssues = publications.filter(i => (!issueId || i.id === issueId) && (!month || (month === 'unknown' ? !i.publishedAt : i.publishedAt?.startsWith(month))));
@@ -33,9 +33,9 @@ export default function Archive() {
       {latest && <a className="archive-latest" href={(edition === 'magazine' ? '#issue/' : '#challenge/') + latest.id}>最新一期 · 第 {latest.number} 期：{latest.title} →</a>}
       <section className="archive-filters" aria-label="查找期刊及內容">
         <label>搜尋歷期內容<input type="search" value={query} onChange={e => setQuery(e.target.value)} placeholder="輸入文章、內容或主題關鍵字" /></label>
-        <label>期數<select value={issueId} onChange={e => setIssue(e.target.value)}><option value="">全部期數</option>{publications.map(i => <option key={i.id} value={i.id}>第 {i.number} 期 · {i.title}</option>)}</select></label>
-        <label>主題<select value={category} onChange={e => setCategory(e.target.value)}><option value="">全部主題</option>{categories.map(c => <option key={c}>{c}</option>)}</select></label>
-        <label>出版年月<select value={month} onChange={e => setMonth(e.target.value)}><option value="">全部年月</option>{[...new Set(dates)].sort().reverse().map(d => <option key={d}>{d}</option>)}<option value="unknown">出版日期未記錄</option></select></label>
+        <label>期數<select aria-label="期數" value={issueId} onChange={e => setIssue(e.target.value)}><option value="">全部期數</option>{publications.map(i => <option key={i.id} value={i.id}>第 {i.number} 期 · {i.title}</option>)}</select></label>
+        <label>主題<select aria-label="主題" value={category} onChange={e => setCategory(e.target.value)}><option value="">全部主題</option>{categories.map(c => <option key={c}>{c}</option>)}</select></label>
+        <label>出版年月<select aria-label="出版年月" value={month} onChange={e => setMonth(e.target.value)}><option value="">全部年月</option>{[...new Set(dates)].sort().reverse().map(d => <option key={d}>{d}</option>)}<option value="unknown">出版日期未記錄</option></select></label>
       </section>
       {!query && !category && <nav className="archive-issues" aria-label="歷期期刊目錄">{shownIssues.map(i => <a key={i.id} href={(edition === 'magazine' ? '#issue/' : '#challenge/') + i.id}><strong>第 {i.number} 期 · {i.title}</strong><small>{i.publishedAt || '出版日期未記錄'}</small></a>)}</nav>}
       {category === '心理與生活探索' && <aside className="archive-life"><h2>心理與生活探索</h2><p>透過故事、對話與不同角色的想法，慢慢認識自己和別人。</p><p>{lifeTopics.join(' · ')}</p><p>不用分享自己的私人經驗，也沒有替個性或心情打分數的測驗。</p></aside>}

@@ -1,13 +1,13 @@
 import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
-import {readFileSync,mkdirSync,writeFileSync} from 'node:fs';
+import {readFileSync,readdirSync,mkdirSync,writeFileSync} from 'node:fs';
 import {createServer} from 'node:http';
 import {resolve,extname,sep} from 'node:path';
 import {dataSegments} from '../src/speech/challenge.ts';
 import {textSegments,plainSegments} from '../src/speech/content.ts';
 import {normalizeSpeech} from '../src/speech/normalize.ts';
-const issues=[1,2,3,4].map(n=>JSON.parse(readFileSync('src/content/challenge/week-'+n+'.json','utf8')));
-const originals=[1,2,3,4].flatMap(n=>JSON.parse(readFileSync('src/content/week-'+n+'.json','utf8')).articles);
+const issues=readdirSync('src/content/challenge').filter(n=>/^week-\d+\.json$/.test(n)).map(n=>JSON.parse(readFileSync('src/content/challenge/'+n,'utf8')));
+const originals=readdirSync('src/content').filter(n=>/^week-\d+\.json$/.test(n)).flatMap(n=>JSON.parse(readFileSync('src/content/'+n,'utf8')).articles);
 const root=resolve('docs'),base=process.env.BASE_URL||'http://127.0.0.1:4187/little-explorer-weekly/';
 const server=process.env.BASE_URL?null:createServer((req,res)=>{
  const pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname).replace(/^\/little-explorer-weekly/,'');

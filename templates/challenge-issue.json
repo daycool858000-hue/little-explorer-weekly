@@ -1,0 +1,460 @@
+{
+  "id": "week-99",
+  "number": 99,
+  "title": "請填挑戰期刊名稱",
+  "description": "請填簡介",
+  "status": "draft",
+  "publishedAt": null,
+  "reviewedBy": null,
+  "sourceRecord": "sources/challenge-week-99.json",
+  "units": [
+    {
+      "id": "replace-unit-1",
+      "category": "數學挑戰",
+      "title": "請填單元名稱",
+      "description": "請填介紹",
+      "skills": [
+        "請填能力"
+      ],
+      "takeaways": [
+        "請填重點一",
+        "請填重點二",
+        "請填重點三"
+      ],
+      "steps": [
+        {
+          "id": "s1",
+          "kind": "read",
+          "title": "請填情境標題",
+          "text": "請填短情境",
+          "prompt": "準備好再往下。",
+          "hints": [],
+          "explanation": "請填簡短回應"
+        },
+        {
+          "id": "s2",
+          "kind": "choice",
+          "title": "請填步驟標題",
+          "text": "",
+          "prompt": "請填不同的問題 2",
+          "options": [
+            "請填選項一",
+            "請填選項二"
+          ],
+          "answer": 0,
+          "hints": [
+            "請填第一層線索",
+            "請填第二層線索"
+          ],
+          "explanation": "請填解釋"
+        },
+        {
+          "id": "s3",
+          "kind": "choice",
+          "title": "請填步驟標題",
+          "text": "",
+          "prompt": "請填不同的問題 3",
+          "options": [
+            "請填選項一",
+            "請填選項二"
+          ],
+          "answer": 0,
+          "hints": [
+            "請填第一層線索",
+            "請填第二層線索"
+          ],
+          "explanation": "請填解釋"
+        },
+        {
+          "id": "s4",
+          "kind": "choice",
+          "title": "請填步驟標題",
+          "text": "",
+          "prompt": "請填不同的問題 4",
+          "options": [
+            "請填選項一",
+            "請填選項二"
+          ],
+          "answer": 0,
+          "hints": [
+            "請填第一層線索",
+            "請填第二層線索"
+          ],
+          "explanation": "請填解釋"
+        },
+        {
+          "id": "s5",
+          "kind": "choice",
+          "title": "請填步驟標題",
+          "text": "",
+          "prompt": "請填不同的問題 5",
+          "options": [
+            "請填選項一",
+            "請填選項二"
+          ],
+          "answer": 0,
+          "hints": [
+            "請填第一層線索",
+            "請填第二層線索"
+          ],
+          "explanation": "請填解釋"
+        },
+        {
+          "id": "s6",
+          "kind": "choice",
+          "title": "請填步驟標題",
+          "text": "",
+          "prompt": "請填不同的問題 6",
+          "options": [
+            "請填選項一",
+            "請填選項二"
+          ],
+          "answer": 0,
+          "hints": [
+            "請填第一層線索",
+            "請填第二層線索"
+          ],
+          "explanation": "請填解釋"
+        }
+      ]
+    },
+    {
+      "id": "replace-unit-2",
+      "category": "英文探索",
+      "title": "請填單元名稱",
+      "description": "請填介紹",
+      "skills": [
+        "請填能力"
+      ],
+      "takeaways": [
+        "請填重點一",
+        "請填重點二",
+        "請填重點三"
+      ],
+      "steps": [
+        {
+          "id": "s1",
+          "kind": "read",
+          "title": "請填情境標題",
+          "text": "請填短情境",
+          "prompt": "準備好再往下。",
+          "hints": [],
+          "explanation": "請填簡短回應"
+        },
+        {
+          "id": "s2",
+          "kind": "choice",
+          "title": "請填步驟標題",
+          "text": "",
+          "prompt": "請填不同的問題 2",
+          "options": [
+            "請填選項一",
+            "請填選項二"
+          ],
+          "answer": 0,
+          "hints": [
+            "請填第一層線索",
+            "請填第二層線索"
+          ],
+          "explanation": "請填解釋"
+        },
+        {
+          "id": "s3",
+          "kind": "choice",
+          "title": "請填步驟標題",
+          "text": "",
+          "prompt": "請填不同的問題 3",
+          "options": [
+            "請填選項一",
+            "請填選項二"
+          ],
+          "answer": 0,
+          "hints": [
+            "請填第一層線索",
+            "請填第二層線索"
+          ],
+          "explanation": "請填解釋"
+        },
+        {
+          "id": "s4",
+          "kind": "choice",
+          "title": "請填步驟標題",
+          "text": "",
+          "prompt": "請填不同的問題 4",
+          "options": [
+            "請填選項一",
+            "請填選項二"
+          ],
+          "answer": 0,
+          "hints": [
+            "請填第一層線索",
+            "請填第二層線索"
+          ],
+          "explanation": "請填解釋"
+        },
+        {
+          "id": "s5",
+          "kind": "choice",
+          "title": "請填步驟標題",
+          "text": "",
+          "prompt": "請填不同的問題 5",
+          "options": [
+            "請填選項一",
+            "請填選項二"
+          ],
+          "answer": 0,
+          "hints": [
+            "請填第一層線索",
+            "請填第二層線索"
+          ],
+          "explanation": "請填解釋"
+        },
+        {
+          "id": "s6",
+          "kind": "choice",
+          "title": "請填步驟標題",
+          "text": "",
+          "prompt": "請填不同的問題 6",
+          "options": [
+            "請填選項一",
+            "請填選項二"
+          ],
+          "answer": 0,
+          "hints": [
+            "請填第一層線索",
+            "請填第二層線索"
+          ],
+          "explanation": "請填解釋"
+        }
+      ],
+      "translations": {
+        "English sentence.": [
+          {
+            "en": "English sentence.",
+            "zh": "請填自然的繁體中文。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "replace-unit-3",
+      "category": "閱讀推理",
+      "title": "請填單元名稱",
+      "description": "請填介紹",
+      "skills": [
+        "請填能力"
+      ],
+      "takeaways": [
+        "請填重點一",
+        "請填重點二",
+        "請填重點三"
+      ],
+      "steps": [
+        {
+          "id": "s1",
+          "kind": "read",
+          "title": "請填情境標題",
+          "text": "請填短情境",
+          "prompt": "準備好再往下。",
+          "hints": [],
+          "explanation": "請填簡短回應"
+        },
+        {
+          "id": "s2",
+          "kind": "choice",
+          "title": "請填步驟標題",
+          "text": "",
+          "prompt": "請填不同的問題 2",
+          "options": [
+            "請填選項一",
+            "請填選項二"
+          ],
+          "answer": 0,
+          "hints": [
+            "請填第一層線索",
+            "請填第二層線索"
+          ],
+          "explanation": "請填解釋"
+        },
+        {
+          "id": "s3",
+          "kind": "choice",
+          "title": "請填步驟標題",
+          "text": "",
+          "prompt": "請填不同的問題 3",
+          "options": [
+            "請填選項一",
+            "請填選項二"
+          ],
+          "answer": 0,
+          "hints": [
+            "請填第一層線索",
+            "請填第二層線索"
+          ],
+          "explanation": "請填解釋"
+        },
+        {
+          "id": "s4",
+          "kind": "choice",
+          "title": "請填步驟標題",
+          "text": "",
+          "prompt": "請填不同的問題 4",
+          "options": [
+            "請填選項一",
+            "請填選項二"
+          ],
+          "answer": 0,
+          "hints": [
+            "請填第一層線索",
+            "請填第二層線索"
+          ],
+          "explanation": "請填解釋"
+        },
+        {
+          "id": "s5",
+          "kind": "choice",
+          "title": "請填步驟標題",
+          "text": "",
+          "prompt": "請填不同的問題 5",
+          "options": [
+            "請填選項一",
+            "請填選項二"
+          ],
+          "answer": 0,
+          "hints": [
+            "請填第一層線索",
+            "請填第二層線索"
+          ],
+          "explanation": "請填解釋"
+        },
+        {
+          "id": "s6",
+          "kind": "choice",
+          "title": "請填步驟標題",
+          "text": "",
+          "prompt": "請填不同的問題 6",
+          "options": [
+            "請填選項一",
+            "請填選項二"
+          ],
+          "answer": 0,
+          "hints": [
+            "請填第一層線索",
+            "請填第二層線索"
+          ],
+          "explanation": "請填解釋"
+        }
+      ]
+    },
+    {
+      "id": "replace-unit-4",
+      "category": "綜合挑戰",
+      "title": "請填單元名稱",
+      "description": "請填介紹",
+      "skills": [
+        "請填能力"
+      ],
+      "takeaways": [
+        "請填重點一",
+        "請填重點二",
+        "請填重點三"
+      ],
+      "steps": [
+        {
+          "id": "s1",
+          "kind": "read",
+          "title": "請填情境標題",
+          "text": "請填短情境",
+          "prompt": "準備好再往下。",
+          "hints": [],
+          "explanation": "請填簡短回應"
+        },
+        {
+          "id": "s2",
+          "kind": "choice",
+          "title": "請填步驟標題",
+          "text": "",
+          "prompt": "請填不同的問題 2",
+          "options": [
+            "請填選項一",
+            "請填選項二"
+          ],
+          "answer": 0,
+          "hints": [
+            "請填第一層線索",
+            "請填第二層線索"
+          ],
+          "explanation": "請填解釋"
+        },
+        {
+          "id": "s3",
+          "kind": "choice",
+          "title": "請填步驟標題",
+          "text": "",
+          "prompt": "請填不同的問題 3",
+          "options": [
+            "請填選項一",
+            "請填選項二"
+          ],
+          "answer": 0,
+          "hints": [
+            "請填第一層線索",
+            "請填第二層線索"
+          ],
+          "explanation": "請填解釋"
+        },
+        {
+          "id": "s4",
+          "kind": "choice",
+          "title": "請填步驟標題",
+          "text": "",
+          "prompt": "請填不同的問題 4",
+          "options": [
+            "請填選項一",
+            "請填選項二"
+          ],
+          "answer": 0,
+          "hints": [
+            "請填第一層線索",
+            "請填第二層線索"
+          ],
+          "explanation": "請填解釋"
+        },
+        {
+          "id": "s5",
+          "kind": "choice",
+          "title": "請填步驟標題",
+          "text": "",
+          "prompt": "請填不同的問題 5",
+          "options": [
+            "請填選項一",
+            "請填選項二"
+          ],
+          "answer": 0,
+          "hints": [
+            "請填第一層線索",
+            "請填第二層線索"
+          ],
+          "explanation": "請填解釋"
+        },
+        {
+          "id": "s6",
+          "kind": "choice",
+          "title": "請填步驟標題",
+          "text": "",
+          "prompt": "請填不同的問題 6",
+          "options": [
+            "請填選項一",
+            "請填選項二"
+          ],
+          "answer": 0,
+          "hints": [
+            "請填第一層線索",
+            "請填第二層線索"
+          ],
+          "explanation": "請填解釋"
+        }
+      ]
+    }
+  ]
+}

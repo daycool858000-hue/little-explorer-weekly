@@ -1,14 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';
+import {readFileSync,readdirSync} from 'node:fs';
 import {createSpeech,chooseVoice} from '../src/speech/engine.ts';
 import {textSegments} from '../src/speech/content.ts';
 import {dataSegments} from '../src/speech/challenge.ts';
 const before=JSON.parse(readFileSync('tests/fixtures/challenge-before-speech.json','utf8'));
-const issues=[1,2,3,4].map(n=>JSON.parse(readFileSync('src/content/challenge/week-'+n+'.json','utf8')));
+const issues=readdirSync('src/content/challenge').filter(n=>/^week-\d+\.json$/.test(n)).sort().map(n=>JSON.parse(readFileSync('src/content/challenge/'+n,'utf8')));
 const clone=x=>JSON.parse(JSON.stringify(x));
 test('all original challenge fields are unchanged; only translation data is added',()=>{
- const stripped=clone(issues);stripped.forEach(i=>i.units.forEach(u=>delete u.translations));assert.deepEqual(stripped,before);
+ const stripped=clone(issues.filter(i=>before.some(b=>b.id===i.id)).sort((a,b)=>a.number-b.number));stripped.forEach(i=>i.units.forEach(u=>delete u.translations));assert.deepEqual(stripped,before);
 });
 test('four English units have complete sentence-aligned translations without answer fields',()=>{
  let count=0;

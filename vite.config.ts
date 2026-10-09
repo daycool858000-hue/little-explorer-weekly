@@ -1,13 +1,16 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
-import { validateProject } from './scripts/content-validation.mjs';
+import { validateProject, validateIssues, loadIssues } from './scripts/content-validation.mjs';
 export default defineConfig(({ mode }) => {
   const reviewing = mode === 'review', folder = '.local-review';
   return {
     plugins: [react(), {
       name: 'content-release-boundary',
-      buildStart() { validateProject(); },
+      buildStart() {
+        validateProject();
+        if (reviewing && existsSync(folder)) validateIssues([...loadIssues('src/content'), ...loadIssues(folder)], 'magazine', n => existsSync(folder + '/assets/' + n + '.svg') || existsSync('public/assets/' + n + '.svg'), { draft: true });
+      },
       resolveId(id) { if (id === 'virtual:review-content') return '\0review-content'; },
       load(id) {
         if (id !== '\0review-content') return;

@@ -311,9 +311,9 @@ export default function Magazine() {
             )}
           </div>
           <p className="editor-note">
-            小小探索家原創編寫 · 四週探索特輯 ·{" "}
-            {["故事劇場", "生活練習"].includes(article.category)
-              ? "原創故事，人物與情節為虛構。"
+            小小探索家閱讀系列 · 知識與生活探索 ·{" "}
+            {["故事劇場", "生活練習", "心理與生活探索"].includes(article.category)
+              ? "故事人物與情節為虛構。"
               : "以日常觀察認識基礎科學。"}
           </p>
         </main>

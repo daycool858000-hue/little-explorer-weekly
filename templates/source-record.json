@@ -1,0 +1,41 @@
+{
+  "issueId": "week-99",
+  "version": "1",
+  "checkedAt": null,
+  "reviewedBy": null,
+  "reviewStatus": "pending",
+  "items": [
+    {
+      "id": "replace-article-id",
+      "path": "src/content/week-99.json",
+      "kind": "article",
+      "creator": "待確認",
+      "aiUse": "填工具與生成日期；未使用則明寫",
+      "thirdParty": "待確認",
+      "licenseBasis": "待確認；不等於免費即可使用",
+      "sources": [
+        {
+          "url": "",
+          "supports": "支持哪項事實",
+          "checkedAt": null
+        }
+      ],
+      "evidence": "不含私人資訊的存證代號",
+      "humanChanges": "待填",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "replace-image-id",
+      "path": "public/assets/replace-image-name.svg",
+      "kind": "image",
+      "creator": "待確認",
+      "aiUse": "待填",
+      "thirdParty": "待確認",
+      "licenseBasis": "待確認",
+      "sources": [],
+      "evidence": "待填",
+      "humanChanges": "待填",
+      "reviewStatus": "pending"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "replace-with-unique-article-id",
+  "title": "請填文章名稱",
+  "subtitle": "請填簡短介紹",
+  "category": "請填分類",
+  "level": "三～六年級",
+  "minutes": 5,
+  "image": "replace-with-image-name",
+  "pages": [
+    {
+      "title": "請填第 1 頁標題",
+      "text": [
+        "請填第一段正文",
+        "請填第二段正文"
+      ]
+    },
+    {
+      "title": "請填第 2 頁標題",
+      "text": [
+        "請填第一段正文",
+        "請填第二段正文"
+      ]
+    },
+    {
+      "title": "請填第 3 頁標題",
+      "text": [
+        "請填第一段正文",
+        "請填第二段正文"
+      ]
+    }
+  ],
+  "word": [
+    "請填詞語",
+    "請填解釋"
+  ],
+  "question": "請填閱讀或安全知識問題",
+  "options": [
+    "請填選項一",
+    "請填選項二",
+    "請填選項三"
+  ],
+  "answer": 0,
+  "explanation": "請填正確答案說明",
+  "thinking": "請填不要求私人經驗的開放問題",
+  "hint": "請填另一個角度，不能判定人格",
+  "task": "請填安全的小任務"
+}

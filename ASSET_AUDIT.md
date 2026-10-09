@@ -417,3 +417,18 @@ GitHub Actions 引用 actions/checkout@v4、setup-node@v4、configure-pages@v5�
 | word-wrap | 1.2.5 | MIT | 開發 | LICENSE |
 | yallist | 3.1.1 | ISC | 開發 | LICENSE |
 | yocto-queue | 0.1.0 | MIT | 開發 | license |
+
+## 第三階段增補（2026-10-09）
+
+本節更新第二階段缺口，不撤回前述待確認事項。
+
+| 對象 | 位置 | 已確認 | 待確認／風險 |
+| --- | --- | --- | --- |
+| React／React DOM／scheduler | public/THIRD-PARTY-NOTICES.txt | 從本機鎖定安裝版本的 LICENSE 完整複製，保留 Meta 版權、許可與免責文字；網站提供連結，建置同步 | 升級套件後須重新核對，不代表自有教材 MIT |
+| Vite modulepreload helper | 同上 | 保留 Vite core 完整 MIT 告知；建置工具其餘開發相依授權仍在套件內 | 不把所有開發套件誤稱為已下載到讀者裝置 |
+| 原 16 篇／16 單元／18 SVG | 原路徑 | 原教材與原圖保留；Git 歷史只能確認首次加入版本，沿用第二階段紀錄 | 逐件作者、AI 來源、人工創作與第三方權利仍待人工補件，不編造存證 |
+| 新主名稱文字 | BRAND_REVIEW.md | 已做一般使用紀錄初查；不製作新 Logo | 正式商標查核未完成，同名兒童作品標題存在，未主張獨占 |
+| 第五期草稿 | 本機 .local-review/，不在公開 repository | Codex 依管理者指定主題撰寫四個虛構情境；SVG 由本次 AI 協助編寫幾何程式，無下載網路圖片；來源與版本在本機 SOURCES.md | 人工內容、安全與權利審閱未完成，不宣稱百分之百原創或已取得完整著作權；不公開正文或圖片 |
+| 新內容範本 | templates/ | AI 協助編寫資料框架；不包含第三方文章或插圖 | 新增教材仍須逐件登錄，不可把模板的空欄當完成證據 |
+
+科普參考的螞蟻失效網址已改為可查得的研究論文，月相改為 NASA 專題，見 CONTENT-SOURCES.md。部分站點可能要求瀏覽器驗證；不能把取用限制誤寫為文章已不存在。新教材從 source-record.json 登錄作者／AI／第三方／依據／查核日／版本／審閱者，私人契約留代號，不上傳敏感文件。機密掃描範圍與結果見 PHASE3_REPORT.md；簡單掃描不等於完整安全審查。

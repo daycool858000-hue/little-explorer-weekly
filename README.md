@@ -1,4 +1,5 @@
-# 小小探索家週刊 Little Explorer Weekly
+# 問號星球 Question Planet
+
 
 給國小三～六年級的靜態閱讀網站。四期、16 篇、48 個閱讀頁面。無登入、無資料庫、無 AI API、無付費服務。程式與所有插圖都包含在專案內。
 
@@ -63,3 +64,9 @@ GitHub 官方說明：[Pages 是什麼](https://docs.github.com/en/pages/getting
 收藏、字級、閱讀頁數及發現章只存在這個瀏覽器的 localStorage，不會傳送給任何人，也不會在不同裝置同步。無法儲存時仍可閱讀。從舊網站換到新網址，瀏覽器不會自動搬移舊站紀錄。
 
 保留簡單 manifest 與 SVG 圖示；正式網站需要網路，不包含 service worker，也不保證每種裝置都出現安裝提示。Safari / Chrome 直接開啟網址才是主要使用方式。
+
+## 目前維護方式（第三階段）
+
+正式發布固定使用既有 GitHub Actions＋Pages，不更換平台或手動切換 Pages 來源。上方歷史說明若提到其他選項，不是目前操作流程。新期刊請依 [每月新增流程](MONTHLY_PUBLISH.md)；私人原版預覽用 `npm run build:review`，一般建置用 `npm run build`。公開前必須完成管理者審閱與驗證。新版圖書館入口為 `#library`，心理與生活分類為 `#library/life`。
+
+第三方授權告知：`public/THIRD-PARTY-NOTICES.txt`。素材來源、名稱初查、專案進度與備份分別見 ASSET_AUDIT.md、BRAND_REVIEW.md、PROJECT_PLAN.md、SOURCE_BACKUP.md；本網站未替自有教材採用 MIT。

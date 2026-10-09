@@ -81,3 +81,7 @@
 
 `npm run test:speech` 執行可重現的語音瀏覽器模擬；也可以設定 `BASE_URL` 檢查公開網站。模擬會核對 utterance 文字、語言、voice、順序及控制事件，不能代替實體 iPhone／Android 的聲音測試。
 
+
+## 第三階段：持續新增期刊
+
+挑戰版與原版分開編號、分開發布；不因原版新增第五期就建立空的挑戰第五期。使用 templates/challenge-issue.json 與 templates/source-record.json，填寫全部四類單元。正式新增需 status: published、真實 publishedAt、reviewedBy、sourceRecord，執行 npm run validate:content。英文 translations 繼續以原文字串對應 [{en, zh}]，包含題意、指示、選項與表格重要資訊；英文句子不得改寫，中文不得洩漏答案。詳 MONTHLY_PUBLISH.md。

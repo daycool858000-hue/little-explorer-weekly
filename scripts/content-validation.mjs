@@ -3,12 +3,21 @@ import assert from 'node:assert/strict';
 import {pathToFileURL} from 'node:url';
 const text = v => typeof v === 'string' && v.trim().length > 0;
 export const loadIssues = dir => readdirSync(dir).filter(n => /^week-\d+\.json$/.test(n)).map(n => JSON.parse(readFileSync(dir+'/'+n,'utf8')));
-export function validateIssues(issues, edition, imageExists = n => existsSync('public/assets/'+n+'.svg'), {draft=false}={}) {
+export function validateIssues(issues, edition, imageExists = n => existsSync('public/assets/'+n+'.svg'), {draft=false, sourceReader=p=>JSON.parse(readFileSync(p,'utf8'))}={}) {
  const ids=new Set(), numbers=new Set(), entries=new Set();
  const unique=(set,id)=>{assert.match(id,/^[a-z][a-z0-9-]*$/);assert.ok(!set.has(id),'重複 ID：'+id);set.add(id);};
  for(const i of issues){
   unique(ids,i.id);assert.ok(Number.isInteger(i.number)&&i.number>0);assert.ok(!numbers.has(i.number),'重複期數');numbers.add(i.number);assert.ok(text(i.title)&&text(i.description));
   const legacy=[1,2,3,4].includes(i.number)&&i.id==='week-'+i.number;
+  if(!legacy && !draft){
+   assert.doesNotMatch(JSON.stringify(i),/請填|replace-|placeholder/i,'尚有未填寫的模板內容');
+   assert.match(i.sourceRecord||'',/^sources\/[a-z0-9-]+\.json$/,'來源紀錄必須位於 sources');
+   const record=sourceReader(i.sourceRecord);
+   assert.equal(record.issueId,i.id);assert.equal(record.reviewStatus,'approved','來源尚未審閱');assert.ok(text(record.reviewedBy));
+   assert.ok(record.items?.length);for(const item of record.items){assert.equal(item.reviewStatus,'approved');for(const key of ['id','path','creator','aiUse','thirdParty','licenseBasis','evidence','humanChanges'])assert.ok(text(item[key]),'來源缺 '+key);}
+   for(const entry of i.articles||i.units)assert.ok(record.items.some(item=>item.id===entry.id),'教材缺逐件來源紀錄');
+   for(const image of i.articles?[i.cover,...i.articles.map(a=>a.image)]:[])assert.ok(record.items.some(item=>item.path==='public/assets/'+image+'.svg'),'插圖缺來源紀錄');
+  }
   if(!legacy||i.status!==undefined){
    assert.equal(i.status,draft?'draft':'published','正式教材不可含草稿');
    if(!draft){assert.match(i.publishedAt||'',/^\d{4}-\d{2}-\d{2}$/);assert.equal(new Date(i.publishedAt).toISOString().slice(0,10),i.publishedAt);assert.ok(i.publishedAt<=new Date().toLocaleDateString('en-CA',{timeZone:'Asia/Taipei'}),'未來日期不可提前發布');assert.ok(text(i.reviewedBy)&&text(i.sourceRecord),'缺審閱與來源紀錄');}
@@ -23,7 +32,16 @@ export function validateIssues(issues, edition, imageExists = n => existsSync('p
      if(['choice','select','order','estimate','reflect'].includes(s.kind)){assert.ok(s.options?.length>=2&&s.options.every(text));if(s.kind==='reflect')assert.equal(s.replies?.length,s.options.length);else{const answers=Array.isArray(s.answer)?s.answer:[s.answer];assert.ok(answers.length&&answers.every(n=>Number.isInteger(n)&&n>=0&&n<s.options.length));}}
      const v=s.visual||u.visual;if(v)assert.ok(v.title&&v.headers.length&&v.rows.every(r=>r.length===v.headers.length&&r.every(text)));
     }
-    if(u.category==='英文探索'){assert.ok(u.translations&&Object.keys(u.translations).length);for(const pairs of Object.values(u.translations)){assert.ok(Array.isArray(pairs)&&pairs.length);for(const p of pairs)assert.ok(text(p.en)&&text(p.zh),'翻譯需英文及繁體中文');}}
+    if(u.category==='英文探索'){
+     assert.ok(u.translations&&Object.keys(u.translations).length);
+     const visuals=[u.visual,...u.steps.map(s=>s.visual)].filter(Boolean);
+     const fields=[u.title,u.description,...u.skills,...u.takeaways,...visuals.flatMap(v=>[v.title,...v.headers,...v.rows.flat(),v.note]),...u.steps.flatMap(s=>[s.title,s.text,s.prompt,...s.options||[]])].filter(Boolean);
+     for(const value of fields)if(/[A-Za-z]/.test(value)&&!/[\u3400-\u9fff]/.test(value))assert.ok(u.translations[value],'缺中文翻譯：'+value);
+     for(const [original,pairs] of Object.entries(u.translations)){
+      assert.ok(Array.isArray(pairs)&&pairs.length);for(const p of pairs){assert.ok(text(p.en)&&text(p.zh),'翻譯需英文及繁體中文');assert.match(p.zh,/[\u3400-\u9fff]/);assert.doesNotMatch(p.zh,/[这为时个学数图书车门问听说让从会与来没样单总对关开动计们够读择该种]/);}
+      if(!/[\u3400-\u9fff]/.test(original))assert.equal(pairs.map(p=>p.en).join(' ').replace(/\s+/g,' ').trim(),original.replace(/\s+/g,' ').trim(),'英文原文對齊');
+     }
+    }
    }
   }
  }
