@@ -44,3 +44,26 @@
 ## 發布紀錄
 
 正式網址不變： https://daycool858000-hue.github.io/little-explorer-weekly/ 。沿用既有 GitHub Actions＋Pages，未更改設定或 repository 公開狀態。部署 commit、Actions 結果與公開網址驗證會在成功後補記；本節未補記前不代表已上線。
+
+### 已完成的發布檢查
+
+技術版提交 `95d2c6a8b718e0e6c39dd43134e2ff5b28d692eb` 已快轉合併 main；[GitHub Actions 37896025424](https://github.com/daycool858000-hue/little-explorer-weekly/actions/runs/37896025424) 建置與部署成功。完整保留第二階段文件提交與第三階段兩個 checkpoint，沒有 force push。發布資產 `index-bo_GJDK2.js`。
+
+已使用全新瀏覽器情境、未登入任何帳號檢查公開網址：原版 4 期 16 篇全文與答案比對、18 SVG 與本機逐位元相同；每種尺寸 53 頁通過。公開圖書館五種尺寸、跨期搜尋、菜單搜尋、分類、深層連結與收藏保留通過，無 console error 或失效／外部請求。正式版沒有第五期正文與圖片。私人版則完整走完第五期 12 頁 × 五種尺寸與朗讀。
+
+### 主要檔案
+
+| 位置 | 修改目的 |
+| --- | --- |
+| src/Archive.tsx、src/archive.css、src/catalog.ts | 歷期目錄、全文搜尋、分類、日期與非連續導覽 |
+| src/App.tsx、src/Root.tsx、src/challenge/Challenge.tsx | 入口、品牌文字、既有頁面分流及相鄰期刊 |
+| src/library.ts、vite.config.ts | 正式資料沿用自動載入；私人原版草稿只進審閱建置 |
+| scripts/content-validation.mjs、templates/ | 新期刊格式、來源與審閱驗證、資料範本 |
+| scripts/preview.mjs | 單檔預覽與第三方告知一起保存 |
+| public/THIRD-PARTY-NOTICES.txt、docs/ | 完整第三方告知及發布成品 |
+| tests/archive.test.mjs、tests/archive-browser.mjs | 圖書館、跳號、新期擴充、草稿隔離、預覽朗讀與尺寸測試 |
+| 原五份文件及新增維護文件 | 階段紀錄、權利狀態、模板流程、名稱查核及備份 |
+
+原始碼包只含已追蹤檔案，私人第五期審閱包另交付於本機 outputs/week-5-review-2026-10-09.zip，沒有上傳 repository。本階段到此停止，不開始故事館。
+
+公開挑戰版也已完成 16 單元／96 步 × 五種尺寸的作答、提示、重試、解法與進度檢查；公開語音版完成與本機相同的 utterance／語言／控制驗證，皆無 console error、失效圖片或資源。最終單元測試共 27 項通過。核對日期為 2026-10-09；音質與實體手機限制仍依前述保留，不把模擬說成實機測試。

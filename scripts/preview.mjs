@@ -13,4 +13,5 @@ html=html.replace(/<link[^>]+href="([^"]+\.css)"[^>]*>/g,(_,p)=>"<style>"+read(o
 html=html.replace(/<script[^>]+src="([^"]+\.js)"[^>]*><\/script>/g,(_,p)=>'<script>window.explorerAssets='+JSON.stringify(assets).replaceAll("<","\\u003c")+';</script><script type="module">'+read(output+"/"+p).replaceAll("</script","<\\/script")+"</script>");
 mkdirSync(new URL(destination+"/",root),{recursive:true});
 writeFileSync(new URL(destination+"/standalone.html",root),html);
+writeFileSync(new URL(destination+"/THIRD-PARTY-NOTICES.txt",root),read("public/THIRD-PARTY-NOTICES.txt"));
 console.log('Created '+destination+'/standalone.html (all illustrations and code included)');
