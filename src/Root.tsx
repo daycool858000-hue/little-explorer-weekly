@@ -1,3 +1,5 @@
+import Archive from './Archive';
+import review from 'virtual:review-content';
 import { useSyncExternalStore } from 'react';
 import Magazine from './App';
 import Challenge from './challenge/Challenge';
@@ -7,5 +9,5 @@ function subscribe(callback: () => void) { window.addEventListener('hashchange',
 const snapshot = () => window.location.hash;
 export default function Root() {
   const hash = useSyncExternalStore(subscribe, snapshot);
-  return <><SpeechLifecycle route={hash}/>{hash === '#challenge' || hash.startsWith('#challenge/') ? <Challenge hash={hash} /> : <Magazine />}</>;
+  return <>{review.length > 0 && <div className="review-banner">管理者審閱版 · 第五期尚未公開</div>}<SpeechLifecycle route={hash}/>{hash === '#library' || hash === '#library/life' ? <Archive key={hash}/> : hash === '#challenge' || hash.startsWith('#challenge/') ? <Challenge hash={hash} /> : <Magazine />}</>;
 }

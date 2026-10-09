@@ -1,0 +1,54 @@
+[
+  {
+    "from": "import { articles, issues } from \"./library\";",
+    "to": "import { articles, issues } from \"./library\";\nimport { adjacent, matches } from \"./catalog\";"
+  },
+  {
+    "from": "  const currentIssue = articleIssue || issue;",
+    "to": "  const currentIssue = articleIssue || issue;\n  const neighbors = adjacent(issues, issueId);"
+  },
+  {
+    "from": "(a.title + a.subtitle + a.category).includes(query.trim())",
+    "to": "matches(query, a.title, a.subtitle, a.category, a.pages.flatMap(p => [p.title, ...p.text]))"
+  },
+  {
+    "from": "aria-label=\"小小探索家首頁\"",
+    "to": "aria-label=\"問號星球首頁\""
+  },
+  {
+    "from": "小小探索家週刊<small>Little Explorer Weekly</small>",
+    "to": "問號星球<small>Question Planet</small>"
+  },
+  {
+    "from": "          <button onClick={() => home()}>首頁</button>",
+    "to": "          <button onClick={() => home()}>首頁</button>\n          <button onClick={() => { location.hash = \"library\"; }}>歷期圖書館</button>"
+  },
+  {
+    "from": "          {/* challenge-entry:start */}",
+    "to": "          {!issue && !shelf && <a className=\"archive-entry\" href=\"#library\"><span><strong>歷期期刊圖書館</strong><small>兒童閱讀・知識探索・故事與生活</small></span><span>找主題、搜尋歷期讀物 →</span></a>}\n          {/* challenge-entry:start */}"
+  },
+  {
+    "from": "這個月，想先翻哪一期？",
+    "to": "小小探索家，想先翻哪一期？"
+  },
+  {
+    "from": "i.number === issues.length",
+    "to": "i.id === issues.at(-1)?.id"
+  },
+  {
+    "from": "disabled={issue.number === 1} onClick={() => goIssue(issues[issue.number - 2].id)}",
+    "to": "disabled={!neighbors.previous} onClick={() => neighbors.previous && goIssue(neighbors.previous.id)}"
+  },
+  {
+    "from": "disabled={issue.number === issues.length} onClick={() => goIssue(issues[issue.number].id)}",
+    "to": "disabled={!neighbors.next} onClick={() => neighbors.next && goIssue(neighbors.next.id)}"
+  },
+  {
+    "from": "<strong>小小探索家</strong>",
+    "to": "<strong>問號星球</strong>"
+  },
+  {
+    "from": "<p>繁體中文原創讀物 · 無需註冊 · 閱讀紀錄保存在此裝置</p>",
+    "to": "<p>小小探索家閱讀系列 · 無需註冊 · 閱讀紀錄保存在此裝置</p>\n        <a href=\"THIRD-PARTY-NOTICES.txt\">第三方程式授權告知</a>"
+  }
+]

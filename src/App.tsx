@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { articles, issues } from "./library";
+import { adjacent, matches } from "./catalog";
 // speech:start
 import { ArticleAudio, ArticleQuestionAudio } from './speech/ArticleAudio';
 // speech:end
@@ -32,6 +33,7 @@ export default function Magazine() {
   const issue = issues.find(i => i.id === issueId);
   const articleIssue = issues.find(i => i.articles.some(a => a.id === selected));
   const currentIssue = articleIssue || issue;
+  const neighbors = adjacent(issues, issueId);
   const issueArticles = currentIssue?.articles || articles;
   function goIssue(id: string) { setQuery(""); setTopic("全部讀物"); setShelf(false); location.hash = "issue/" + id; }
   useEffect(() => {
@@ -121,21 +123,22 @@ export default function Magazine() {
     (a) =>
       (!shelf || memory.saved.includes(a.id)) &&
       (topic === "全部讀物" || a.category === topic) &&
-      (a.title + a.subtitle + a.category).includes(query.trim()),
+      matches(query, a.title, a.subtitle, a.category, a.pages.flatMap(p => [p.title, ...p.text])),
   );
   const last = articles.find((a) => a.id === memory.last);
   return (
     <div className={memory.warm ? "magazine warm" : "magazine"}>
       <button className="skip" onClick={() => document.querySelector<HTMLElement>("main")?.focus()}>跳到內容</button>
       <header className="header">
-        <button className="brand" onClick={() => home()} aria-label="小小探索家首頁">
+        <button className="brand" onClick={() => home()} aria-label="問號星球首頁">
           <img src={asset("logo")} alt="" width="42" height="42" />
           <span>
-            小小探索家週刊<small>Little Explorer Weekly</small>
+            問號星球<small>Question Planet</small>
           </span>
         </button>
         <nav aria-label="主選單">
           <button onClick={() => home()}>首頁</button>
+          <button onClick={() => { location.hash = "library"; }}>歷期圖書館</button>
           {currentIssue && <button onClick={() => goIssue(currentIssue.id)}>本週目錄</button>}
           <button className="help-toggle" onClick={() => setHelp(!help)} aria-expanded={help}>閱讀說明</button>
         </nav>
@@ -354,21 +357,22 @@ export default function Magazine() {
               </div>
             </>
           )}
+          {!issue && !shelf && <a className="archive-entry" href="#library"><span><strong>歷期期刊圖書館</strong><small>兒童閱讀・知識探索・故事與生活</small></span><span>找主題、搜尋歷期讀物 →</span></a>}
           {/* challenge-entry:start */}
           {!issue && !shelf && <a className="challenge-entry" href="#challenge"><span><strong>五六年級挑戰版</strong><small>動動腦，把學到的東西拿來用。</small></span><span aria-hidden="true">探索新任務 →</span></a>}
           {/* challenge-entry:end */}
           {!issue && !shelf ? <section className="issue-library" aria-labelledby="issue-title">
-            <div className="library-heading"><div><span className="section-kicker">你的每週探索任務</span><h2 id="issue-title">這個月，想先翻哪一期？</h2></div></div>
+            <div className="library-heading"><div><span className="section-kicker">你的每週探索任務</span><h2 id="issue-title">小小探索家，想先翻哪一期？</h2></div></div>
             <button className="latest-issue" onClick={() => goIssue(issues[issues.length - 1].id)}>本週最新一期 · 第 {issues[issues.length - 1].number} 週：{issues[issues.length - 1].title} →</button>
             <div className="issue-grid">{issues.map((i) => <button key={i.id} className="issue-card" onClick={() => goIssue(i.id)}>
               <img src={asset(i.cover)} alt="" width="1200" height="720" />
-              <div><span className="section-kicker">第 {i.number} 週 {i.number === issues.length && "· 本週最新一期"}</span><h3>{i.title}</h3><p>{i.description}</p><strong>{i.articles.length} 篇探索 · 打開週刊 ↗</strong></div>
+              <div><span className="section-kicker">第 {i.number} 週 {i.id === issues.at(-1)?.id && "· 本週最新一期"}</span><h3>{i.title}</h3><p>{i.description}</p><strong>{i.articles.length} 篇探索 · 打開週刊 ↗</strong></div>
             </button>)}</div>
           </section> : <>
           {issue && <div className="issue-intro"><span className="section-kicker">第 {issue.number} 週</span><h1>{issue.title}</h1><p>{issue.description}</p><div className="issue-navigation">
-          <button disabled={issue.number === 1} onClick={() => goIssue(issues[issue.number - 2].id)}>← 上一期</button>
+          <button disabled={!neighbors.previous} onClick={() => neighbors.previous && goIssue(neighbors.previous.id)}>← 上一期</button>
           <button onClick={() => home()}>首頁</button>
-          <button disabled={issue.number === issues.length} onClick={() => goIssue(issues[issue.number].id)}>下一期 →</button></div></div>}
+          <button disabled={!neighbors.next} onClick={() => neighbors.next && goIssue(neighbors.next.id)}>下一期 →</button></div></div>}
           <section className="library" aria-labelledby="library-title">
             <div className="library-heading">
               <div>
@@ -507,10 +511,11 @@ export default function Magazine() {
       <footer>
         <div>
           <img src={asset("logo")} alt="" width="30" height="30" />
-          <strong>小小探索家</strong>
+          <strong>問號星球</strong>
           <span>世界很大，好奇心慢慢長大。</span>
         </div>
-        <p>繁體中文原創讀物 · 無需註冊 · 閱讀紀錄保存在此裝置</p>
+        <p>小小探索家閱讀系列 · 無需註冊 · 閱讀紀錄保存在此裝置</p>
+        <a href="THIRD-PARTY-NOTICES.txt">第三方程式授權告知</a>
       </footer>
     </div>
   );
