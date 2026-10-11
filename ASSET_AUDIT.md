@@ -1,3 +1,8 @@
+## 最新逐項清冊（2026-10-11～12）
+
+本次全量清冊移至 audit/RIGHTS_INVENTORY.json 及 CSV（包含60個來源圖像檔），套件另見 audit/PACKAGE_LICENSES.json。下方舊紀錄保留作歷史證據；以新表的A/B/C/D及待辦為優先。5張官方照片有目前教育展示用途依據；其餘缺少完整原始權利鏈者不推定原創。AI輔助／Git紀錄與法律授權、一般科普參考分欄保存。
+
+
 ## 2026-10-11 最終整合增量
 
 新增 src/planet/knowledge-review.json：24 題，AI 協助新編，依 8 篇已公開原文與 USGS／NASA／NOAA／大學／Exploratorium／CS Unplugged 資料核對。來源逐題列於 review/KNOWLEDGE_REVIEW.md；沒有複製外站題目、圖片或語音。風險：合理來源紀錄，不代表已完成法律審查或排他權利確認。

@@ -1,0 +1,48 @@
+{
+  "base": "http://127.0.0.1:59397/",
+  "results": [
+    {
+      "width": 375,
+      "originalPages": 48,
+      "originalQuestions": 16,
+      "reviewQuestions": 24,
+      "randomUnique": 16,
+      "storage": "preserved"
+    },
+    {
+      "width": 390,
+      "originalPages": 48,
+      "originalQuestions": 16,
+      "reviewQuestions": 24,
+      "randomUnique": 16,
+      "storage": "preserved"
+    },
+    {
+      "width": 768,
+      "originalPages": 48,
+      "originalQuestions": 16,
+      "reviewQuestions": 24,
+      "randomUnique": 16,
+      "storage": "preserved"
+    },
+    {
+      "width": 1024,
+      "originalPages": 48,
+      "originalQuestions": 16,
+      "reviewQuestions": 24,
+      "randomUnique": 16,
+      "storage": "preserved"
+    },
+    {
+      "width": 1440,
+      "originalPages": 48,
+      "originalQuestions": 16,
+      "reviewQuestions": 24,
+      "randomUnique": 16,
+      "storage": "preserved"
+    }
+  ],
+  "errors": [],
+  "bad": [],
+  "physicalDevices": false
+}

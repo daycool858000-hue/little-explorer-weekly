@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-10-11",
+  "trackedFiles": 308,
+  "findings": [],
+  "codeFindings": [],
+  "privateFilesPreserved": true,
+  "privateBuildLeaks": [],
+  "buildFiles": 50,
+  "buildBytes": 1886690,
+  "fontFiles": [],
+  "audioFiles": [],
+  "limitations": "常見格式掃描，不等於完整滲透／歷史所有憑證查核；不輸出私人正文。"
+}

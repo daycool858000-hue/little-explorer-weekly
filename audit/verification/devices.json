@@ -1,0 +1,56 @@
+{
+  "checkedAt": "2026-10-11T22:56:58.214Z",
+  "simulation": true,
+  "physicalDevice": false,
+  "speechAudio": "不以此模擬推定真機聲音品質；utterance 與控制另有既有完整測試",
+  "results": [
+    {
+      "name": "iphone-webkit",
+      "orientation": "直向",
+      "routes": 12,
+      "layout": "passed",
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "name": "iphone-webkit",
+      "orientation": "橫向",
+      "routes": 12,
+      "layout": "passed",
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "name": "android-chromium",
+      "orientation": "直向",
+      "routes": 12,
+      "layout": "passed",
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "name": "android-chromium",
+      "orientation": "橫向",
+      "routes": 12,
+      "layout": "passed",
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "name": "ipad-webkit",
+      "orientation": "直向",
+      "routes": 12,
+      "layout": "passed",
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "name": "ipad-webkit",
+      "orientation": "橫向",
+      "routes": 12,
+      "layout": "passed",
+      "errors": [],
+      "externalRequests": []
+    }
+  ]
+}

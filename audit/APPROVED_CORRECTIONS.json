@@ -1,0 +1,26 @@
+{
+  "src/planet/junior/junior-cold-cup.json": {
+    "before": "db819ef65a7d8065ad2d231bd9d0d4b635830efeb6fcfc37ba2c8a5afcab3f50",
+    "after": "5ef26030229a8863d9a42e73e363fafca1a1fa237bdd42fbad0dc8454d30588b",
+    "reason": "2026-10-11 依教育部國語小字典「和」與／跟義，四篇各一處改 ㄏㄢˋ；正文及答案不變",
+    "source": "https://dict.mini.moe.edu.tw/SearchIndex/word_detail?wordID=D0003160"
+  },
+  "src/planet/junior/junior-leaf-hole.json": {
+    "before": "f6d29de1e9ef1c9d618d014ea50a62d747a70b66b466ed487e00e008366fefa0",
+    "after": "425799b1edfcb0a215fce49d6d565f62067aa419fd3125c1ee9d8339cd78344d",
+    "reason": "2026-10-11 依教育部國語小字典「和」與／跟義，四篇各一處改 ㄏㄢˋ；正文及答案不變",
+    "source": "https://dict.mini.moe.edu.tw/SearchIndex/word_detail?wordID=D0003160"
+  },
+  "src/planet/junior/junior-paper-boat.json": {
+    "before": "dafa4d2b89bc59f691a0b56a91490ff72813a7c11c0ffe55c3020cb31cdd1757",
+    "after": "2ac619c97093bcc2a417b1e18654aca92ec9c819f58e2ad2e561d4c498b8d643",
+    "reason": "2026-10-11 依教育部國語小字典「和」與／跟義，四篇各一處改 ㄏㄢˋ；正文及答案不變",
+    "source": "https://dict.mini.moe.edu.tw/SearchIndex/word_detail?wordID=D0003160"
+  },
+  "src/planet/junior/junior-take-turns.json": {
+    "before": "cd8189a885929d1ed85305978d0f4f3e71ed87ba54cb9355c303001ba79e1d4a",
+    "after": "35d491415ad58952a2d124e4e3d0325e85885a0ffb5535115b90bb326c157164",
+    "reason": "2026-10-11 依教育部國語小字典「和」與／跟義，四篇各一處改 ㄏㄢˋ；正文及答案不變",
+    "source": "https://dict.mini.moe.edu.tw/SearchIndex/word_detail?wordID=D0003160"
+  }
+}

@@ -19,5 +19,6 @@ test('24 unique review questions preserve their original article mapping, indepe
 });
 test('all established educational data and voice source files are byte-for-byte preserved',()=>{
  const baseline=JSON.parse(fs.readFileSync('tests/fixtures/phase4-integration-baseline.json'));
- for(const [p,sha] of Object.entries(baseline))assert.equal(createHash('sha256').update(fs.readFileSync(p)).digest('hex'),sha,p);
+ const corrections=JSON.parse(fs.readFileSync('audit/APPROVED_CORRECTIONS.json'));
+ for(const [p,sha] of Object.entries(baseline)){if(corrections[p])assert.equal(corrections[p].before,sha,p+' original baseline');assert.equal(createHash('sha256').update(fs.readFileSync(p)).digest('hex'),corrections[p]?.after||sha,p);}
 });

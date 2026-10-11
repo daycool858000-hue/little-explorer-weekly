@@ -1,3 +1,12 @@
+## 本次最終稽核回復點
+
+backup/pre-final-audit-2026-10-11 → 72a8a5b308b0d6058bc40cc0f6a93c3009398fc4（本機及GitHub均已建立）。不覆寫先前ZIP。新ZIP將以 question-planet-phase4-audited-2026-10-12.zip 存在專案上一層 outputs；實際SHA256與還原結果寫在交付收據。
+
+下載／保存ZIP後，解壓至新的空資料夾，使用Node與npm執行 npm ci、npm run lint、npm test、npm run build；npm run dev 開本機網站。第一次安裝需要網路及套件registry。不要把還原資料夾直接覆蓋現有工作。需要回復正式站時，从最新main新增還原commit，恢復已確認問題檔，測試後用原Actions部署；不要強制推送、刪歷史或直接把旧分支合併當還原。
+
+ZIP不含node_modules、Git憑證、私人第五期、讀者瀏覽器收藏與進度，亦不含並不存在的真人錄音。私人草稿另保留既有私人備份。本次已核對其10檔雜湊未變。
+
+
 ## 最終整合備份（2026-10-11）
 
 本次發布前正式版本 99e9e2f38be6350fc9f3b3f56f9b0bfb172028d3；本機相同 tree 的 03c57fd 保存為 backup/pre-final-integration-2026-10-11。既有 question-planet-phase4-complete-2026-10-11.zip 不覆寫。新包使用 question-planet-phase4-integration-2026-10-11.zip，包含新增回顧題庫、原版／新版與全部測試。雜湊、實際還原結果與最終發布 SHA 見交付紀錄。

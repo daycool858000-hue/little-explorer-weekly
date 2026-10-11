@@ -1,0 +1,1573 @@
+[
+  {
+    "id": "原始期刊:water",
+    "name": "一滴水的奇妙旅行",
+    "path": "src/content/week-1.json",
+    "kind": "原始期刊",
+    "risk": "B",
+    "characters": 1084,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "原始期刊:fox",
+    "name": "狐狸的慢慢郵局",
+    "path": "src/content/week-1.json",
+    "kind": "原始期刊",
+    "risk": "B",
+    "characters": 1055,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "原始期刊:ants",
+    "name": "螞蟻的無形路標",
+    "path": "src/content/week-1.json",
+    "kind": "原始期刊",
+    "risk": "B",
+    "characters": 802,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "原始期刊:maps",
+    "name": "把大世界摺進口袋",
+    "path": "src/content/week-1.json",
+    "kind": "原始期刊",
+    "risk": "B",
+    "characters": 799,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "原始期刊:moon",
+    "name": "月亮真的會變形嗎？",
+    "path": "src/content/week-2.json",
+    "kind": "原始期刊",
+    "risk": "B",
+    "characters": 1082,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "原始期刊:library",
+    "name": "圖書館裡的神祕腳印",
+    "path": "src/content/week-2.json",
+    "kind": "原始期刊",
+    "risk": "B",
+    "characters": 1101,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "原始期刊:bread",
+    "name": "麵包裡的洞是誰挖的？",
+    "path": "src/content/week-2.json",
+    "kind": "原始期刊",
+    "risk": "B",
+    "characters": 806,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "原始期刊:shadows",
+    "name": "影子也有上下班時間？",
+    "path": "src/content/week-2.json",
+    "kind": "原始期刊",
+    "risk": "B",
+    "characters": 765,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "原始期刊:seed",
+    "name": "種子裡住著一座森林",
+    "path": "src/content/week-3.json",
+    "kind": "原始期刊",
+    "risk": "B",
+    "characters": 1059,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "原始期刊:taiwan",
+    "name": "台灣為什麼有這麼多山？",
+    "path": "src/content/week-3.json",
+    "kind": "原始期刊",
+    "risk": "B",
+    "characters": 803,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "原始期刊:coral",
+    "name": "珊瑚是石頭，還是動物？",
+    "path": "src/content/week-3.json",
+    "kind": "原始期刊",
+    "risk": "B",
+    "characters": 800,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "原始期刊:bridges",
+    "name": "一張紙也能當橋？",
+    "path": "src/content/week-3.json",
+    "kind": "原始期刊",
+    "risk": "B",
+    "characters": 795,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "原始期刊:feelings",
+    "name": "心裡下雨的那一天",
+    "path": "src/content/week-4.json",
+    "kind": "原始期刊",
+    "risk": "B",
+    "characters": 1070,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "原始期刊:printing",
+    "name": "一本書怎麼變成一百本？",
+    "path": "src/content/week-4.json",
+    "kind": "原始期刊",
+    "risk": "B",
+    "characters": 811,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "原始期刊:binary",
+    "name": "只有兩種符號，也能傳訊息？",
+    "path": "src/content/week-4.json",
+    "kind": "原始期刊",
+    "risk": "B",
+    "characters": 803,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "原始期刊:culture",
+    "name": "一句「你好」，有好多種樣子",
+    "path": "src/content/week-4.json",
+    "kind": "原始期刊",
+    "risk": "B",
+    "characters": 823,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "重製讀物:water",
+    "name": "水跑到哪裡去了？",
+    "path": "src/planet/content/week-1.json",
+    "kind": "重製讀物",
+    "risk": "B",
+    "characters": 1799,
+    "referenceSources": [
+      {
+        "title": "USGS：蒸發與水循環",
+        "url": "https://www.usgs.gov/water-science-school/science/evaporation-and-water-cycle",
+        "checkedAt": "2026-10-10"
+      },
+      {
+        "title": "USGS：大氣與水循環",
+        "url": "https://www.usgs.gov/water-science-school/science/atmosphere-and-water-cycle",
+        "checkedAt": "2026-10-10"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "重製讀物:fox",
+    "name": "慢慢郵局：這封信需要多快？",
+    "path": "src/planet/content/week-1.json",
+    "kind": "重製讀物",
+    "risk": "B",
+    "characters": 1521,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "重製讀物:ants",
+    "name": "沒有路牌，螞蟻怎麼找到隊伍？",
+    "path": "src/planet/content/week-1.json",
+    "kind": "重製讀物",
+    "risk": "B",
+    "characters": 1731,
+    "referenceSources": [
+      {
+        "title": "Smithsonian：螞蟻以氣味溝通",
+        "url": "https://www.si.edu/object/ant-communication-do-ants-use-smell-talk%3Ayt_7s16f2fmkEw",
+        "checkedAt": "2026-10-10"
+      },
+      {
+        "title": "Smithsonian：昆蟲費洛蒙",
+        "url": "https://www.si.edu/spotlight/buginfo/pheromones",
+        "checkedAt": "2026-10-10"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "重製讀物:maps",
+    "name": "地圖把世界縮小，卻不能什麼都放進去",
+    "path": "src/planet/content/week-1.json",
+    "kind": "重製讀物",
+    "risk": "B",
+    "characters": 1789,
+    "referenceSources": [
+      {
+        "title": "美國國家公園管理局：地圖符號",
+        "url": "https://www.nps.gov/subjects/gisandmapping/map-symbols-patterns-for-nps-maps.htm",
+        "checkedAt": "2026-10-10"
+      },
+      {
+        "title": "美國國家公園管理局：地圖圖例",
+        "url": "https://www.nps.gov/maps/web/tools/park-tiles/legend/index.html",
+        "checkedAt": "2026-10-10"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "重製讀物:moon",
+    "name": "月亮真的會變形嗎？",
+    "path": "src/planet/content/week-2.json",
+    "kind": "重製讀物",
+    "risk": "B",
+    "characters": 1730,
+    "referenceSources": [
+      {
+        "title": "NASA：月相",
+        "url": "https://science.nasa.gov/moon/moon-phases/",
+        "checkedAt": "2026-10-10"
+      },
+      {
+        "title": "NASA：月光",
+        "url": "https://science.nasa.gov/moon/moonlight/",
+        "checkedAt": "2026-10-10"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "重製讀物:library",
+    "name": "圖書館腳印案：找到麻雀就結案？",
+    "path": "src/planet/content/week-2.json",
+    "kind": "重製讀物",
+    "risk": "B",
+    "characters": 1527,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "重製讀物:bread",
+    "name": "麵包裡的洞，是怎麼留住的？",
+    "path": "src/planet/content/week-2.json",
+    "kind": "重製讀物",
+    "risk": "B",
+    "characters": 1730,
+    "referenceSources": [
+      {
+        "title": "Exploratorium：酵母",
+        "url": "https://annex.exploratorium.edu/cooking/bread/activity-yeast.html",
+        "checkedAt": "2026-10-10"
+      },
+      {
+        "title": "Exploratorium：麵筋",
+        "url": "https://annex.exploratorium.edu/cooking/bread/activity-gluten.html",
+        "checkedAt": "2026-10-10"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "重製讀物:shadows",
+    "name": "影子為什麼上午長、中午短？",
+    "path": "src/planet/content/week-2.json",
+    "kind": "重製讀物",
+    "risk": "B",
+    "characters": 1755,
+    "referenceSources": [
+      {
+        "title": "NASA：熱帶至日的影子",
+        "url": "https://science.nasa.gov/solar-system/skywatching/night-sky-network/tropical-solstice-shadows/",
+        "checkedAt": "2026-10-10"
+      },
+      {
+        "title": "NASA：太陽與影子教學",
+        "url": "https://sdo.gsfc.nasa.gov/assets/docs/UnitPlanSecondary.pdf",
+        "checkedAt": "2026-10-10"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "重製讀物:seed",
+    "name": "種子還沒長葉子，力氣從哪裡來？",
+    "path": "src/planet/content/week-3.json",
+    "kind": "重製讀物",
+    "risk": "B",
+    "characters": 1809,
+    "referenceSources": [
+      {
+        "title": "明尼蘇達大學推廣部：室內育苗",
+        "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/starting-seeds-indoors",
+        "checkedAt": "2026-10-10"
+      },
+      {
+        "title": "明尼蘇達大學推廣部：大豆萌發",
+        "url": "https://blog-nwcrops.extension.umn.edu/2023/05/its-magic-neat-process-of-soybean.html",
+        "checkedAt": "2026-10-10"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "重製讀物:taiwan",
+    "name": "臺灣的山，是怎麼慢慢長高的？",
+    "path": "src/planet/content/week-3.json",
+    "kind": "重製讀物",
+    "risk": "B",
+    "characters": 1839,
+    "referenceSources": [
+      {
+        "title": "中央氣象署：地震的原因",
+        "url": "https://edu.cwa.gov.tw/PopularScience/ec/ec_12.html",
+        "checkedAt": "2026-10-10"
+      },
+      {
+        "title": "中央氣象署：板塊運動",
+        "url": "https://scweb.cwa.gov.tw/zh-TW/Guidance/FAQdetail/52",
+        "checkedAt": "2026-10-10"
+      },
+      {
+        "title": "NASA：龜山島影像",
+        "url": "https://science.nasa.gov/earth/earth-observatory/guishan-island-149363/",
+        "checkedAt": "2026-10-10"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "重製讀物:coral",
+    "name": "珊瑚不會走路，為什麼算動物？",
+    "path": "src/planet/content/week-3.json",
+    "kind": "重製讀物",
+    "risk": "B",
+    "characters": 1912,
+    "referenceSources": [
+      {
+        "title": "NOAA：珊瑚是動物或植物？",
+        "url": "https://oceanservice.noaa.gov/facts/coral.html",
+        "checkedAt": "2026-10-10"
+      },
+      {
+        "title": "NOAA：珊瑚礁生態系",
+        "url": "https://www.noaa.gov/education/resource-collections/marine-life/coral-reef-ecosystems",
+        "checkedAt": "2026-10-10"
+      },
+      {
+        "title": "NOAA：珊瑚與共生藻",
+        "url": "https://oceanservice.noaa.gov/education/tutorial_corals/coral02_zooxanthellae.html",
+        "checkedAt": "2026-10-10"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "重製讀物:bridges",
+    "name": "同一張紙，摺一摺就能多撐一點？",
+    "path": "src/planet/content/week-3.json",
+    "kind": "重製讀物",
+    "risk": "B",
+    "characters": 1640,
+    "referenceSources": [
+      {
+        "title": "Science Buddies：紙橋教學",
+        "url": "https://www.sciencebuddies.org/teacher-resources/lesson-plans/paper-bridges-2",
+        "checkedAt": "2026-10-10"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "重製讀物:feelings",
+    "name": "心裡下雨的那一天",
+    "path": "src/planet/content/week-4.json",
+    "kind": "重製讀物",
+    "risk": "B",
+    "characters": 1908,
+    "referenceSources": [
+      {
+        "title": "UNICEF：支持有低落、壓力與焦慮的孩子",
+        "url": "https://www.unicef.org/asia-pacific/place-for-parents/supporting-children-depression-stress-and-anxiety",
+        "checkedAt": "2026-10-10"
+      },
+      {
+        "title": "UNICEF：建立兒童心理健康基礎",
+        "url": "https://www.unicef.org/eca/stories/laying-foundation-your-childs-mental-health",
+        "checkedAt": "2026-10-10"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "重製讀物:printing",
+    "name": "一本書怎麼變成一百本？",
+    "path": "src/planet/content/week-4.json",
+    "kind": "重製讀物",
+    "risk": "B",
+    "characters": 1799,
+    "referenceSources": [
+      {
+        "title": "英國圖書館 IDP：藏經洞與印本",
+        "url": "https://idp.bl.uk/discover/learning/dunhuang/collection-items/cave-17-the-library-cave/",
+        "checkedAt": "2026-10-10"
+      },
+      {
+        "title": "英國圖書館 IDP：金剛經",
+        "url": "https://idp.bl.uk/blog/the-diamond-sutra/",
+        "checkedAt": "2026-10-10"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "重製讀物:binary",
+    "name": "只用零和一，怎麼傳出不同訊息？",
+    "path": "src/planet/content/week-4.json",
+    "kind": "重製讀物",
+    "risk": "B",
+    "characters": 1827,
+    "referenceSources": [
+      {
+        "title": "CS Unplugged：二進位數字",
+        "url": "https://classic.csunplugged.org/activities/binary-numbers/",
+        "checkedAt": "2026-10-10"
+      },
+      {
+        "title": "CS Unplugged：二元表示教材",
+        "url": "https://www.csunplugged.org/static/slides/en/binary-representation/binary-representation-slides.pdf",
+        "checkedAt": "2026-10-10"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "重製讀物:culture",
+    "name": "一句「你好」，一定要用同一種方式嗎？",
+    "path": "src/planet/content/week-4.json",
+    "kind": "重製讀物",
+    "risk": "B",
+    "characters": 1534,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "挑戰教材:market-math",
+    "name": "一百元的果汁任務",
+    "path": "src/content/challenge/week-1.json",
+    "kind": "挑戰教材",
+    "risk": "B",
+    "characters": 1688,
+    "referenceSources": [],
+    "steps": 6,
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "挑戰教材:menu-english",
+    "name": "Mia 的點餐清單",
+    "path": "src/content/challenge/week-1.json",
+    "kind": "挑戰教材",
+    "risk": "B",
+    "characters": 4563,
+    "referenceSources": [],
+    "steps": 6,
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "挑戰教材:notice-reading",
+    "name": "公告裡藏著哪些限制？",
+    "path": "src/content/challenge/week-1.json",
+    "kind": "挑戰教材",
+    "risk": "B",
+    "characters": 1792,
+    "referenceSources": [],
+    "steps": 6,
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "挑戰教材:budget-mix",
+    "name": "幫八個人準備文具",
+    "path": "src/content/challenge/week-1.json",
+    "kind": "挑戰教材",
+    "risk": "B",
+    "characters": 1766,
+    "referenceSources": [],
+    "steps": 6,
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "挑戰教材:walk-math",
+    "name": "九百公尺要走多久？",
+    "path": "src/content/challenge/week-2.json",
+    "kind": "挑戰教材",
+    "risk": "B",
+    "characters": 1712,
+    "referenceSources": [],
+    "steps": 6,
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "挑戰教材:bus-english",
+    "name": "Can we get there by 9:40?",
+    "path": "src/content/challenge/week-2.json",
+    "kind": "挑戰教材",
+    "risk": "B",
+    "characters": 5212,
+    "referenceSources": [],
+    "steps": 6,
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "挑戰教材:transfer-reading",
+    "name": "看得到車班，就趕得上嗎？",
+    "path": "src/content/challenge/week-2.json",
+    "kind": "挑戰教材",
+    "risk": "B",
+    "characters": 1781,
+    "referenceSources": [],
+    "steps": 6,
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "挑戰教材:route-mix",
+    "name": "雨天怎麼走才從容？",
+    "path": "src/content/challenge/week-2.json",
+    "kind": "挑戰教材",
+    "risk": "B",
+    "characters": 1743,
+    "referenceSources": [],
+    "steps": 6,
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "挑戰教材:chart-math",
+    "name": "一半的人，是哪些人？",
+    "path": "src/content/challenge/week-3.json",
+    "kind": "挑戰教材",
+    "risk": "B",
+    "characters": 1611,
+    "referenceSources": [],
+    "steps": 6,
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "挑戰教材:message-english",
+    "name": "Which message is newer?",
+    "path": "src/content/challenge/week-3.json",
+    "kind": "挑戰教材",
+    "risk": "B",
+    "characters": 5564,
+    "referenceSources": [],
+    "steps": 6,
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "挑戰教材:evidence-reading",
+    "name": "操場濕了，一定下過雨？",
+    "path": "src/content/challenge/week-3.json",
+    "kind": "挑戰教材",
+    "risk": "B",
+    "characters": 1811,
+    "referenceSources": [],
+    "steps": 6,
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "挑戰教材:experiment-mix",
+    "name": "紙飛機飛得遠，原因找到了嗎？",
+    "path": "src/content/challenge/week-3.json",
+    "kind": "挑戰教材",
+    "risk": "B",
+    "characters": 1923,
+    "referenceSources": [],
+    "steps": 6,
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "挑戰教材:area-math",
+    "name": "替閱讀角鋪好地墊",
+    "path": "src/content/challenge/week-4.json",
+    "kind": "挑戰教材",
+    "risk": "B",
+    "characters": 1849,
+    "referenceSources": [],
+    "steps": 6,
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "挑戰教材:team-english",
+    "name": "Let's work together",
+    "path": "src/content/challenge/week-4.json",
+    "kind": "挑戰教材",
+    "risk": "B",
+    "characters": 5245,
+    "referenceSources": [],
+    "steps": 6,
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "挑戰教材:plans-reading",
+    "name": "兩個閱讀方案，都有理由",
+    "path": "src/content/challenge/week-4.json",
+    "kind": "挑戰教材",
+    "risk": "B",
+    "characters": 1816,
+    "referenceSources": [],
+    "steps": 6,
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "挑戰教材:solutions-mix",
+    "name": "選一個走得通的服務計畫",
+    "path": "src/content/challenge/week-4.json",
+    "kind": "挑戰教材",
+    "risk": "B",
+    "characters": 1862,
+    "referenceSources": [],
+    "steps": 6,
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "故事:story-archive-photo",
+    "name": "照片背面的兩個日期",
+    "path": "src/planet/stories/story-archive-photo.json",
+    "kind": "故事",
+    "risk": "B",
+    "characters": 1309,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "故事:story-coral-colour",
+    "name": "沒有塗滿的海",
+    "path": "src/planet/stories/story-coral-colour.json",
+    "kind": "故事",
+    "risk": "B",
+    "characters": 1438,
+    "referenceSources": [
+      {
+        "title": "NOAA：What is coral bleaching?",
+        "url": "https://oceanservice.noaa.gov/facts/coral_bleach.html",
+        "checkedAt": "2026-10-10"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "故事:story-island-table",
+    "name": "島上的圓桌",
+    "path": "src/planet/stories/story-island-table.json",
+    "kind": "故事",
+    "risk": "B",
+    "characters": 1333,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "故事:story-last-message",
+    "name": "最後一格訊號",
+    "path": "src/planet/stories/story-last-message.json",
+    "kind": "故事",
+    "risk": "B",
+    "characters": 1310,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "故事:story-library-sound",
+    "name": "書架後的滴答聲",
+    "path": "src/planet/stories/story-library-sound.json",
+    "kind": "故事",
+    "risk": "B",
+    "characters": 1303,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "故事:story-map-path",
+    "name": "地圖上沒有的路",
+    "path": "src/planet/stories/story-map-path.json",
+    "kind": "故事",
+    "risk": "B",
+    "characters": 1259,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "故事:story-market-word",
+    "name": "市場裡的一個名字",
+    "path": "src/planet/stories/story-market-word.json",
+    "kind": "故事",
+    "risk": "B",
+    "characters": 1297,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "故事:story-missing-label",
+    "name": "失蹤的三號標籤",
+    "path": "src/planet/stories/story-missing-label.json",
+    "kind": "故事",
+    "risk": "B",
+    "characters": 1306,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "故事:story-moon-calendar",
+    "name": "月亮缺席的星期三",
+    "path": "src/planet/stories/story-moon-calendar.json",
+    "kind": "故事",
+    "risk": "B",
+    "characters": 1351,
+    "referenceSources": [
+      {
+        "title": "NASA：Moon Phases",
+        "url": "https://science.nasa.gov/moon/moon-phases/",
+        "checkedAt": "2026-10-10"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "故事:story-night-listener",
+    "name": "聽不見的夜班",
+    "path": "src/planet/stories/story-night-listener.json",
+    "kind": "故事",
+    "risk": "B",
+    "characters": 1406,
+    "referenceSources": [
+      {
+        "title": "NPS：Echolocation",
+        "url": "https://www.nps.gov/subjects/bats/echolocation.htm",
+        "checkedAt": "2026-10-10"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "故事:story-printer-error",
+    "name": "印刷房裡反過來的山",
+    "path": "src/planet/stories/story-printer-error.json",
+    "kind": "故事",
+    "risk": "B",
+    "characters": 1302,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "故事:story-quiet-seat",
+    "name": "留下來的那張椅子",
+    "path": "src/planet/stories/story-quiet-seat.json",
+    "kind": "故事",
+    "risk": "B",
+    "characters": 1314,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "故事:story-robot-puddle",
+    "name": "機器人繞遠路",
+    "path": "src/planet/stories/story-robot-puddle.json",
+    "kind": "故事",
+    "risk": "B",
+    "characters": 1347,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "故事:story-tide-letter",
+    "name": "潮線上的空白信",
+    "path": "src/planet/stories/story-tide-letter.json",
+    "kind": "故事",
+    "risk": "B",
+    "characters": 1298,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "故事:story-two-kites",
+    "name": "兩條風箏線",
+    "path": "src/planet/stories/story-two-kites.json",
+    "kind": "故事",
+    "risk": "B",
+    "characters": 1284,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "故事:story-window-test",
+    "name": "窗邊的兩張紙",
+    "path": "src/planet/stories/story-window-test.json",
+    "kind": "故事",
+    "risk": "B",
+    "characters": 1298,
+    "referenceSources": [],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "低年級與注音:junior-cold-cup",
+    "name": "杯子外的小水滴",
+    "path": "src/planet/junior/junior-cold-cup.json",
+    "kind": "低年級與注音",
+    "risk": "B",
+    "characters": 2622,
+    "referenceSources": [
+      {
+        "title": "教育部國語小字典：全文注音編輯原則",
+        "url": "https://dict.mini.moe.edu.tw/Home/Intro?Intro_id=5",
+        "checkedAt": "2026-10-10"
+      },
+      {
+        "title": "教育部國語辭典簡編本：單一音讀與變調",
+        "url": "https://dict.concised.moe.edu.tw/page.jsp?ID=55&la=0&powerMode=0",
+        "checkedAt": "2026-10-10"
+      },
+      {
+        "title": "USGS：凝結與水循環（冷杯表面水滴）",
+        "url": "https://www.usgs.gov/water-science-school/science/condensation-and-water-cycle",
+        "checkedAt": "2026-10-10"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "低年級與注音:junior-leaf-hole",
+    "name": "葉子上的小洞",
+    "path": "src/planet/junior/junior-leaf-hole.json",
+    "kind": "低年級與注音",
+    "risk": "B",
+    "characters": 2524,
+    "referenceSources": [
+      {
+        "title": "教育部國語小字典：全文注音編輯原則",
+        "url": "https://dict.mini.moe.edu.tw/Home/Intro?Intro_id=5",
+        "checkedAt": "2026-10-10"
+      },
+      {
+        "title": "教育部國語辭典簡編本：單一音讀與變調",
+        "url": "https://dict.concised.moe.edu.tw/page.jsp?ID=55&la=0&powerMode=0",
+        "checkedAt": "2026-10-10"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "低年級與注音:junior-paper-boat",
+    "name": "紙船的第二次旅行",
+    "path": "src/planet/junior/junior-paper-boat.json",
+    "kind": "低年級與注音",
+    "risk": "B",
+    "characters": 2658,
+    "referenceSources": [
+      {
+        "title": "教育部國語小字典：全文注音編輯原則",
+        "url": "https://dict.mini.moe.edu.tw/Home/Intro?Intro_id=5",
+        "checkedAt": "2026-10-10"
+      },
+      {
+        "title": "教育部國語辭典簡編本：單一音讀與變調",
+        "url": "https://dict.concised.moe.edu.tw/page.jsp?ID=55&la=0&powerMode=0",
+        "checkedAt": "2026-10-10"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "低年級與注音:junior-take-turns",
+    "name": "今天換你選",
+    "path": "src/planet/junior/junior-take-turns.json",
+    "kind": "低年級與注音",
+    "risk": "B",
+    "characters": 2699,
+    "referenceSources": [
+      {
+        "title": "教育部國語小字典：全文注音編輯原則",
+        "url": "https://dict.mini.moe.edu.tw/Home/Intro?Intro_id=5",
+        "checkedAt": "2026-10-10"
+      },
+      {
+        "title": "教育部國語辭典簡編本：單一音讀與變調",
+        "url": "https://dict.concised.moe.edu.tw/page.jsp?ID=55&la=0&powerMode=0",
+        "checkedAt": "2026-10-10"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "recall-water-1",
+    "name": "小明說：「看得見的雲，就是一大團水蒸氣。」哪個修正較準確？",
+    "path": "src/planet/knowledge-review.json",
+    "kind": "知識回顧",
+    "risk": "B",
+    "characters": 408,
+    "referenceSources": [
+      {
+        "title": "USGS 水循環",
+        "url": "https://www.usgs.gov/water-science-school/science/condensation-and-water-cycle",
+        "checkedAt": "2026-10-11"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "recall-water-2",
+    "name": "同樣濕的毛巾，一條攤開放在溫暖通風處，一條擠在不通風的角落。通常哪條先乾？",
+    "path": "src/planet/knowledge-review.json",
+    "kind": "知識回顧",
+    "risk": "B",
+    "characters": 414,
+    "referenceSources": [
+      {
+        "title": "USGS 水循環",
+        "url": "https://www.usgs.gov/water-science-school/science/condensation-and-water-cycle",
+        "checkedAt": "2026-10-11"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "recall-water-3",
+    "name": "雨落到地面後，哪一種旅程可能發生？",
+    "path": "src/planet/knowledge-review.json",
+    "kind": "知識回顧",
+    "risk": "B",
+    "characters": 413,
+    "referenceSources": [
+      {
+        "title": "USGS 水循環",
+        "url": "https://www.usgs.gov/water-science-school/science/condensation-and-water-cycle",
+        "checkedAt": "2026-10-11"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "recall-ants-1",
+    "name": "地上沒有畫線，螞蟻卻沿著近似路線走。哪個解釋值得考慮？",
+    "path": "src/planet/knowledge-review.json",
+    "kind": "知識回顧",
+    "risk": "B",
+    "characters": 393,
+    "referenceSources": [
+      {
+        "title": "亞利桑那州立大學：螞蟻研究訪談",
+        "url": "https://askabiologist.asu.edu/explore/ant-life-part-1",
+        "checkedAt": "2026-10-11"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "recall-ants-2",
+    "name": "看到一群螞蟻沿氣味走，就能說全世界的螞蟻只靠氣味找路嗎？",
+    "path": "src/planet/knowledge-review.json",
+    "kind": "知識回顧",
+    "risk": "B",
+    "characters": 396,
+    "referenceSources": [
+      {
+        "title": "亞利桑那州立大學：螞蟻研究訪談",
+        "url": "https://askabiologist.asu.edu/explore/ant-life-part-1",
+        "checkedAt": "2026-10-11"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "recall-ants-3",
+    "name": "幾隻螞蟻反覆沿同一路線留下費洛蒙，可能讓後來的螞蟻怎樣？",
+    "path": "src/planet/knowledge-review.json",
+    "kind": "知識回顧",
+    "risk": "B",
+    "characters": 391,
+    "referenceSources": [
+      {
+        "title": "亞利桑那州立大學：螞蟻研究訪談",
+        "url": "https://askabiologist.asu.edu/explore/ant-life-part-1",
+        "checkedAt": "2026-10-11"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "recall-maps-1",
+    "name": "校園地圖沒有畫出每一片葉子，最可能是因為什麼？",
+    "path": "src/planet/knowledge-review.json",
+    "kind": "知識回顧",
+    "risk": "B",
+    "characters": 395,
+    "referenceSources": [
+      {
+        "title": "USGS 地圖符號說明",
+        "url": "https://www.usgs.gov/faqs/where-can-i-find-a-topographic-map-symbol-sheet",
+        "checkedAt": "2026-10-11"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "recall-maps-2",
+    "name": "把同一張地圖放大印成兩倍，學校到公園的真實距離會怎樣？",
+    "path": "src/planet/knowledge-review.json",
+    "kind": "知識回顧",
+    "risk": "B",
+    "characters": 392,
+    "referenceSources": [
+      {
+        "title": "USGS 地圖符號說明",
+        "url": "https://www.usgs.gov/faqs/where-can-i-find-a-topographic-map-symbol-sheet",
+        "checkedAt": "2026-10-11"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "recall-maps-3",
+    "name": "你在兩張地圖上看到不同的車站圖示，應先做什麼？",
+    "path": "src/planet/knowledge-review.json",
+    "kind": "知識回顧",
+    "risk": "B",
+    "characters": 399,
+    "referenceSources": [
+      {
+        "title": "USGS 地圖符號說明",
+        "url": "https://www.usgs.gov/faqs/where-can-i-find-a-topographic-map-symbol-sheet",
+        "checkedAt": "2026-10-11"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "recall-moon-1",
+    "name": "朋友說彎月是地球影子每天遮掉月亮。哪個回答較準確？",
+    "path": "src/planet/knowledge-review.json",
+    "kind": "知識回顧",
+    "risk": "B",
+    "characters": 378,
+    "referenceSources": [
+      {
+        "title": "NASA 月相",
+        "url": "https://science.nasa.gov/moon/moon-phases/",
+        "checkedAt": "2026-10-11"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "recall-moon-2",
+    "name": "用固定手電筒照球，移動觀察位置，看見的亮面份量改變。這個模型主要說明什麼？",
+    "path": "src/planet/knowledge-review.json",
+    "kind": "知識回顧",
+    "risk": "B",
+    "characters": 381,
+    "referenceSources": [
+      {
+        "title": "NASA 月相",
+        "url": "https://science.nasa.gov/moon/moon-phases/",
+        "checkedAt": "2026-10-11"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "recall-moon-3",
+    "name": "小安白天拍到淡淡的月亮，這一定是相機壞掉嗎？",
+    "path": "src/planet/knowledge-review.json",
+    "kind": "知識回顧",
+    "risk": "B",
+    "characters": 366,
+    "referenceSources": [
+      {
+        "title": "NASA 月相",
+        "url": "https://science.nasa.gov/moon/moon-phases/",
+        "checkedAt": "2026-10-11"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "recall-bread-1",
+    "name": "含酵母的麵團變大，哪一組因果最合理？",
+    "path": "src/planet/knowledge-review.json",
+    "kind": "知識回顧",
+    "risk": "B",
+    "characters": 404,
+    "referenceSources": [
+      {
+        "title": "Exploratorium 酵母與氣體",
+        "url": "https://annex.exploratorium.edu/cooking/bread/activity-yeast.html",
+        "checkedAt": "2026-10-11"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "recall-bread-2",
+    "name": "如果麵團很難留住產生的氣體，哪一種結果較合理？",
+    "path": "src/planet/knowledge-review.json",
+    "kind": "知識回顧",
+    "risk": "B",
+    "characters": 397,
+    "referenceSources": [
+      {
+        "title": "Exploratorium 酵母與氣體",
+        "url": "https://annex.exploratorium.edu/cooking/bread/activity-yeast.html",
+        "checkedAt": "2026-10-11"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "recall-bread-3",
+    "name": "兩個麵包孔洞大小不同，只看切面就能確定是哪個步驟造成嗎？",
+    "path": "src/planet/knowledge-review.json",
+    "kind": "知識回顧",
+    "risk": "B",
+    "characters": 416,
+    "referenceSources": [
+      {
+        "title": "Exploratorium 酵母與氣體",
+        "url": "https://annex.exploratorium.edu/cooking/bread/activity-yeast.html",
+        "checkedAt": "2026-10-11"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "recall-seed-1",
+    "name": "「種子需要水，所以泡得越深越容易發芽。」這句話忽略了什麼？",
+    "path": "src/planet/knowledge-review.json",
+    "kind": "知識回顧",
+    "risk": "B",
+    "characters": 404,
+    "referenceSources": [
+      {
+        "title": "明尼蘇達大學 種子生理",
+        "url": "https://open.lib.umn.edu/horticulture/chapter/9-2-seed-physiology/",
+        "checkedAt": "2026-10-11"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "recall-seed-2",
+    "name": "要比較水量是否影響同一種豆子的發芽，哪種安排更有幫助？",
+    "path": "src/planet/knowledge-review.json",
+    "kind": "知識回顧",
+    "risk": "B",
+    "characters": 402,
+    "referenceSources": [
+      {
+        "title": "明尼蘇達大學 種子生理",
+        "url": "https://open.lib.umn.edu/horticulture/chapter/9-2-seed-physiology/",
+        "checkedAt": "2026-10-11"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "recall-seed-3",
+    "name": "剛發芽的小根能幫植物做什麼？",
+    "path": "src/planet/knowledge-review.json",
+    "kind": "知識回顧",
+    "risk": "B",
+    "characters": 379,
+    "referenceSources": [
+      {
+        "title": "明尼蘇達大學 種子生理",
+        "url": "https://open.lib.umn.edu/horticulture/chapter/9-2-seed-physiology/",
+        "checkedAt": "2026-10-11"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "recall-coral-1",
+    "name": "珊瑚像樹枝，就能把珊瑚蟲分類成植物嗎？",
+    "path": "src/planet/knowledge-review.json",
+    "kind": "知識回顧",
+    "risk": "B",
+    "characters": 375,
+    "referenceSources": [
+      {
+        "title": "NOAA 珊瑚白化",
+        "url": "https://oceanservice.noaa.gov/facts/coral_bleach.html",
+        "checkedAt": "2026-10-11"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "recall-coral-2",
+    "name": "許多造礁珊瑚失去共生藻時，為什麼需要關注？",
+    "path": "src/planet/knowledge-review.json",
+    "kind": "知識回顧",
+    "risk": "B",
+    "characters": 388,
+    "referenceSources": [
+      {
+        "title": "NOAA 珊瑚白化",
+        "url": "https://oceanservice.noaa.gov/facts/coral_bleach.html",
+        "checkedAt": "2026-10-11"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "recall-coral-3",
+    "name": "一大片珊瑚礁，適合解釋成什麼？",
+    "path": "src/planet/knowledge-review.json",
+    "kind": "知識回顧",
+    "risk": "B",
+    "characters": 377,
+    "referenceSources": [
+      {
+        "title": "NOAA 珊瑚白化",
+        "url": "https://oceanservice.noaa.gov/facts/coral_bleach.html",
+        "checkedAt": "2026-10-11"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "recall-binary-1",
+    "name": "你收到「010」，卻不知道朋友的編碼約定。可以立刻確定訊息意思嗎？",
+    "path": "src/planet/knowledge-review.json",
+    "kind": "知識回顧",
+    "risk": "B",
+    "characters": 408,
+    "referenceSources": [
+      {
+        "title": "CS Unplugged 二進位",
+        "url": "https://classic.csunplugged.org/activities/binary-numbers/",
+        "checkedAt": "2026-10-11"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "recall-binary-2",
+    "name": "兩個開關各能開或關，改成三個開關後，可能組合數會怎樣？",
+    "path": "src/planet/knowledge-review.json",
+    "kind": "知識回顧",
+    "risk": "B",
+    "characters": 382,
+    "referenceSources": [
+      {
+        "title": "CS Unplugged 二進位",
+        "url": "https://classic.csunplugged.org/activities/binary-numbers/",
+        "checkedAt": "2026-10-11"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  },
+  {
+    "id": "recall-binary-3",
+    "name": "只用 0 和 1，能不能依約定表示文字或圖片資料？",
+    "path": "src/planet/knowledge-review.json",
+    "kind": "知識回顧",
+    "risk": "B",
+    "characters": 413,
+    "referenceSources": [
+      {
+        "title": "CS Unplugged 二進位",
+        "url": "https://classic.csunplugged.org/activities/binary-numbers/",
+        "checkedAt": "2026-10-11"
+      }
+    ],
+    "contentChecks": "全文納入程式掃描：結構／來源欄位／重複文字／認證與第三方角色關鍵字；不等於逐篇外部相似性鑑定",
+    "externalOriginality": "未完成可靠的全文外部相似性比對，不能宣稱已全面排除抄襲",
+    "longQuoteMarkers": 0,
+    "action": "來源與生成紀錄待補；引用需逐項對原作比對。教材來源只作知識依據，不當作授權。"
+  }
+]
