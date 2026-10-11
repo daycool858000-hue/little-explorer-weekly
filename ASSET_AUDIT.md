@@ -438,3 +438,14 @@ GitHub Actions 引用 actions/checkout@v4、setup-node@v4、configure-pages@v5�
 | 新內容範本 | templates/ | AI 協助編寫資料框架；不包含第三方文章或插圖 | 新增教材仍須逐件登錄，不可把模板的空欄當完成證據 |
 
 科普參考的螞蟻失效網址已改為可查得的研究論文，月相改為 NASA 專題，見 CONTENT-SOURCES.md。部分站點可能要求瀏覽器驗證；不能把取用限制誤寫為文章已不存在。新教材從 source-record.json 登錄作者／AI／第三方／依據／查核日／版本／審閱者，私人契約留代號，不上傳敏感文件。機密掃描範圍與結果見 PHASE3_REPORT.md；簡單掃描不等於完整安全審查。
+
+
+## 第四階段 A 私人重製素材（2026-10-10）
+
+16 篇的檔名、圖說、AI 使用、第三方狀態、來源、使用依據、SHA-256 與待確認事項集中在不公開的 .local-review/phase4-approved/media-records.json；圖解產生程式 build-media.mjs 留存。4 張真實影像採 NASA/JPL/USGS、NASA Earth Observatory/Lauren Dauphin、NOAA NOS、USDA ARS/Scott Bauer 明確標示來源，依各機構媒體規範署名，不暗示背書。其餘為 AI 協助產製之圖解或虛構情境，權利及圖解品質仍待人工確認。所有未核准素材均未放進 public、docs 或 Git 追蹤。既有 Logo、favicon、原版 SVG 與挑戰圖表未改。
+
+NASA 媒體規範：https://www.nasa.gov/nasa-brand-center/images-and-media/
+NOAA NOS 規範：https://oceanservice.noaa.gov/about/faq.html
+USDA ARS 規範：https://www.ars.usda.gov/oc/images/copyright/
+
+既有素材來源不完整者仍待確認；本次不補造創作證據，也不套用全站 MIT／CC。

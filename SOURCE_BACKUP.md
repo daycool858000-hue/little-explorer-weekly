@@ -23,3 +23,12 @@
 **GitHub／ZIP 備份不包含讀者裝置的收藏、閱讀進度及語音偏好。** 不會回復被清除的瀏覽器資料，也不提供跨裝置同步。第五期審閱素材另放本機，不應上傳到公開備份。
 
 第三階段另有 `question-planet-phase3-source-9fef643.zip`：本機提交 9fef643，與公開技術版 95d2c6a 的檔案樹相同（f75ad391332e42d9f504dbe43a8b84b27a9da4a7）。SHA-256：758798BEDFC3D332114DA944B5329EFE71613FDDDAC1FC76171F0F4D2647FCB5。最後文件整理完成後另提供日期命名的完整原始碼包，回復方式相同。
+
+
+## A 方案集中審閱檢查點（2026-10-10）
+
+本次另外產生 question-planet-phase4-A-private-source-2026-10-10.zip（含原始碼、依賴鎖定檔、部署設定、原版與挑戰基準、A 私人內容與素材、測試及審閱文件）與 question-planet-phase4-A-review-2026-10-10.zip（可操作離線預覽、全文審閱及來源紀錄）。兩包均屬私人檔案，不能上傳公開分支。實際 SHA 與還原結果見 outputs/phase4-A-backup-manifest.json 及私人 FINAL_REPORT.md。先前原始碼 ZIP、備份分支與第五期獨立 ZIP 全部保留。
+
+下載後請另外複製到安全資料夾或外接硬碟。先解壓審閱 ZIP，開啟「審閱全文.html」；互動預覽在 portable/standalone.html。要還原開發環境：把 source ZIP 解壓到新的空資料夾，安裝 Node.js，執行 npm ci；執行 npx vite build --config .local-review/phase4-approved/vite.config.ts 建立私人 A 版，再執行 node .local-review/phase4-approved/portable.mjs。一般 npm run build 仍只建置正式舊內容，這是刻意保留的審閱隔離。不要覆蓋當時 main；正式回復仍採新分支與新提交。
+
+ZIP 不含 .git 歷史、node_modules、帳號憑證、第五期私人內容或讀者裝置上的閱讀紀錄。第五期使用原獨立私人備份；孩子的收藏、進度與語音偏好仍只在各自瀏覽器。

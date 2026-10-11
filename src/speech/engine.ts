@@ -47,6 +47,11 @@ export function createSpeech(platform: SpeechPlatform | null) {
       const current = platform.make(normalizeSpeech(segment.text,segment.lang)); utterance = current;
       current.lang = segment.lang; current.rate = state.rate;
       const voice = chooseVoice(voices, segment.lang,segment.lang==='zh-TW'?selectedVoices.zh:selectedVoices.en);
+      if (voices.length > 0 && !voice) {
+        cancel(false);
+        emit({status:'error',message:segment.lang==='zh-TW'?'這台裝置目前沒有可用的中文聲音。請在裝置的語音設定加入中文聲音；文字閱讀仍可使用。':'這台裝置目前沒有可用的英文聲音。請在裝置的語音設定加入英文聲音；文字閱讀仍可使用。'});
+        return;
+      }
       if (voice) current.voice = voice; // Never assign a voice from the other language.
       const valid = () => token === generation && utterance === current;
       current.onstart = () => {

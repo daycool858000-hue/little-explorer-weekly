@@ -108,3 +108,10 @@ Web Speech API 不等於所有聲音都在本機運算：OS／瀏覽器可提供
 - 第三階段工作分支：feature/phase-3-library-2026-10-09，從第二階段文件版本 3b98843fe7bd57eda14aea33deefb5d3676a7130 延伸。
 - 原始碼 ZIP 與回復流程見 SOURCE_BACKUP.md。不得以 reset／force push 回復網站。
 - 每次後續開發同步更新本文件、來源與測試紀錄，保留未完成項目的真實狀態。
+
+
+## 第四階段 A 方案核准後進度（2026-10-10）
+
+A 方向已核准，先前三案待選狀態已結束。單一 A 私人整合版及 16 篇完整重製資料已完成，下一個必要節點為集中內容審閱與正式發布授權；尚未部署。五六年級原內容保持不變，第五期仍私藏。低年級、故事館、注音及長篇有聲皆維持第五階段規劃，不提前開發。詳細實際成果與驗證見 PHASE4_REPORT.md 最新段落及私人審閱包。
+
+資料擴充沿用 React＋JSON：每篇增加 gradeBand、primaryTopic、relatedTopics、contentType、originalIssue、revision、reviewStatus、updatedAt、sources。原始出版日不明者維持 null。相同文章只存一份，主題／期刊／搜尋共用；保留 explorer-magazine-v1、explorer-challenge-v1、explorer-speech-v1。私人資料不得直接搬入公開分支，需審閱與正式發布授權後整合。
