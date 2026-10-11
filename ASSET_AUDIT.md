@@ -1,3 +1,11 @@
+## 2026-10-11 最終整合增量
+
+新增 src/planet/knowledge-review.json：24 題，AI 協助新編，依 8 篇已公開原文與 USGS／NASA／NOAA／大學／Exploratorium／CS Unplugged 資料核對。來源逐題列於 review/KNOWLEDGE_REVIEW.md；沒有複製外站題目、圖片或語音。風險：合理來源紀錄，不代表已完成法律審查或排他權利確認。
+
+本次沒有新增或替換圖片、音檔、字型、第三方套件，沿用原授權告知。舊版重新開啟的是原 src/content 正文及 public/assets 圖像；既有來源待確認事項保留，不補造原創證據。品牌、商標與正式自有授權沿用既有待查證紀錄。
+
+---
+
 ## 2026-10-10 第四階段新增素材
 
 完整逐項紀錄：src/planet/media-records.json（16 篇圖像）、sources/phase4-scenes.json（20 張新情境 SVG）、sources/earth-nasa.json（NASA 地球合成影像），說明見 review/PHASE4_SOURCES.md。

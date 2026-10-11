@@ -1,3 +1,11 @@
+## 最終整合備份（2026-10-11）
+
+本次發布前正式版本 99e9e2f38be6350fc9f3b3f56f9b0bfb172028d3；本機相同 tree 的 03c57fd 保存為 backup/pre-final-integration-2026-10-11。既有 question-planet-phase4-complete-2026-10-11.zip 不覆寫。新包使用 question-planet-phase4-integration-2026-10-11.zip，包含新增回顧題庫、原版／新版與全部測試。雜湊、實際還原結果與最終發布 SHA 見交付紀錄。
+
+典藏新紀錄 archiveSaved、archivePages、archiveDone、lastArchive 也只在孩子的瀏覽器內。ZIP 不包含它們，不會跨裝置同步；原有 saved、pages、done 與語音偏好亦同。隨機探索的最近抽選暫存於 sessionStorage，不是會員資料。
+
+---
+
 ## 第四階段正式候選版備份（2026-10-10）
 
 新版完整 ZIP 使用 question-planet-phase4-release-2026-10-11.zip；最終實際產出、雜湊與還原結果見 PHASE4_COMPLETION.md／outputs 的備份清單。發布前回復點為 backup/pre-phase4-release-2026-10-10（cd5c345abc74a4f28e5ee2cdae206ace6ca99dd7），另有 question-planet-pre-release-cd5c345-2026-10-10.zip。不覆寫既有私人備份。
@@ -50,4 +58,3 @@
 下載後請另外複製到安全資料夾或外接硬碟。先解壓審閱 ZIP，開啟「審閱全文.html」；互動預覽在 portable/standalone.html。要還原開發環境：把 source ZIP 解壓到新的空資料夾，安裝 Node.js，執行 npm ci；執行 npx vite build --config .local-review/phase4-approved/vite.config.ts 建立私人 A 版，再執行 node .local-review/phase4-approved/portable.mjs。一般 npm run build 仍只建置正式舊內容，這是刻意保留的審閱隔離。不要覆蓋當時 main；正式回復仍採新分支與新提交。
 
 ZIP 不含 .git 歷史、node_modules、帳號憑證、第五期私人內容或讀者裝置上的閱讀紀錄。第五期使用原獨立私人備份；孩子的收藏、進度與語音偏好仍只在各自瀏覽器。
-

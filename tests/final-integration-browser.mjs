@@ -24,4 +24,3 @@ await p.goto(base+'#library/life');assert.ok(await p.locator('.story-card').coun
 if([390,1440].includes(width)){for(const [name,hash]of [['home',''],['catalog','#catalog'],['archive','#library'],['recall','#library/review']]){await p.goto(base+hash);await layout(p);await p.screenshot({path:`test-results/final-integration/${name}-${width}.png`,fullPage:true})}}
 results.push({width,originalPages:48,originalQuestions:16,reviewQuestions:24,randomUnique:16,storage:'preserved'});console.log('integration passed '+width);await context.close();
 }assert.deepEqual(errors,[]);assert.deepEqual(bad,[]);fs.writeFileSync('test-results/final-integration/results.json',JSON.stringify({base,results,errors,bad,physicalDevices:false},null,2));}finally{await browser.close()}
-

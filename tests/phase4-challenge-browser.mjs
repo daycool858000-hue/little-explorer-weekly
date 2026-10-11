@@ -29,9 +29,9 @@ async function answer(page,s,wrong=false){
 try{
  for(const [width,height]of [[375,812],[390,844],[768,1024],[1024,768],[1440,1000]]){
   const context=await browser.newContext({viewport:{width,height}});const page=await watch(context);
-  await page.goto(base);await page.locator('.grade-links a[href="#challenge"]').waitFor();assert.equal(await page.locator('.discovery-stories .story-card').count(),16);
+  await page.goto(base);await page.locator('.site-header nav a[href="#challenge"]').waitFor();assert.equal(await page.locator('.discovery-stories .story-card').count(),16);
   await page.evaluate(value=>localStorage.setItem('explorer-magazine-v1',JSON.stringify(value)),original);
-  await page.locator('.grade-links a[href="#challenge"]').click();await page.locator('.c-issue-card').first().waitFor();assert.equal(await page.locator('.c-issue-card').count(),4);await layout(page,'home');await page.screenshot({path:output+'/home-'+width+'.png',fullPage:true});
+  await page.locator('.site-header nav a[href="#challenge"]').click();await page.locator('.c-issue-card').first().waitFor();assert.equal(await page.locator('.c-issue-card').count(),4);await layout(page,'home');await page.screenshot({path:output+'/home-'+width+'.png',fullPage:true});
   let steps=0;
   for(const issue of issues){
    await page.goto(base+'#challenge/'+issue.id);await page.locator('.c-unit-card').first().waitFor();assert.equal(await page.locator('.c-unit-card').count(),4);
@@ -64,5 +64,3 @@ try{
  assert.deepEqual(errors,[]);assert.deepEqual(broken,[]);assert.deepEqual(external,[]);assert.equal(wrongCoverage.size,4);
  const report={base,checkedAt:new Date().toISOString(),results,wrongAnswerTypes:[...wrongCoverage],errors,broken,external,checks:['separate original storage unchanged','all 96 steps complete at each width','both hints','retry twice then solution','back and next','reload and resume','completion and return to contents','original font/warm/bookmark preserved','missing route','storage blocked and corrupt']};writeFileSync(output+'/report.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
 }finally{await browser.close();if(server)server.close();}
-
-

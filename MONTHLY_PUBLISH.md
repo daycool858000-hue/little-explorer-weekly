@@ -1,3 +1,13 @@
+## 最終整合新增維護入口（2026-10-11）
+
+原始期刊：src/content/week-*.json（不可覆蓋舊檔）；新版閱讀：src/planet/content；故事與低年級仍在各自資料夾。不要因增加單篇文章而自動產生一期。正式 publishedAt 只填可查證的整期發行日，不能填創作或部署日；不知道就不填，目錄顯示早期刊物。
+
+reading-levels.json 記錄年級導覽與狀態，五六年級完整文章目前為 planned／0 篇，不是挑戰教材。未來新增文章依現有文章欄位（穩定 ID、年級、主題、正文、題目、來源、審閱狀態）設計，不將挑戰資料搬過去。
+
+knowledge-review.json 是預先製作的回顧題庫，每題填 articleId、concept、prompt、options、answer、explanation、articleHref、source、status。返回路徑使用 #archive/read/文章ID/0。題目須與原始文章相符，不僅重排選項；新增後更新 review/KNOWLEDGE_REVIEW.md 及測試基準中新增題的答案。執行 lint、test、build 與 tests/final-integration-browser.mjs（透過 run-reading-browser.mjs 啟動伺服器）。不需要 API 或後台。
+
+---
+
 ## 第四階段新版資料補充（2026-10-10）
 
 現在三四年級使用 src/planet/content/week-N.json。複製模板準備新一期時先存私人區，保留舊 JSON 不覆寫；核准後才放入公開資料夾。published 狀態、releaseAuthorizedBy 及可靠日期必填；舊期原始日期不補造。系統依 number 排序，不依連續陣列索引尋找期數。
