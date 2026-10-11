@@ -1,0 +1,12 @@
+{
+  "name": "NASA PIA18033 Earth composite",
+  "file": "public/earth-nasa.jpg",
+  "source": "https://images.nasa.gov/details/PIA18033",
+  "download": "https://images-assets.nasa.gov/image/PIA18033/PIA18033~medium.jpg",
+  "terms": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "credit": "NASA / NOAA，Suomi NPP VIIRS 多軌道合成地球影像；不是單張曝光照片。",
+  "checkedAt": "2026-10-10",
+  "ai": false,
+  "sha256": "d0470ba7a24cb58e6361c1e413d44987f1536120abee107fb60b3062511af734",
+  "rights": "依 NASA 素材使用指引，保留來源；不暗示 NASA 背書，不授權其標誌。"
+}

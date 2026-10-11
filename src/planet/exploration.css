@@ -1,0 +1,85 @@
+/* 私人 A 版：自行以 CSS/SVG 編寫的靜態等高線與觀測星點，不載入外部素材。 */
+.proposals.mode-A,.a-challenge-shell,.a-archive-shell{
+ --exploration-lines:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='620' viewBox='0 0 640 620'%3E%3Cg fill='none' stroke='%235a8392' stroke-opacity='.11' stroke-width='1'%3E%3Cpath d='M-110 90C100-60 325 30 270 180S400 370 640 310M-110 115C100-35 290 55 245 180S385 345 640 285M-110 140C100-10 255 80 220 180S370 320 640 260M-110 165C100 15 220 105 195 180S355 295 640 235'/%3E%3Ccircle cx='520' cy='510' r='62'/%3E%3Cellipse cx='520' cy='510' rx='100' ry='26' transform='rotate(-25 520 510)'/%3E%3Cpath d='M405 95v12m-6-6h12M88 435v10m-5-5h10'/%3E%3C/g%3E%3Cg fill='%235a8392' fill-opacity='.2'%3E%3Ccircle cx='420' cy='350' r='1.5'/%3E%3Ccircle cx='145' cy='540' r='1.5'/%3E%3Ccircle cx='560' cy='170' r='1.5'/%3E%3C/g%3E%3C/svg%3E");
+ background-color:#f5f8f7;
+ background-image:var(--exploration-lines),radial-gradient(ellipse at 5% 0%,#e0edf2 0,transparent 50%),radial-gradient(ellipse at 98% 35%,#eef0dd 0,transparent 42%);
+ background-size:640px 620px,100% 1100px,100% 1500px;
+ background-repeat:repeat,no-repeat,no-repeat;
+}
+.proposals.mode-A .site-header{background:linear-gradient(90deg,#f7faf8d9,#f7faf866);}
+.mode-A .magazine-kicker,.mode-A .section-heading,.mode-A .catalog-title{background:#f5f8f7b8;}
+.mode-A .story-copy,.mode-A .theme>div:last-child{background:#f9fbf5dc;}
+.mode-A .question-tape{background:#f6d77c;}
+.mode-A .grades{background:#e3eeeb;border-top:3px solid #3e6e70;}
+.mode-A .archive-footer{background:#e6edf2;border-left:5px solid #507a94;}
+.mode-A[data-topic=printing]{background-color:#f7f4ed;}
+.mode-A[data-topic=maps]{background-color:#eef5f1;}
+.mode-A[data-topic=binary]{background-color:#eef3f8;}
+.mode-A[data-topic=feelings]{background-color:#faf3ef;}
+.mode-A[data-topic=fox]{background-color:#f3f1f8;}
+.mode-A .catalog-title{border-left:4px solid #507a94;padding-left:20px;}
+.mode-A[data-topic=feelings] .catalog-title{border-color:#ad6855;background:#faf3efe8;}
+.proposals.mode-A.is-reading{background-color:#f0f5f4;background-size:850px 820px,100% 1100px,100% 1500px;}
+.mode-A.is-reading .reader-cover,.mode-A.is-reading .reader-top,.mode-A.is-reading .reading-progress{background:#f8faf8ed;}
+.mode-A.is-reading .reader-body{background:#fffefc;box-shadow:0 0 0 26px #fffefc;border-radius:3px;}
+.proposals.mode-A.warm.is-reading{background-color:#f4eee1;}
+.mode-A.warm.is-reading .reader-body{background:#fcf3e3;box-shadow:0 0 0 26px #fcf3e3;}
+.mode-A.focused.is-reading{background-image:none;}
+.a-challenge-shell{min-height:100vh;color:#253e50;}
+.a-challenge-shell .challenge{background:transparent;color:#253e50;}
+.a-challenge-shell .c-header{border-bottom:2px solid #355d71;background:#f8fbf9d9;}
+.a-challenge-shell .c-brand{color:#365c70;}
+.a-challenge-shell .c-intro{border-left:5px solid #d59c36;padding:8px 0 8px 24px;margin-bottom:32px;}
+.a-challenge-shell .c-eyebrow{color:#486679;letter-spacing:.08em;}
+.a-challenge-shell .c-intro h1{line-height:1.25;}
+.a-challenge-shell .c-issue-card,.a-challenge-shell .c-unit-card{border:1px solid #b9ccd0;border-radius:16px;background:#fffefb;box-shadow:0 5px 0 #dce6e6;}
+.a-challenge-shell .c-cover-number{color:#2c5365;background:linear-gradient(115deg,#d9e8ed 65%,#edf4f5 65%);border-bottom:1px solid #b9ccd0;}
+.a-challenge-shell .c-cover-0 .c-cover-number{background:linear-gradient(115deg,#d9e8ed 65%,#edf4f5 65%);}
+.a-challenge-shell .c-cover-1 .c-cover-number{background:linear-gradient(115deg,#f4e4ba 65%,#fcf3df 65%);color:#6c5327;}
+.a-challenge-shell .c-cover-2 .c-cover-number{background:linear-gradient(115deg,#e5e1ee 65%,#f2eef8 65%);color:#595473;}
+.a-challenge-shell .c-cover-3 .c-cover-number{background:linear-gradient(115deg,#dcebe2 65%,#eff6f0 65%);color:#365e4d;}
+.a-challenge-shell .c-card-top{border-bottom:1px solid #d9e4e5;padding-bottom:12px;}
+.a-challenge-shell .c-task,.a-challenge-shell .c-complete{background:#fffefa;margin-top:26px;margin-bottom:26px;border:1px solid #cad8d9;border-radius:18px;box-shadow:0 8px 30px #254b6410;}
+.a-challenge-shell .c-task-meta{font-size:15px;gap:12px;}
+.a-challenge-shell .c-task-meta>span{background:#e9f0f2;border-radius:6px;padding:3px 10px;}
+.a-challenge-shell .c-progress{padding:16px 0;border-bottom:1px solid #dce5e5;}
+.a-challenge-shell .c-progress progress{accent-color:#337384;}
+.a-challenge-shell .c-unit-title{color:#4d697a;}
+.a-challenge-shell .c-task h1{line-height:1.35;}
+.a-challenge-shell .speech-panel{background:#f1f5f6;border-color:#cad9dd;}
+.a-challenge-shell .speech-en{font-weight:600;line-height:1.65;}
+.a-challenge-shell .speech-zh{color:#52616b;font-size:.9em;line-height:1.75;margin-top:.35em;}
+.a-challenge-shell .c-information{padding:20px;border:1px solid #b5cbd3;border-top:4px solid #527e91;background:#f9fcfd;border-radius:10px;}
+.a-challenge-shell .c-information figcaption{color:#284d61;margin-bottom:14px;}
+.a-challenge-shell .c-information thead{background:#e5eef2;}
+.a-challenge-shell .c-information tbody tr:nth-child(even){background:#eef5f6;}
+.a-challenge-shell .c-information th,.a-challenge-shell .c-information td{padding:12px 10px;}
+.a-challenge-shell .c-context{background:#edf3f1;border:1px solid #c9d9d3;border-radius:10px;padding:8px 14px;}
+.a-challenge-shell .c-question{margin-top:28px;}
+.a-challenge-shell .c-question h2{line-height:1.6;}
+.a-challenge-shell .c-options{gap:14px;}
+.a-challenge-shell .c-options label,.a-challenge-shell .c-order{background:#fff;border-color:#b8cbd3;border-radius:12px;padding:15px;line-height:1.7;}
+.a-challenge-shell .c-options .is-selected{border-color:#32677a;background:#eaf3f5;box-shadow:inset 4px 0 #32677a;}
+.a-challenge-shell .c-hints p{background:#fff3d8;border-left-color:#b78a35;padding:14px 18px;}
+.a-challenge-shell .c-feedback{background:#eaf3eb;border:1px solid #a9cbb6;border-left:4px solid #55866a;border-radius:10px;line-height:1.8;}
+.a-challenge-shell .c-feedback strong{color:#315c45;}
+.a-challenge-shell .c-primary{background:#315e73;color:white;border-color:#315e73;}
+.a-challenge-shell .c-primary:disabled{background:#e1e8e9;color:#56676f;border-color:#bac9ce;}
+.a-challenge-shell .c-footer{background:#f6f9f6cc;}
+.a-challenge-shell :is(a,button,input,select,summary):focus-visible{outline:3px solid #a5572d;outline-offset:4px;}
+.a-archive-shell>div{background-color:transparent;}
+@media(max-width:700px){
+ .a-challenge-shell .c-task,.a-challenge-shell .c-complete{margin:12px 10px 24px;padding:22px 18px;border-radius:12px;}
+ .a-challenge-shell .c-intro{padding-left:17px;}
+ .a-challenge-shell .c-information{padding:14px 10px;}
+ .a-challenge-shell .c-information th,.a-challenge-shell .c-information td{padding:10px 6px;}
+ .a-challenge-shell .c-options label,.a-challenge-shell .c-order{padding:12px;}
+ .a-challenge-shell .c-task-meta{font-size:13px;}
+ .a-challenge-shell .speech-controls{gap:8px;font-size:14px;}
+ .a-challenge-shell .speech-controls label{flex-wrap:wrap;}
+ .a-challenge-shell .speech-zh{font-size:16px;}
+ .mode-A.is-reading .reader-body{box-shadow:0 0 0 10px #fffefc;}
+ .mode-A.warm.is-reading .reader-body{box-shadow:0 0 0 10px #fcf3e3;}
+ .mode-A .catalog-title{padding-left:14px;}
+}
+@media(prefers-reduced-motion:reduce){.a-challenge-shell *,.a-archive-shell *{animation:none!important;transition:none!important;scroll-behavior:auto!important;}}

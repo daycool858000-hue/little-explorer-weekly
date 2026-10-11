@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import { validatePlanet } from './scripts/planet-validation.mjs';
 import react from '@vitejs/plugin-react';
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { validateProject, validateIssues, loadIssues } from './scripts/content-validation.mjs';
@@ -9,6 +10,7 @@ export default defineConfig(({ mode }) => {
       name: 'content-release-boundary',
       buildStart() {
         validateProject();
+        validatePlanet();
         if (reviewing && existsSync(folder)) validateIssues([...loadIssues('src/content'), ...loadIssues(folder)], 'magazine', n => existsSync(folder + '/assets/' + n + '.svg') || existsSync('public/assets/' + n + '.svg'), { draft: true });
       },
       resolveId(id) { if (id === 'virtual:review-content') return '\0review-content'; },
