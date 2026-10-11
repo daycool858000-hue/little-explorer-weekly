@@ -1,0 +1,48 @@
+{
+  "results": [
+    {
+      "width": 375,
+      "pages": 48,
+      "questions": 16,
+      "images": "passed",
+      "search": "passed",
+      "legacyProgress": "passed"
+    },
+    {
+      "width": 390,
+      "pages": 48,
+      "questions": 16,
+      "images": "passed",
+      "search": "passed",
+      "legacyProgress": "passed"
+    },
+    {
+      "width": 768,
+      "pages": 48,
+      "questions": 16,
+      "images": "passed",
+      "search": "passed",
+      "legacyProgress": "passed"
+    },
+    {
+      "width": 1024,
+      "pages": 48,
+      "questions": 16,
+      "images": "passed",
+      "search": "passed",
+      "legacyProgress": "passed"
+    },
+    {
+      "width": 1440,
+      "pages": 48,
+      "questions": 16,
+      "images": "passed",
+      "search": "passed",
+      "legacyProgress": "passed"
+    }
+  ],
+  "errors": [],
+  "broken": [],
+  "external": [],
+  "physicalDevices": false
+}

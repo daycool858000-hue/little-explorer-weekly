@@ -51,3 +51,17 @@
 
 ZIP 不含私人第五期、憑證、node_modules、Git 歷史或孩子瀏覽器資料。沒有預錄音檔可打包。第五期私人備份與原始檔均保留；收藏、進度與偏好仍只在各自瀏覽器。
 
+## 正式部署與公開驗證（2026-10-11）
+
+**已正式部署**：[問號星球](https://daycool858000-hue.github.io/little-explorer-weekly/)。[GitHub Actions 38107653999](https://github.com/daycool858000-hue/little-explorer-weekly/actions/runs/38107653999) 成功，發布提交 `b1de57e13628932b18a532a7d8986a5450701e77`；與本機受測 `5bf7d5d` 的 Git tree 完全相同。
+
+因本機 Git 未登入，使用既有授權的 GitHub 連接器上傳。8 個開發 checkpoint 均保存為遠端提交，逐一確認 tree SHA 相同；原本本機提交仍保留，對照見 review/verification/commit-map.json。未強制推送或刪除歷史。
+
+公開網址已重新通過五尺寸原版 48 頁、20 篇新讀物、挑戰 96 步及雙語語音回歸。實際公開紀錄見 review/verification/public-*.json；375px 另外用鍵盤切換注音及放大到 28px 檢查，沒有水平溢出。公開截圖已重新擷取。這些是瀏覽器模擬，實體手機語音仍待驗證。
+
+最後將 20 篇新讀物的發布日由候選日期改為實際上線日期 `2026-10-11`，只有發布中繼資料修正，沒有改動正文、題目或語音流程。其後的驗證提交由既有 Actions 再次檢查；最新部署狀態以 repository Actions 及交付紀錄為準。
+
+完整發布快照：`question-planet-phase4-release-2026-10-11.zip`，SHA-256 `db3cb45d41db3e94abcc1db91177140d347a55a0428f3cafb2749cc978c22d8e`。該封存檔已在 `phase4-final-restore-2026-10-11` 重新安裝 173 套件，Lint、34 項測試、TypeScript、正式 build、兩組五尺寸閱讀測試全部通過。這份是首次成功發布的完整快照；最後日期修正與公開證據另封存為最終交付包，不覆寫本檔。
+
+第四階段功能開發已完成；沒有開始下一階段。未完成的實機語音、正式商標及法律權利確認已如實列於限制，未冒充全面通過。
+
