@@ -31,5 +31,8 @@
     "license": "未另選正式自有內容授權；AI 輔助內容權利仍有法律不確定性",
     "audio": "瀏覽器 Web Speech API 即時合成；無預錄或真人音檔"
   },
-  "order": 11
+  "order": 11,
+  "status": "published",
+  "releaseAuthorizedBy": "管理者 2026-10-10：完成內容與自動化檢查後正式公開",
+  "publishedAt": "2026-10-10"
 }

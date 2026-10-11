@@ -5,8 +5,8 @@ import storyTemplate from './stories/story-tide-letter.json';
 import juniorTemplate from './junior/junior-cold-cup.json';
 const storyFiles=import.meta.glob<{default:typeof storyTemplate}>('./stories/*.json',{eager:true});
 const juniorFiles=import.meta.glob<{default:typeof juniorTemplate}>('./junior/*.json',{eager:true});
-export const stories=Object.values(storyFiles).map(x=>x.default).sort((a,b)=>a.order-b.order);
-export const juniors=Object.values(juniorFiles).map(x=>x.default);
+export const stories=Object.values(storyFiles).map(x=>x.default).filter(x=>x.status==="published").sort((a,b)=>a.order-b.order);
+export const juniors=Object.values(juniorFiles).map(x=>x.default).filter(x=>x.status==="published");
 export const newReadings=[...stories.map(s=>({id:s.id,title:s.title,text:[s.summary,...s.paragraphs].join(' '),theme:s.theme,grade:s.grade,image:s.image,imageAlt:s.imageAlt,href:'#stories/'+s.id})),...juniors.map(s=>({id:s.id,title:s.title,text:s.paragraphs.join(' '),theme:s.theme,grade:s.grade,image:s.image,imageAlt:s.imageAlt,href:'#junior/'+s.id}))];
 type Reading=typeof stories[number]|typeof juniors[number];
 type ReadingMemory={positions:Record<string,number>;done:string[];zhuyin:boolean};
@@ -39,3 +39,4 @@ export default function ReadingLibrary({hash}:{hash:string}){
  <details className="book-source"><summary>情境、來源與聲音說明</summary>{'fictionNote'in item&&<p>{item.fictionNote}</p>}<p>本文及情境圖為本次 AI 協助新編，未引用他人故事或真實兒童經驗；自有內容正式授權尚未選定。幾何情境圖不是科學量測圖或歷史照片。</p>{item.sources.map(s=><p key={s.url}><a href={s.url} target="_blank" rel="noreferrer">{s.title}</a> · 查核 {s.checkedAt}</p>)}<p>朗讀使用既有 Web Speech API，沒有下載的聲音素材、付費語音 API 或額外音檔。</p></details><a className="book-back" href={junior?'#junior':'#stories'}>回目錄，挑下一篇 →</a></main>}
  <footer className="book-footer">問號星球 · 免費免登入 · <a href="#about">內容與權利</a> · <a href="./THIRD-PARTY-NOTICES.txt">第三方授權</a></footer></div>
 }
+

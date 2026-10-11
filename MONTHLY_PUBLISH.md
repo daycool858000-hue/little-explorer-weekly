@@ -1,3 +1,17 @@
+## 第四階段新版資料補充（2026-10-10）
+
+現在三四年級使用 src/planet/content/week-N.json。複製模板準備新一期時先存私人區，保留舊 JSON 不覆寫；核准後才放入公開資料夾。published 狀態、releaseAuthorizedBy 及可靠日期必填；舊期原始日期不補造。系統依 number 排序，不依連續陣列索引尋找期數。
+
+新故事新增 src/planet/stories/唯一ID.json；低年級新增 src/planet/junior/唯一ID.json。可從目前完整檔案複製結構，但重寫 ID、正文、來源及圖說，不能複製舊文章充數。低年級必須在 annotated 為所有學習文字逐字填入讀音，完成語境校對及 review/ZHUYIN_REVIEW.md 紀錄。新圖放 public/story-scenes 或有來源紀錄的適當資料夾。
+
+公開來源資料夾禁止放草稿：即使 UI 過濾，也可能進入 bundle。validate:planet 會拒絕未發布狀態。第五期一律留 .local-review，不可複製到上述目錄。
+
+執行：npm run validate:planet → npm run lint → npm test → npm run build → npm run test:browser → npm run test:challenge → npm run test:speech。npm run review:readings 可產生新讀物全文及注音 HTML。既有原始測試檔保留，新 browser 指令測新版入口；test:legacy-browser 僅用於另行啟動的舊介面。
+
+scripts/phase4-author-*.mjs 是本次產製紀錄，不是每月發布命令；重新執行會覆寫同名資料，禁止用來新增下一期。
+
+---
+
 # 每月新增期刊：操作流程
 
 目前是 React＋JSON 靜態網站，不需要付費服務、帳號、資料庫或後台。原版與挑戰版分別編號，不必每次一起增加。

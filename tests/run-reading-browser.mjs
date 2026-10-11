@@ -1,0 +1,5 @@
+import {createServer} from 'node:http';import fs from 'node:fs';import path from 'node:path';import {spawn} from 'node:child_process';
+const root=path.resolve('docs');
+const server=createServer((req,res)=>{const url=new URL(req.url,'http://localhost');const p=path.resolve(root,'.'+(url.pathname.endsWith('/')?url.pathname+'index.html':url.pathname));if(!p.startsWith(root+path.sep)){res.writeHead(403).end();return}try{const ext=path.extname(p);res.setHeader('Content-Type',({'.html':'text/html','.js':'text/javascript','.css':'text/css','.svg':'image/svg+xml','.jpg':'image/jpeg','.png':'image/png'})[ext]||'application/octet-stream');res.end(fs.readFileSync(p))}catch{res.writeHead(404).end()}});
+if(!process.env.BASE_URL)await new Promise(r=>server.listen(0,'127.0.0.1',r));
+try{for(const file of ['tests/phase4-reading-browser.mjs','tests/phase4-new-readings-browser.mjs']){const code=await new Promise(r=>{const p=spawn(process.execPath,[file],{stdio:'inherit',env:{...process.env,BASE_URL:process.env.BASE_URL||'http://127.0.0.1:'+server.address().port+'/'}});p.on('exit',r)});if(code)throw Error(file+' failed: '+code)}}finally{server.close()}

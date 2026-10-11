@@ -17,9 +17,10 @@ function inlineCode(p){
   const mime=n.endsWith('.svg')?'image/svg+xml':n.endsWith('.jpg')?'image/jpeg':'image/'+n.split('.').at(-1);
   const uri='data:'+mime+';base64,'+readFileSync(new URL(output+'/'+folder+'/'+n,root)).toString('base64');
   for(const path of ['./'+folder+'/'+n,folder+'/'+n])code=code.replaceAll(JSON.stringify(path),JSON.stringify(uri));
+  code=code.replaceAll('new URL('+JSON.stringify(n)+',import.meta.url).href',JSON.stringify(uri));
  }
  const earth='data:image/jpeg;base64,'+readFileSync(new URL(output+'/earth-nasa.jpg',root)).toString('base64');
- code=code.replaceAll('"earth-nasa.jpg"',JSON.stringify(earth));
+ code=code.replaceAll('"earth-nasa.jpg"',JSON.stringify(earth)).replaceAll('"./earth-nasa.jpg"',JSON.stringify(earth));
  return code.replaceAll('</script','<\\/script');
 }
 html=html.replace(/<script[^>]+src="([^"]+\.js)"[^>]*><\/script>/g,(_,p)=>'<script>window.explorerAssets='+JSON.stringify(assets).replaceAll("<","\\u003c")+';</script><script type="module">'+inlineCode(p)+"</script>");

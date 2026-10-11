@@ -1,3 +1,11 @@
+## 2026-10-10 第四階段新增素材
+
+完整逐項紀錄：src/planet/media-records.json（16 篇圖像）、sources/phase4-scenes.json（20 張新情境 SVG）、sources/earth-nasa.json（NASA 地球合成影像），說明見 review/PHASE4_SOURCES.md。
+
+16 篇重製稿沿用已審閱方向；16 故事與 4 低年級是 AI 協助新編，製作來源可追溯，不宣稱百分之百原創權利。沒有第三方音檔，新語音共用 Web Speech API。正式版台灣影像已縮圖並更新雜湊；私人原始素材不覆寫。舊待查證來源保留原標記。
+
+---
+
 # 素材來源與授權稽核紀錄
 
 2026-10-10 私人三方案補充：`.local-review/phase4-options/` 使用 NASA/JPL/USGS PIA00405 月球影像（NASA Photojournal 原頁與媒體使用條件已查核，保留署名，不暗示背書）；地圖、字版、科技與生活情境由 Codex 協助編寫 SVG，明標虛構／原理示意，未當成真實文物或城市。逐項來源、AI 參與、限制及製作紀錄保留於該區審閱說明。尚未核准公開；原來源待確認項目維持原狀，未替自有內容選正式授權。

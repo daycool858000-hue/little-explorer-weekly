@@ -80,7 +80,7 @@
       "originalPublicationDate": null,
       "revision": "phase4-A-2026-10-10",
       "reviewStatus": "待管理者集中審閱",
-      "reviewedBy": null,
+      "reviewedBy": "管理者初步認可內容方向與深度；本次完成檢查後發布授權",
       "updatedAt": "2026-10-10",
       "changeType": "內容深度與視覺重製；原始版本保存於 cd5c345"
     },
@@ -164,7 +164,7 @@
       "originalPublicationDate": null,
       "revision": "phase4-A-2026-10-10",
       "reviewStatus": "待管理者集中審閱",
-      "reviewedBy": null,
+      "reviewedBy": "管理者初步認可內容方向與深度；本次完成檢查後發布授權",
       "updatedAt": "2026-10-10",
       "changeType": "內容深度與視覺重製；原始版本保存於 cd5c345"
     },
@@ -248,7 +248,7 @@
       "originalPublicationDate": null,
       "revision": "phase4-A-2026-10-10",
       "reviewStatus": "待管理者集中審閱",
-      "reviewedBy": null,
+      "reviewedBy": "管理者初步認可內容方向與深度；本次完成檢查後發布授權",
       "updatedAt": "2026-10-10",
       "changeType": "內容深度與視覺重製；原始版本保存於 cd5c345"
     },
@@ -322,10 +322,12 @@
       "originalPublicationDate": null,
       "revision": "phase4-A-2026-10-10",
       "reviewStatus": "待管理者集中審閱",
-      "reviewedBy": null,
+      "reviewedBy": "管理者初步認可內容方向與深度；本次完成檢查後發布授權",
       "updatedAt": "2026-10-10",
       "changeType": "內容深度與視覺重製；原始版本保存於 cd5c345"
     }
   ],
-  "status": "private-review"
+  "status": "published",
+  "releaseAuthorizedBy": "管理者 2026-10-10：完成內容與自動化檢查後正式公開",
+  "revisedAt": "2026-10-10"
 }

@@ -283,5 +283,8 @@
     "method": "逐句核對標音數量、語境多音字、輕聲及一／不變調；上聲連讀保留本調",
     "reviewedAt": "2026-10-10",
     "uncertain": []
-  }
+  },
+  "status": "published",
+  "releaseAuthorizedBy": "管理者 2026-10-10：完成內容與自動化檢查後正式公開",
+  "publishedAt": "2026-10-10"
 }

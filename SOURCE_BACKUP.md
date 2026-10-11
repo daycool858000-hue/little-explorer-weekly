@@ -1,3 +1,13 @@
+## 第四階段正式候選版備份（2026-10-10）
+
+新版完整 ZIP 使用 question-planet-phase4-release-2026-10-10.zip；最終實際產出、雜湊與還原結果見 PHASE4_COMPLETION.md／outputs 的備份清單。發布前回復點為 backup/pre-phase4-release-2026-10-10（cd5c345abc74a4f28e5ee2cdae206ace6ca99dd7），另有 question-planet-pre-release-cd5c345-2026-10-10.zip。不覆寫既有私人備份。
+
+下載 ZIP 後另存外接硬碟。解壓到新的空資料夾，安裝 Node.js 22 或 24，依序執行 npm ci、npm run lint、npm test、npm run build；npm run preview 開啟本機網站。不要把還原資料夾覆蓋正式工作目錄。需回復正式站時，以目前 main 建修復分支，從回復點取所需檔案建立新提交，測試後再發布；不可 force push 或刪除歷史。
+
+新版 ZIP 不含 .git、node_modules、憑證、測試截圖、私人第五期或瀏覽器資料。包含原始與重製文章、故事、低年級注音、圖片、共用語音程式、鎖定檔、測試、部署設定、來源與審閱文件。沒有預錄音檔可備份。孩子的收藏、進度及聲音偏好只在裝置瀏覽器，GitHub 或此 ZIP 不能代替裝置資料備份。
+
+---
+
 # 原始碼備份與回復
 
 ## 第四階段開始前確認（2026-10-09）
