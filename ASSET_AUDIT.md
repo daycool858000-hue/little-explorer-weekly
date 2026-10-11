@@ -449,3 +449,7 @@ NOAA NOS 規範：https://oceanservice.noaa.gov/about/faq.html
 USDA ARS 規範：https://www.ars.usda.gov/oc/images/copyright/
 
 既有素材來源不完整者仍待確認；本次不補造創作證據，也不套用全站 MIT／CC。
+
+## 2026-10-10 私人背景樣式補登
+
+`.local-review/phase4-approved/exploration.css` 的等高線、星點、軌道幾何由本次 AI 協助編寫 CSS／SVG；不是第三方圖片或精確地理／天文資料。未引入外部資源、字型、付費服務或授權素材。現有圖片及來源紀錄未變，本次僅私人審閱；正式自有內容授權仍待管理者決定。

@@ -115,3 +115,11 @@ Web Speech API 不等於所有聲音都在本機運算：OS／瀏覽器可提供
 A 方向已核准，先前三案待選狀態已結束。單一 A 私人整合版及 16 篇完整重製資料已完成，下一個必要節點為集中內容審閱與正式發布授權；尚未部署。五六年級原內容保持不變，第五期仍私藏。低年級、故事館、注音及長篇有聲皆維持第五階段規劃，不提前開發。詳細實際成果與驗證見 PHASE4_REPORT.md 最新段落及私人審閱包。
 
 資料擴充沿用 React＋JSON：每篇增加 gradeBand、primaryTopic、relatedTopics、contentType、originalIssue、revision、reviewStatus、updatedAt、sources。原始出版日不明者維持 null。相同文章只存一份，主題／期刊／搜尋共用；保留 explorer-magazine-v1、explorer-challenge-v1、explorer-speech-v1。私人資料不得直接搬入公開分支，需審閱與正式發布授權後整合。
+
+## 2026-10-10：A 方案最後介面修正（私人審閱）
+
+管理者已通過 A 方案方向並初步認可 16 篇，最新要求限背景、挑戰 UI 與年級說明。本機私人 Design.tsx 增加樣式容器與指定「1–6年級建議讀物，歡迎不同年級自由探索。」；exploration.css 提供靜態等高線／星點與挑戰視覺整合。沒有修改教材、語音邏輯、圖片、來源或儲存格式。
+
+ESLint、TypeScript、31 測試、內容驗證、私人 build 通過。閱讀 48 頁與挑戰 96 步均通過五尺寸回歸；語音模擬通過，另完成鍵盤、中文開關、背景及減少動態專項。47 個保護檔與第五期 10 個私人檔案雜湊不變。實體手機語音尚未測試。
+
+本次完整比較與報告位於被 Git 排除的 `.local-review/phase4-approved/ui-review/`；私人預覽為本機 4198 與 portable/standalone.html。未推送、未合併、未部署，等待管理者確認，不開始第五階段。本段為最新狀態，先前設計待選定等敘述為歷史紀錄。
