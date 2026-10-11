@@ -27,6 +27,14 @@
 
 ## A 方案集中審閱檢查點（2026-10-10）
 
+已完成：程式快照 c42bd9f0675e1313f30537fe601bd5ec4563878e。
+
+- `question-planet-phase4-A-private-source-2026-10-10.zip`：261 檔；SHA-256 `03322e7d47b6b04f69f4947b62829064c36d5ae3d40d12a0684288c5b99211c6`。
+- `question-planet-phase4-A-review-2026-10-10.zip`：52 檔；SHA-256 `72d113feb2975821d4785824687481266bfbbe3d8fd4503b1c7f8d55e5d66ff7`。
+- 隔離還原候選包 `question-planet-phase4-A-source-c42bd9f-restore-candidate.zip` 也保留，SHA-256 `62a20d7db92f91de8521ac15bbed1ebe00a5a4c4579a206af6b403be2498014a`。解壓至 `outputs/phase4-A-restore-c42bd9f`，重新安裝 173 套件後，Lint、TypeScript、31 項測試、私人 build、離線全部圖片與關鍵閱讀入口通過；最終包的核心程式與此受測版本相同，補入最後審閱與還原報告。正式模式 build／28 項測試也於隔離目錄通過。
+
+未覆寫既有 ZIP 或備份分支。新版兩份 ZIP 均逐項與來源雜湊核對，不含第五期。因離線審閱內嵌影像，私人 build 有較大 chunk 提示；npm 12 另提示鎖定 ESLint 版本與 esbuild 安裝腳本狀態，實際 build 已成功，未為消除提示任意升級依賴。
+
 本次另外產生 question-planet-phase4-A-private-source-2026-10-10.zip（含原始碼、依賴鎖定檔、部署設定、原版與挑戰基準、A 私人內容與素材、測試及審閱文件）與 question-planet-phase4-A-review-2026-10-10.zip（可操作離線預覽、全文審閱及來源紀錄）。兩包均屬私人檔案，不能上傳公開分支。實際 SHA 與還原結果見 outputs/phase4-A-backup-manifest.json 及私人 FINAL_REPORT.md。先前原始碼 ZIP、備份分支與第五期獨立 ZIP 全部保留。
 
 下載後請另外複製到安全資料夾或外接硬碟。先解壓審閱 ZIP，開啟「審閱全文.html」；互動預覽在 portable/standalone.html。要還原開發環境：把 source ZIP 解壓到新的空資料夾，安裝 Node.js，執行 npm ci；執行 npx vite build --config .local-review/phase4-approved/vite.config.ts 建立私人 A 版，再執行 node .local-review/phase4-approved/portable.mjs。一般 npm run build 仍只建置正式舊內容，這是刻意保留的審閱隔離。不要覆蓋當時 main；正式回復仍採新分支與新提交。
