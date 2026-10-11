@@ -1,0 +1,62 @@
+{
+  "base": "http://127.0.0.1:4204/",
+  "checkedAt": "2026-10-10T14:55:49.419Z",
+  "results": [
+    {
+      "width": 375,
+      "height": 812,
+      "units": 16,
+      "steps": 96,
+      "status": "passed"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "units": 16,
+      "steps": 96,
+      "status": "passed"
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "units": 16,
+      "steps": 96,
+      "status": "passed"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "units": 16,
+      "steps": 96,
+      "status": "passed"
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "units": 16,
+      "steps": 96,
+      "status": "passed"
+    }
+  ],
+  "wrongAnswerTypes": [
+    "number",
+    "choice",
+    "select",
+    "order"
+  ],
+  "errors": [],
+  "broken": [],
+  "external": [],
+  "checks": [
+    "separate original storage unchanged",
+    "all 96 steps complete at each width",
+    "both hints",
+    "retry twice then solution",
+    "back and next",
+    "reload and resume",
+    "completion and return to contents",
+    "original font/warm/bookmark preserved",
+    "missing route",
+    "storage blocked and corrupt"
+  ]
+}

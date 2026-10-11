@@ -1,0 +1,47 @@
+{
+  "results": [
+    {
+      "width": 375,
+      "readings": 20,
+      "phoneticToggle": true,
+      "progress": true,
+      "bookmarks": true,
+      "utterances": "all complete readings and questions"
+    },
+    {
+      "width": 390,
+      "readings": 20,
+      "phoneticToggle": true,
+      "progress": true,
+      "bookmarks": true,
+      "utterances": "covered at 375"
+    },
+    {
+      "width": 768,
+      "readings": 20,
+      "phoneticToggle": true,
+      "progress": true,
+      "bookmarks": true,
+      "utterances": "covered at 375"
+    },
+    {
+      "width": 1024,
+      "readings": 20,
+      "phoneticToggle": true,
+      "progress": true,
+      "bookmarks": true,
+      "utterances": "covered at 375"
+    },
+    {
+      "width": 1440,
+      "readings": 20,
+      "phoneticToggle": true,
+      "progress": true,
+      "bookmarks": true,
+      "utterances": "covered at 375"
+    }
+  ],
+  "errors": [],
+  "broken": [],
+  "physicalDevices": false
+}

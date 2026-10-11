@@ -1,0 +1,52 @@
+{
+  "base": "http://127.0.0.1:4204/",
+  "checkedAt": "2026-10-10T14:54:00.982Z",
+  "speech": "Web Speech API simulated with deterministic voices/events; not a physical audio test",
+  "results": [
+    {
+      "width": 375,
+      "originalPages": 48,
+      "challengeSteps": 96,
+      "status": "passed"
+    },
+    {
+      "width": 390,
+      "originalPages": 3,
+      "challengeSteps": 60,
+      "status": "passed"
+    },
+    {
+      "width": 768,
+      "originalPages": 3,
+      "challengeSteps": 60,
+      "status": "passed"
+    },
+    {
+      "width": 1024,
+      "originalPages": 3,
+      "challengeSteps": 60,
+      "status": "passed"
+    },
+    {
+      "width": 1440,
+      "originalPages": 3,
+      "challengeSteps": 60,
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "broken": [],
+  "checks": [
+    "no autoplay",
+    "per-page reading",
+    "question only, no answer",
+    "data available and replayable",
+    "individual options do not select answers",
+    "English/Chinese per sentence and matching voices",
+    "highlight switches language",
+    "pause/resume/replay/rate",
+    "preferences survive reload",
+    "route cancellation and stale callbacks",
+    "unsupported/throwing/error API does not break reading or answering"
+  ]
+}

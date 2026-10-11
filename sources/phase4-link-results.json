@@ -1,0 +1,226 @@
+[
+  {
+    "url": "https://www.usgs.gov/water-science-school/science/evaporation-and-water-cycle",
+    "status": 403,
+    "finalUrl": "https://www.usgs.gov/water-science-school/science/evaporation-and-water-cycle",
+    "checkedAt": "2026-10-10T15:04:31.051Z",
+    "note": "自動存取未成功，需與人工查核區分"
+  },
+  {
+    "url": "https://www.usgs.gov/water-science-school/science/atmosphere-and-water-cycle",
+    "status": 403,
+    "finalUrl": "https://www.usgs.gov/water-science-school/science/atmosphere-and-water-cycle",
+    "checkedAt": "2026-10-10T15:04:31.065Z",
+    "note": "自動存取未成功，需與人工查核區分"
+  },
+  {
+    "url": "https://www.si.edu/object/ant-communication-do-ants-use-smell-talk%3Ayt_7s16f2fmkEw",
+    "status": 403,
+    "finalUrl": "https://www.si.edu/object/ant-communication-do-ants-use-smell-talk%3Ayt_7s16f2fmkEw",
+    "checkedAt": "2026-10-10T15:04:31.142Z",
+    "note": "自動存取未成功，需與人工查核區分"
+  },
+  {
+    "url": "https://www.si.edu/spotlight/buginfo/pheromones",
+    "status": 403,
+    "finalUrl": "https://www.si.edu/spotlight/buginfo/pheromones",
+    "checkedAt": "2026-10-10T15:04:31.172Z",
+    "note": "自動存取未成功，需與人工查核區分"
+  },
+  {
+    "url": "https://science.nasa.gov/moon/moonlight/",
+    "status": 200,
+    "finalUrl": "https://science.nasa.gov/moon/moonlight/",
+    "checkedAt": "2026-10-10T15:04:31.576Z",
+    "note": "可存取；不等於法律審查"
+  },
+  {
+    "url": "https://science.nasa.gov/moon/moon-phases/",
+    "status": 200,
+    "finalUrl": "https://science.nasa.gov/moon/moon-phases/",
+    "checkedAt": "2026-10-10T15:04:31.587Z",
+    "note": "可存取；不等於法律審查"
+  },
+  {
+    "url": "https://www.nps.gov/maps/web/tools/park-tiles/legend/index.html",
+    "status": 200,
+    "finalUrl": "https://www.nps.gov/maps/web/tools/park-tiles/legend/index.html",
+    "checkedAt": "2026-10-10T15:04:31.993Z",
+    "note": "可存取；不等於法律審查"
+  },
+  {
+    "url": "https://www.nps.gov/subjects/gisandmapping/map-symbols-patterns-for-nps-maps.htm",
+    "status": 200,
+    "finalUrl": "https://www.nps.gov/subjects/gisandmapping/map-symbols-patterns-for-nps-maps.htm",
+    "checkedAt": "2026-10-10T15:04:32.005Z",
+    "note": "可存取；不等於法律審查"
+  },
+  {
+    "url": "https://science.nasa.gov/solar-system/skywatching/night-sky-network/tropical-solstice-shadows/",
+    "status": 200,
+    "finalUrl": "https://science.nasa.gov/solar-system/skywatching/night-sky-network/tropical-solstice-shadows/",
+    "checkedAt": "2026-10-10T15:04:33.178Z",
+    "note": "可存取；不等於法律審查"
+  },
+  {
+    "url": "https://annex.exploratorium.edu/cooking/bread/activity-yeast.html",
+    "status": 200,
+    "finalUrl": "https://annex.exploratorium.edu/cooking/bread/activity-yeast.html",
+    "checkedAt": "2026-10-10T15:04:33.371Z",
+    "note": "可存取；不等於法律審查"
+  },
+  {
+    "url": "https://annex.exploratorium.edu/cooking/bread/activity-gluten.html",
+    "status": 200,
+    "finalUrl": "https://annex.exploratorium.edu/cooking/bread/activity-gluten.html",
+    "checkedAt": "2026-10-10T15:04:33.387Z",
+    "note": "可存取；不等於法律審查"
+  },
+  {
+    "url": "https://sdo.gsfc.nasa.gov/assets/docs/UnitPlanSecondary.pdf",
+    "status": 200,
+    "finalUrl": "https://sdo.gsfc.nasa.gov/assets/docs/UnitPlanSecondary.pdf",
+    "checkedAt": "2026-10-10T15:04:36.355Z",
+    "note": "可存取；不等於法律審查"
+  },
+  {
+    "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/starting-seeds-indoors",
+    "status": 403,
+    "finalUrl": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/starting-seeds-indoors",
+    "checkedAt": "2026-10-10T15:04:36.672Z",
+    "note": "自動存取未成功，需與人工查核區分"
+  },
+  {
+    "url": "https://edu.cwa.gov.tw/PopularScience/ec/ec_12.html",
+    "status": 200,
+    "finalUrl": "https://edu.cwa.gov.tw/PopularScience/ec/ec_12.html",
+    "checkedAt": "2026-10-10T15:04:36.681Z",
+    "note": "可存取；不等於法律審查"
+  },
+  {
+    "url": "https://scweb.cwa.gov.tw/zh-TW/Guidance/FAQdetail/52",
+    "status": 200,
+    "finalUrl": "https://scweb.cwa.gov.tw/zh-TW/Guidance/FAQdetail/52",
+    "checkedAt": "2026-10-10T15:04:36.792Z",
+    "note": "可存取；不等於法律審查"
+  },
+  {
+    "url": "https://blog-nwcrops.extension.umn.edu/2023/05/its-magic-neat-process-of-soybean.html",
+    "status": 200,
+    "finalUrl": "https://blog-nwcrops.extension.umn.edu/2023/05/its-magic-neat-process-of-soybean.html",
+    "checkedAt": "2026-10-10T15:04:36.907Z",
+    "note": "可存取；不等於法律審查"
+  },
+  {
+    "url": "https://science.nasa.gov/earth/earth-observatory/guishan-island-149363/",
+    "status": 200,
+    "finalUrl": "https://science.nasa.gov/earth/earth-observatory/guishan-island-149363/",
+    "checkedAt": "2026-10-10T15:04:37.083Z",
+    "note": "可存取；不等於法律審查"
+  },
+  {
+    "url": "https://www.noaa.gov/education/resource-collections/marine-life/coral-reef-ecosystems",
+    "status": 403,
+    "finalUrl": "https://www.noaa.gov/education/resource-collections/marine-life/coral-reef-ecosystems",
+    "checkedAt": "2026-10-10T15:04:37.852Z",
+    "note": "自動存取未成功，需與人工查核區分"
+  },
+  {
+    "url": "https://oceanservice.noaa.gov/facts/coral.html",
+    "status": 200,
+    "finalUrl": "https://oceanservice.noaa.gov/facts/coral.html",
+    "checkedAt": "2026-10-10T15:04:39.690Z",
+    "note": "可存取；不等於法律審查"
+  },
+  {
+    "url": "https://oceanservice.noaa.gov/education/tutorial_corals/coral02_zooxanthellae.html",
+    "status": 200,
+    "finalUrl": "https://oceanservice.noaa.gov/education/tutorial_corals/coral02_zooxanthellae.html",
+    "checkedAt": "2026-10-10T15:04:39.884Z",
+    "note": "可存取；不等於法律審查"
+  },
+  {
+    "url": "https://www.sciencebuddies.org/teacher-resources/lesson-plans/paper-bridges-2",
+    "status": 403,
+    "finalUrl": "https://www.sciencebuddies.org/teacher-resources/lesson-plans/paper-bridges-2",
+    "checkedAt": "2026-10-10T15:04:40.966Z",
+    "note": "自動存取未成功，需與人工查核區分"
+  },
+  {
+    "url": "https://idp.bl.uk/discover/learning/dunhuang/collection-items/cave-17-the-library-cave/",
+    "status": 403,
+    "finalUrl": "https://idp.bl.uk/discover/learning/dunhuang/collection-items/cave-17-the-library-cave/",
+    "checkedAt": "2026-10-10T15:04:41.974Z",
+    "note": "自動存取未成功，需與人工查核區分"
+  },
+  {
+    "url": "https://www.unicef.org/asia-pacific/place-for-parents/supporting-children-depression-stress-and-anxiety",
+    "status": 200,
+    "finalUrl": "https://www.unicef.org/asia-pacific/place-for-parents/supporting-children-depression-stress-and-anxiety",
+    "checkedAt": "2026-10-10T15:04:42.677Z",
+    "note": "可存取；不等於法律審查"
+  },
+  {
+    "url": "https://www.unicef.org/eca/stories/laying-foundation-your-childs-mental-health",
+    "status": 200,
+    "finalUrl": "https://www.unicef.org/eca/stories/laying-foundation-your-childs-mental-health",
+    "checkedAt": "2026-10-10T15:04:45.450Z",
+    "note": "可存取；不等於法律審查"
+  },
+  {
+    "url": "https://idp.bl.uk/blog/the-diamond-sutra/",
+    "status": 403,
+    "finalUrl": "https://idp.bl.uk/blog/the-diamond-sutra/",
+    "checkedAt": "2026-10-10T15:04:45.609Z",
+    "note": "自動存取未成功，需與人工查核區分"
+  },
+  {
+    "url": "https://oceanservice.noaa.gov/facts/coral_bleach.html",
+    "status": 200,
+    "finalUrl": "https://oceanservice.noaa.gov/facts/coral_bleach.html",
+    "checkedAt": "2026-10-10T15:04:46.159Z",
+    "note": "可存取；不等於法律審查"
+  },
+  {
+    "url": "https://classic.csunplugged.org/activities/binary-numbers/",
+    "status": 200,
+    "finalUrl": "https://classic.csunplugged.org/activities/binary-numbers/",
+    "checkedAt": "2026-10-10T15:04:46.163Z",
+    "note": "可存取；不等於法律審查"
+  },
+  {
+    "url": "https://www.csunplugged.org/static/slides/en/binary-representation/binary-representation-slides.pdf",
+    "status": 200,
+    "finalUrl": "https://www.csunplugged.org/static/slides/en/binary-representation/binary-representation-slides.pdf",
+    "checkedAt": "2026-10-10T15:04:46.400Z",
+    "note": "可存取；不等於法律審查"
+  },
+  {
+    "url": "https://www.usgs.gov/water-science-school/science/condensation-and-water-cycle",
+    "status": 403,
+    "finalUrl": "https://www.usgs.gov/water-science-school/science/condensation-and-water-cycle",
+    "checkedAt": "2026-10-10T15:04:46.509Z",
+    "note": "自動存取未成功，需與人工查核區分"
+  },
+  {
+    "url": "https://dict.concised.moe.edu.tw/page.jsp?ID=55&la=0&powerMode=0",
+    "status": 200,
+    "finalUrl": "https://dict.concised.moe.edu.tw/page.jsp?ID=55&la=0&powerMode=0",
+    "checkedAt": "2026-10-10T15:04:46.540Z",
+    "note": "可存取；不等於法律審查"
+  },
+  {
+    "url": "https://www.nps.gov/subjects/bats/echolocation.htm",
+    "status": 200,
+    "finalUrl": "https://www.nps.gov/subjects/bats/echolocation.htm",
+    "checkedAt": "2026-10-10T15:04:46.963Z",
+    "note": "可存取；不等於法律審查"
+  },
+  {
+    "url": "https://dict.mini.moe.edu.tw/Home/Intro?Intro_id=5",
+    "status": 200,
+    "finalUrl": "https://dict.mini.moe.edu.tw/Home/Intro?Intro_id=5",
+    "checkedAt": "2026-10-10T15:04:47.608Z",
+    "note": "可存取；不等於法律審查"
+  }
+]
