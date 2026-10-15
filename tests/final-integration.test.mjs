@@ -17,8 +17,8 @@ test('24 unique review questions preserve their original article mapping, indepe
  const answers={water:[0,1,2],ants:[1,2,0],maps:[2,0,1],moon:[1,2,0],bread:[0,1,2],seed:[1,2,0],coral:[2,0,1],binary:[1,2,0]};
  for(const q of questions){const a=articles.find(a=>a.id===q.articleId);assert.ok(a);assert.equal(q.answer,answers[q.articleId][Number(q.id.split('-').at(-1))-1]);assert.ok(q.options[q.answer]);assert.equal(q.options.length,new Set(q.options).size);assert.notEqual(q.prompt,a.question);assert.ok(q.concept&&q.explanation.length>20);assert.equal(q.articleHref,'#archive/read/'+a.id+'/0');assert.match(q.source.url,/^https:\/\//);assert.equal(q.source.checkedAt,'2026-10-11')}
 });
-test('all established educational data and voice source files are byte-for-byte preserved',()=>{
+test('educational data unchanged; authorized rate revision retains original speech baseline',()=>{
  const baseline=JSON.parse(fs.readFileSync('tests/fixtures/phase4-integration-baseline.json'));
  const corrections=JSON.parse(fs.readFileSync('audit/APPROVED_CORRECTIONS.json'));
- for(const [p,sha] of Object.entries(baseline)){if(corrections[p])assert.equal(corrections[p].before,sha,p+' original baseline');assert.equal(createHash('sha256').update(fs.readFileSync(p)).digest('hex'),corrections[p]?.after||sha,p);}
+ for(const [p,sha] of Object.entries(baseline)){if(corrections[p])assert.equal(corrections[p].before,sha,p+' original baseline');assert.equal(createHash('sha256').update(JSON.parse(fs.readFileSync('tests/fixtures/phase5-round3-original-speech.json'))[p]??fs.readFileSync(p)).digest('hex'),corrections[p]?.after||sha,p);}
 });

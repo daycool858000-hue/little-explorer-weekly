@@ -57,17 +57,17 @@ async function read(page,label,expected){
 try{
  for(const width of [375,390,768,1024,1440]){
   const {context,page}=await setup(width);let pages=0,steps=0;
-  await route(page,'#read/water/0');assert.equal(await page.evaluate(()=>window.__tts.calls.length),0,'no autoplay');assert.equal(await page.getByLabel('朗讀語速',{exact:true}).inputValue(),'1.2');
+  await route(page,'#read/water/0');assert.equal(await page.evaluate(()=>window.__tts.calls.length),0,'no autoplay');assert.equal(await page.getByLabel('朗讀語速',{exact:true}).inputValue(),'1.1');
   await page.getByRole('button',{name:'聽這一頁',exact:true}).focus();await page.keyboard.press('Enter');await page.locator('.speech-highlight').first().waitFor();
   await page.getByRole('button',{name:'暫停朗讀',exact:true}).click();assert.equal(await page.evaluate(()=>window.__tts.pauseCount),1);
   await page.getByRole('button',{name:'繼續朗讀',exact:true}).click();assert.ok(await page.evaluate(()=>window.__tts.resumeCount>0));
   await page.getByRole('button',{name:'重新播放',exact:true}).click();assert.equal(await page.evaluate(()=>window.__tts.calls.length),2);
-  for(const rate of [.9,1.2,1.5,1.8]){await page.getByLabel('朗讀語速',{exact:true}).selectOption(String(rate));await page.getByRole('button',{name:'重新播放',exact:true}).click();assert.equal(await page.evaluate(()=>window.__tts.calls.at(-1).rate),rate);}
+  for(const rate of [.9,1.1]){await page.getByLabel('朗讀語速',{exact:true}).selectOption(String(rate));await page.getByRole('button',{name:'重新播放',exact:true}).click();assert.equal(await page.evaluate(()=>window.__tts.calls.at(-1).rate),rate);}
   assert.equal(await page.evaluate(()=>window.__tts.calls.at(-1).voiceName),'Taiwan Enhanced');
   await page.locator('.speech-voices summary').click();await layout(page,'expanded voice controls '+width);
   await page.getByLabel('中文聲音',{exact:true}).selectOption('zh-TW|Taiwan Basic');await page.getByRole('button',{name:'重新播放',exact:true}).click();assert.equal(await page.evaluate(()=>window.__tts.calls.at(-1).voiceName),'Taiwan Basic');
   const cancels=await page.evaluate(()=>window.__tts.cancelCount);await page.getByRole('button',{name:'下一頁 →',exact:true}).click();await page.waitForFunction(n=>window.__tts.cancelCount>n,cancels);assert.equal(await page.locator('.speech-highlight').count(),0);
-  await page.reload();await page.evaluate(()=>window.__tts.refresh());assert.equal(await page.getByLabel('朗讀語速',{exact:true}).inputValue(),'1.8');await page.locator('.speech-voices summary').click();assert.equal(await page.getByLabel('中文聲音',{exact:true}).inputValue(),'zh-TW|Taiwan Basic');await page.getByLabel('中文聲音',{exact:true}).selectOption('');await page.getByLabel('朗讀語速',{exact:true}).selectOption('1.2');
+  await page.reload();await page.evaluate(()=>window.__tts.refresh());assert.equal(await page.getByLabel('朗讀語速',{exact:true}).inputValue(),'1.1');await page.locator('.speech-voices summary').click();assert.equal(await page.getByLabel('中文聲音',{exact:true}).inputValue(),'zh-TW|Taiwan Basic');await page.getByLabel('中文聲音',{exact:true}).selectOption('');await page.getByLabel('朗讀語速',{exact:true}).selectOption('1.1');
   for(const a of width===375?originals:[originals[0]])for(const [n,p]of a.pages.entries()){
    await route(page,'#read/'+a.id+'/'+n);assert.equal(await page.evaluate(()=>window.__tts.calls.length),0);
    await read(page,'聽這一頁',[...plainSegments(a.title,'article-title'),...plainSegments(p.title,'article-page-title'),...p.text.flatMap((t,i)=>plainSegments(t,'article-paragraph-'+i))]);

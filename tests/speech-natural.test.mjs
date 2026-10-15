@@ -23,7 +23,7 @@ const examples=[
 test('actual utterances contain the expected money, units, clocks and arithmetic words',()=>{
  const actual=[];const synth={getVoices:()=>[],cancel(){},resume(){},addEventListener(){},removeEventListener(){},speak:u=>actual.push(u)};
  const engine=createSpeech({synth,make:text=>({text})});
- try{for(const [text,lang,expected]of examples){engine.play([{text,lang}]);assert.equal(actual.at(-1).text,expected,text);assert.equal(actual.at(-1).lang,lang);assert.equal(actual.at(-1).rate,1.2);}}finally{engine.dispose();}
+ try{for(const [text,lang,expected]of examples){engine.play([{text,lang}]);assert.equal(actual.at(-1).text,expected,text);assert.equal(actual.at(-1).lang,lang);assert.equal(actual.at(-1).rate,1.1);}}finally{engine.dispose();}
 });
 test('contextual language keeps Chinese units together and never drops numeric-only English',()=>{
  const text='兩瓶果汁共有 1.5 L，換成多少 mL？';assert.deepEqual(plainSegments(text,'x'),[{text,lang:'zh-TW',id:'x'}]);
@@ -31,9 +31,9 @@ test('contextual language keeps Chinese units together and never drops numeric-o
  for(const value of ['1.5 L','200 mL','A','NT$200']){assert.equal(plainSegments(value,'x')[0].lang,'zh-TW');assert.equal(textSegments(value,'x',undefined,'english')[0].lang,'en-US');}
  assert.equal(numberWords('10001','zh-TW'),'一萬零一');assert.equal(numberWords('1000001','en-US'),'one million one');assert.equal(numberWords('0.05','zh-TW'),'零點零五');
 });
-test('new rates default to 1.2; saved rates and display/language choices are retained',()=>{
- assert.equal(readPreferences(null).rate,1.2);for(const rate of [.9,1.2,1.5,1.8,.8,1])assert.equal(readPreferences({rate}).rate,rate);
- assert.equal(readPreferences({rate:100}).rate,1.2);assert.deepEqual(readPreferences({rate:1.8,chinese:false,mode:'english',zhVoice:'zh-TW|A',enVoice:'en-US|B'}),{rate:1.8,chinese:false,mode:'english',zhVoice:'zh-TW|A',enVoice:'en-US|B'});
+test('rates migrate safely to 0.9/1.1 without changing other preferences',()=>{
+ assert.equal(readPreferences(null).rate,1.1);for(const rate of [.9,.8,1])assert.equal(readPreferences({rate}).rate,.9);for(const rate of [1.1,1.2,1.5,1.8])assert.equal(readPreferences({rate}).rate,1.1);
+ assert.equal(readPreferences({rate:100}).rate,1.1);assert.deepEqual(readPreferences({rate:1.8,chinese:false,mode:'english',zhVoice:'zh-TW|A',enVoice:'en-US|B'}),{rate:1.1,chinese:false,mode:'english',zhVoice:'zh-TW|A',enVoice:'en-US|B'});
 });
 test('language-aware gaps avoid blanket pauses and remain deliberate at translations',()=>{
  const en={text:'a',lang:'en-US',id:'one'},zh={text:'甲',lang:'zh-TW',id:'two'};

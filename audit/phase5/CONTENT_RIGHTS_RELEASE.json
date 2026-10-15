@@ -1,0 +1,758 @@
+[
+  {
+    "id": "junior-anger",
+    "title": "我的積木倒了",
+    "file": "src/planet/phase5/junior/junior-anger.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "UNICEF：情緒與不傷害的教養",
+        "url": "https://www.unicef.org/asia-pacific/place-for-parents/positive-parenting-ages-0-5",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "title": "教育部：輕聲與一／不變調體例",
+        "url": "https://dict.concised.moe.edu.tw/page.jsp?ID=55&la=0&powerMode=0",
+        "checkedAt": "2026-10-12"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "junior-ant-trail",
+    "title": "看不見的螞蟻小路",
+    "file": "src/planet/phase5/junior/junior-ant-trail.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "亞利桑那州立大學：螞蟻生活",
+        "url": "https://askabiologist.asu.edu/explore/ant-life-part-1",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "title": "ASU：螞蟻導航研究訪談",
+        "url": "https://askabiologist.asu.edu/sites/default/files/transcript/ask_a_biologist_transcript_vol_044.pdf",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "title": "教育部：輕聲與一／不變調體例",
+        "url": "https://dict.concised.moe.edu.tw/page.jsp?ID=55&la=0&powerMode=0",
+        "checkedAt": "2026-10-12"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "junior-bird-beaks",
+    "title": "鳥嘴像什麼工具？",
+    "file": "src/planet/phase5/junior/junior-bird-beaks.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "康乃爾鳥類學實驗室：鳥嘴不只受食物影響",
+        "url": "https://www.allaboutbirds.org/news/a-birds-beak-is-shaped-by-more-than-what-it-eats/",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "title": "教育部：輕聲與一／不變調體例",
+        "url": "https://dict.concised.moe.edu.tw/page.jsp?ID=55&la=0&powerMode=0",
+        "checkedAt": "2026-10-12"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "junior-different-ideas",
+    "title": "我們想玩的不一樣",
+    "file": "src/planet/phase5/junior/junior-different-ideas.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "APA：兒童友誼與同儕關係",
+        "url": "https://www.apa.org/topics/parenting/navigating-friendships",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "title": "教育部：輕聲與一／不變調體例",
+        "url": "https://dict.concised.moe.edu.tw/page.jsp?ID=55&la=0&powerMode=0",
+        "checkedAt": "2026-10-12"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "junior-float",
+    "title": "大木塊和小石頭",
+    "file": "src/planet/phase5/junior/junior-float.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "紐西蘭科學學習中心：浮與沉",
+        "url": "https://www.sciencelearn.org.nz/resources/3181-building-science-concepts-floating-and-sinking",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "title": "教育部：輕聲與一／不變調體例",
+        "url": "https://dict.concised.moe.edu.tw/page.jsp?ID=55&la=0&powerMode=0",
+        "checkedAt": "2026-10-12"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "junior-melting",
+    "title": "冰塊跑到哪裡去了？",
+    "file": "src/planet/phase5/junior/junior-melting.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "USGS：冰與水的變化",
+        "url": "https://www.usgs.gov/science/science-explorer/climate/snow-ice-and-permafrost",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "title": "教育部：輕聲與一／不變調體例",
+        "url": "https://dict.concised.moe.edu.tw/page.jsp?ID=55&la=0&powerMode=0",
+        "checkedAt": "2026-10-12"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "junior-queue",
+    "title": "排隊時，也可以問原因",
+    "file": "src/planet/phase5/junior/junior-queue.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "UNICEF：尊重與保護兒童",
+        "url": "https://www.unicef.org/protection/violence-against-children",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "title": "教育部：輕聲與一／不變調體例",
+        "url": "https://dict.concised.moe.edu.tw/page.jsp?ID=55&la=0&powerMode=0",
+        "checkedAt": "2026-10-12"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "junior-say-no",
+    "title": "我可以不想被搔癢",
+    "file": "src/planet/phase5/junior/junior-say-no.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "NSPCC：身體界線與向可信任大人求助",
+        "url": "https://www.nspcc.org.uk/advice-for-families/pants-underwear-rule/pants-how-to-answer-questions/",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "title": "教育部：輕聲與一／不變調體例",
+        "url": "https://dict.concised.moe.edu.tw/page.jsp?ID=55&la=0&powerMode=0",
+        "checkedAt": "2026-10-12"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "junior-seed",
+    "title": "種子不是喝越多越好",
+    "file": "src/planet/phase5/junior/junior-seed.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "明尼蘇達大學：室內育苗",
+        "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/starting-seeds-indoors",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "title": "教育部：輕聲與一／不變調體例",
+        "url": "https://dict.concised.moe.edu.tw/page.jsp?ID=55&la=0&powerMode=0",
+        "checkedAt": "2026-10-12"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "junior-shadow",
+    "title": "影子怎麼變長了？",
+    "file": "src/planet/phase5/junior/junior-shadow.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "NASA：太陽與影子",
+        "url": "https://sunearthday.nasa.gov/2007/materials/changing_shadows.pdf",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "title": "教育部：輕聲與一／不變調體例",
+        "url": "https://dict.concised.moe.edu.tw/page.jsp?ID=55&la=0&powerMode=0",
+        "checkedAt": "2026-10-12"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "junior-sleep",
+    "title": "睡著了，身體還在忙",
+    "file": "src/planet/phase5/junior/junior-sleep.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "美國國家心肺血液研究所：睡眠的重要性",
+        "url": "https://www.nhlbi.nih.gov/health/sleep/why-sleep-important",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "title": "教育部：輕聲與一／不變調體例",
+        "url": "https://dict.concised.moe.edu.tw/page.jsp?ID=55&la=0&powerMode=0",
+        "checkedAt": "2026-10-12"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "junior-snail",
+    "title": "雨後，蝸牛出門了",
+    "file": "src/planet/phase5/junior/junior-snail.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "RHS：蛞蝓與蝸牛",
+        "url": "https://www.rhs.org.uk/Advice/Profile?PID=228",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "title": "教育部：輕聲與一／不變調體例",
+        "url": "https://dict.concised.moe.edu.tw/page.jsp?ID=55&la=0&powerMode=0",
+        "checkedAt": "2026-10-12"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "advanced-ai-errors",
+    "title": "回答很流暢，為什麼還可能是錯的？",
+    "file": "src/planet/phase5/advanced/advanced-ai-errors.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "NIST：生成式AI風險管理",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+        "checkedAt": "2026-10-12",
+        "scope": "依NIST風險分類，區分生成、工具與查核；不描述特定模型必然行為，不把幻覺當診斷。"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "advanced-anger-brain",
+    "title": "生氣時，大腦真的停止思考了嗎？",
+    "file": "src/planet/phase5/advanced/advanced-anger-brain.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "NIMH：青少年大腦發展",
+        "url": "https://www.nimh.nih.gov/health/publications/the-teen-brain-7-things-to-know",
+        "checkedAt": "2026-10-12",
+        "scope": "NIMH主要談青少年，本文不把群體發展結果當個別診斷；不使用杏仁核劫持等過度簡化敘述。"
+      },
+      {
+        "title": "UNICEF：保護兒童免受暴力",
+        "url": "https://www.unicef.org/protection/violence-against-children",
+        "checkedAt": "2026-10-12",
+        "scope": "NIMH主要談青少年，本文不把群體發展結果當個別診斷；不使用杏仁核劫持等過度簡化敘述。"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "advanced-antibiotics",
+    "title": "同樣發燒，為什麼不能吃同一種藥？",
+    "file": "src/planet/phase5/advanced/advanced-antibiotics.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "CDC：病毒與細菌",
+        "url": "https://www.cdc.gov/antibiotic-use/communication-resources/virus-or-bacteria.html",
+        "checkedAt": "2026-10-12",
+        "scope": "健康教育，不提供診斷、劑量或自行用藥指令；依CDC區分病毒、細菌及抗生素用途。"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "advanced-comparison",
+    "title": "別人做得好，為什麼我有時反而難過？",
+    "file": "src/planet/phase5/advanced/advanced-comparison.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "APA：社群媒體與青少年比較風險",
+        "url": "https://www.apa.org/monitor/2023/09/protecting-teens-on-social-media",
+        "checkedAt": "2026-10-12",
+        "scope": "社群比較研究多涉及青少年且常為相關性，不宣稱必然因果；小晴為自編角色，不要求讀者揭露私密經驗。"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "advanced-coral-network",
+    "title": "珊瑚礁少了，誰的生活會改變？",
+    "file": "src/planet/phase5/advanced/advanced-coral-network.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "NOAA：珊瑚礁的重要性",
+        "url": "https://oceanservice.noaa.gov/education/tutorial_corals/coral07_importance.html",
+        "checkedAt": "2026-10-12",
+        "scope": "NOAA支持棲地、海岸保護及生活連結；不以單一數字概括所有礁區，白化與死亡分開。"
+      },
+      {
+        "title": "NOAA：什麼是珊瑚白化",
+        "url": "https://oceanservice.noaa.gov/facts/coral_bleach.html",
+        "checkedAt": "2026-10-12"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "advanced-data-journey",
+    "title": "按下同意之後，資料可能去哪裡？",
+    "file": "src/planet/phase5/advanced/advanced-data-journey.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "FTC：資料仲介透明度報告",
+        "url": "https://www.ftc.gov/news-events/news/press-releases/2014/05/ftc-recommends-congress-require-data-broker-industry-be-more-transparent-give-consumers-greater",
+        "checkedAt": "2026-10-12",
+        "scope": "FTC作資料仲介概念依據，不當成臺灣法律條文；本站儲存描述依b67ebfd程式與隱私稽核，發布前再核對。"
+      },
+      {
+        "title": "GitHub Pages資料蒐集說明",
+        "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection",
+        "checkedAt": "2026-10-12"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "advanced-earthquake",
+    "title": "地震預警響了，為什麼還不能預測地震？",
+    "file": "src/planet/phase5/advanced/advanced-earthquake.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "USGS：能預測地震嗎？",
+        "url": "https://www.usgs.gov/faqs/can-you-predict-earthquakes",
+        "checkedAt": "2026-10-12",
+        "scope": "核對預測定義與目前能力限制；預警描述不承諾固定秒數。情境為虛構，安全行動依所在地官方與學校指引。"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "advanced-historical-evidence",
+    "title": "沒有錄影的年代，怎麼知道發生過什麼？",
+    "file": "src/planet/phase5/advanced/advanced-historical-evidence.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "美國國會圖書館：分析第一手史料",
+        "url": "https://www.loc.gov/static/programs/teachers/getting-started-with-primary-sources/documents/Analyzing_Primary_Sources.pdf",
+        "checkedAt": "2026-10-12",
+        "scope": "石橋、碑文與帳簿為教學虛構案例，不冒充真實古蹟考證；方法依LOC史料分析。"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "advanced-history-accounts",
+    "title": "同一場事件，為什麼留下不同版本？",
+    "file": "src/planet/phase5/advanced/advanced-history-accounts.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "美國國會圖書館：分析第一手史料",
+        "url": "https://www.loc.gov/static/programs/teachers/getting-started-with-primary-sources/documents/Analyzing_Primary_Sources.pdf",
+        "checkedAt": "2026-10-12",
+        "scope": "運動會與車站案例皆為虛構教學例，非實際歷史事件；區分多元觀點與事實查證。"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "advanced-majority",
+    "title": "大家都點頭，我也一定要同意嗎？",
+    "file": "src/planet/phase5/advanced/advanced-majority.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "APA：同儕影響的不同面向",
+        "url": "https://www.apa.org/news/podcasts/speaking-of-psychology/peer-pressure",
+        "checkedAt": "2026-10-12",
+        "scope": "採同儕影響與兒童保護原則；不提供法律裁判，不要求揭露真實霸凌經驗。"
+      },
+      {
+        "title": "UNICEF：保護兒童免受暴力",
+        "url": "https://www.unicef.org/protection/violence-against-children",
+        "checkedAt": "2026-10-12",
+        "scope": "採同儕影響與兒童保護原則；不提供法律裁判，不要求揭露真實霸凌經驗。"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "advanced-map-perspectives",
+    "title": "同一個地球，為什麼地圖長得不一樣？",
+    "file": "src/planet/phase5/advanced/advanced-map-perspectives.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "USGS：地圖投影",
+        "url": "https://www.usgs.gov/publications/map-projections",
+        "checkedAt": "2026-10-12",
+        "scope": "投影限制依USGS，橘皮與校園案例為自行編寫比喻；不製作有爭議國界圖。"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "advanced-photo-evidence",
+    "title": "照片看起來是真的，就能證明整件事嗎？",
+    "file": "src/planet/phase5/advanced/advanced-photo-evidence.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "NIST：數位合成內容的透明度與查核限制",
+        "url": "https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content",
+        "checkedAt": "2026-10-12",
+        "scope": "依NIST說明來源追蹤與偵測限制；操場案例自編，不使用真實兒童照片。"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "advanced-printing-spread",
+    "title": "一本書變成一百本，世界就會立刻改變嗎？",
+    "file": "src/planet/phase5/advanced/advanced-printing-spread.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "美國國會圖書館：亞洲印刷史",
+        "url": "https://blogs.loc.gov/international-collections/2021/06/the-history-of-printing-in-asia-according-to-library-of-congress-asian-collections-part-1/",
+        "checkedAt": "2026-10-12",
+        "scope": "不採亞洲文章中有爭議的字數或單一路徑傳播假說；僅核對東亞先行與古騰堡非全球印刷起源。"
+      },
+      {
+        "title": "美國國會圖書館：古騰堡與印刷",
+        "url": "https://guides.loc.gov/gutenberg/the-printer",
+        "checkedAt": "2026-10-12",
+        "scope": "不採亞洲文章中有爭議的字數或單一路徑傳播假說；僅核對東亞先行與古騰堡非全球印刷起源。"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "advanced-recommendations",
+    "title": "為什麼下一支影片，總像上一支？",
+    "file": "src/planet/phase5/advanced/advanced-recommendations.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "YouTube：推薦如何運作",
+        "url": "https://support.google.com/youtube/answer/16089387?hl=en",
+        "checkedAt": "2026-10-12",
+        "scope": "以YouTube官方訊號說明為例，明示不是所有平台通用公式；生活案例及學習策略自編。"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "advanced-responsibility",
+    "title": "不是故意的，還需要做什麼？",
+    "file": "src/planet/phase5/advanced/advanced-responsibility.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "UNICEF：保護兒童免受暴力",
+        "url": "https://www.unicef.org/protection/violence-against-children",
+        "checkedAt": "2026-10-12",
+        "scope": "此篇為自編倫理思考框架，UNICEF只支持安全與免受傷害原則，不把修補步驟宣稱為心理學定律或法律責任判定。"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "advanced-space-debris",
+    "title": "太空很大，為什麼還會撞上垃圾？",
+    "file": "src/planet/phase5/advanced/advanced-space-debris.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "ESA：減少太空碎片",
+        "url": "https://www.esa.int/Space_Safety/Space_Debris/Mitigating_space_debris_generation",
+        "checkedAt": "2026-10-12",
+        "scope": "依ESA碎片減量框架，不採用會快速過時的碎片總數或誇大必然災難。"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "life-exclusion",
+    "title": "大家都不跟他玩，我可以怎麼做？",
+    "file": "src/planet/phase5/middle/life-exclusion.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "StopBullying.gov：辨別霸凌與其他衝突",
+        "url": "https://www.stopbullying.gov/bullying/what-is-bullying",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "title": "StopBullying.gov：旁觀者可以怎麼做",
+        "url": "https://www.stopbullying.gov/prevention/bystanders-to-bullying",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "title": "StopBullying.gov：先保護安全，不強迫當場和好",
+        "url": "https://www.stopbullying.gov/prevention/on-the-spot",
+        "checkedAt": "2026-10-12"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "life-jokes",
+    "title": "玩笑為什麼會讓人難過？",
+    "file": "src/planet/phase5/middle/life-jokes.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "NSPCC：身體界線與可信任成人",
+        "url": "https://www.nspcc.org.uk/advice-for-families/pants-underwear-rule/pants-how-to-answer-questions/",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "title": "StopBullying.gov：辨別霸凌與其他衝突",
+        "url": "https://www.stopbullying.gov/bullying/what-is-bullying",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "title": "StopBullying.gov：先保護安全，不強迫當場和好",
+        "url": "https://www.stopbullying.gov/prevention/on-the-spot",
+        "checkedAt": "2026-10-12"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "life-repair",
+    "title": "做錯事情之後，怎麼把事情補好？",
+    "file": "src/planet/phase5/middle/life-repair.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "StopBullying.gov：先保護安全，不強迫當場和好",
+        "url": "https://www.stopbullying.gov/prevention/on-the-spot",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "title": "NSPCC：身體界線與可信任成人",
+        "url": "https://www.nspcc.org.uk/advice-for-families/pants-underwear-rule/pants-how-to-answer-questions/",
+        "checkedAt": "2026-10-12"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "life-worry",
+    "title": "當擔心一直留在心裡",
+    "file": "src/planet/phase5/middle/life-worry.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "NHS：兒童的擔心與求助",
+        "url": "https://www.nhs.uk/mental-health/children-and-young-adults/advice-for-parents/anxiety-in-children/",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "title": "StopBullying.gov：先保護安全，不強迫當場和好",
+        "url": "https://www.stopbullying.gov/prevention/on-the-spot",
+        "checkedAt": "2026-10-12"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "no-hug-please",
+    "title": "我不想被抱抱",
+    "file": "src/planet/phase5/middle/no-hug-please.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "NSPCC：身體界線與求助",
+        "url": "https://www.nspcc.org.uk/advice-for-families/pants-underwear-rule/",
+        "checkedAt": "2026-10-09"
+      },
+      {
+        "title": "衛福部：113 保護專線",
+        "url": "https://dep.mohw.gov.tw/DOPs/cp-1183-6499-105.html",
+        "checkedAt": "2026-10-09"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "quiet-today",
+    "title": "今天，我不想說話",
+    "file": "src/planet/phase5/middle/quiet-today.json",
+    "creator": "Codex AI 協助編寫",
+    "method": "虛構情境及知識說明；參考資料作事實查核，不是第三方重製授權",
+    "sources": [
+      {
+        "title": "UNICEF：支持有低落、壓力與焦慮的孩子",
+        "url": "https://www.unicef.org/asia-pacific/place-for-parents/supporting-children-depression-stress-and-anxiety",
+        "checkedAt": "2026-10-09"
+      }
+    ],
+    "risk": "B",
+    "publication": "管理者 2026-10-14 授權檢查後公開；不宣稱教師或專業機構認證",
+    "pending": "不保證 AI 輸出的排他著作權；外部全面相似性與法律鑑定未完成",
+    "checkedAt": "2026-10-15"
+  }
+]

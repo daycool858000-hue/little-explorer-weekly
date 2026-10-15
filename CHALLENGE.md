@@ -85,3 +85,7 @@
 ## 第三階段：持續新增期刊
 
 挑戰版與原版分開編號、分開發布；不因原版新增第五期就建立空的挑戰第五期。使用 templates/challenge-issue.json 與 templates/source-record.json，填寫全部四類單元。正式新增需 status: published、真實 publishedAt、reviewedBy、sourceRecord，執行 npm run validate:content。英文 translations 繼續以原文字串對應 [{en, zh}]，包含題意、指示、選項與表格重要資訊；英文句子不得改寫，中文不得洩漏答案。詳 MONTHLY_PUBLISH.md。
+
+## 第五階段第三輪語速相容性
+
+共用速度改為0.9／1.1，預設1.1。既有0.8、0.9、1轉為0.9；1.2、1.5、1.8及不支援值轉為1.1。保留zhVoice、enVoice、chinese、mode，僅更新explorer-speech-v1的速度。engine與Controls同步，不能新增僅顯示用的速度。新教材不必加入語速資料，沿用共用設定。測試保留中英逐句、單獨選項、切頁停止及無API降級。

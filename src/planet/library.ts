@@ -1,7 +1,9 @@
+import drafts from 'virtual:phase5-readings';
 import type template from './content/week-1.json';
 const files=import.meta.glob<{default:typeof template}>('./content/week-*.json',{eager:true});
 export const issues=Object.values(files).map(f=>f.default).filter(i=>i.status==="published").sort((a,b)=>a.number-b.number);
-export const articles=issues.flatMap(i=>i.articles);
+export const articles=[...issues.flatMap(i=>i.articles),...drafts.middle];
+export const middleDraftCount=drafts.privateReview?drafts.middle.length:0;
 export const topics=[
  {name:'自然與科學',id:'moon',line:'從月亮到麵包，找出藏起來的原因。'},
  {name:'歷史與人物',id:'printing',line:'看見人們留下的工具與想法。'},

@@ -46,7 +46,7 @@ test('pause, resume, replay, speed and cancellation discard stale callbacks',t=>
  const f=fake(t);assert.equal(f.spoken().length,0);
  f.engine.play([{text:'one',lang:'en-US'},{text:'two',lang:'en-US'}]);const first=f.spoken()[0];
  f.engine.pause();assert.equal(f.engine.getSnapshot().status,'paused');f.engine.resume();first.onresume();assert.ok(f.calls.includes('pause'));assert.equal(f.engine.getSnapshot().status,'playing');
- f.engine.setRate(.8);first.onend();t.mock.timers.tick(1000);assert.equal(f.spoken().length,1);f.engine.replay();assert.equal(f.spoken()[1].rate,.8);
+ f.engine.setRate(.8);first.onend();t.mock.timers.tick(1000);assert.equal(f.spoken().length,1);f.engine.replay();assert.equal(f.spoken()[1].rate,.9);
  const stale=f.spoken()[1];f.engine.cancel();stale.onend();t.mock.timers.tick(1000);assert.equal(f.spoken().length,2);assert.equal(f.engine.getSnapshot().canReplay,false);
 });
 test('pause between sentences and engines that end on pause can resume safely',t=>{
@@ -60,4 +60,5 @@ test('missing API, throwing API, error event and no-start timeout fall back with
  const bad=createSpeech({synth:{getVoices(){throw Error();},cancel(){throw Error();},speak(){throw Error();}},make:text=>({text})});assert.doesNotThrow(()=>bad.play([{text:'hi',lang:'en-US'}]));assert.equal(bad.getSnapshot().status,'error');bad.dispose();
  const stuck=createSpeech({synth:{getVoices:()=>[],cancel(){},speak(){}},make:text=>({text})});stuck.play([{text:'hi',lang:'en-US'}]);t.mock.timers.tick(8000);assert.equal(stuck.getSnapshot().status,'error');stuck.dispose();
 });
+
 

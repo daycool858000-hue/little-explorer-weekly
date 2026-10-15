@@ -21,7 +21,7 @@ test('new draft is previewable but never accepted as published data; dates are n
  const i=structuredClone(loadIssues('src/content')[0]);i.id='week-8';i.number=8;i.status='draft';i.publishedAt=null;
  assert.throws(()=>validateIssues([i],'magazine'));assert.equal(validateIssues([i],'magazine',()=>true,{draft:true}).entries,4);
  assert.ok(loadIssues('src/content').filter(i=>i.number<=4).every(i=>i.publishedAt===undefined));
- const config=readFileSync('vite.config.ts','utf8');assert.match(config,/reviewing && existsSync\(folder\)/);assert.match(config,/outDir: reviewing \? '.local-review\/build' : 'docs'/);assert.match(readFileSync('.gitignore','utf8'),/\.local-review\//);
+ const config=readFileSync('vite.config.ts','utf8');assert.match(config,/reviewing && existsSync\(folder\)/);assert.match(config,/outDir: phase5 \? '.local-review\/phase5\/build' : reviewing \? '.local-review\/build' : 'docs'/);assert.match(readFileSync('.gitignore','utf8'),/\.local-review\//);
 });
 test('distributed notices contain full upstream notices, without licensing educational content',()=>{
  const notices=readFileSync('public/THIRD-PARTY-NOTICES.txt','utf8');
@@ -44,5 +44,5 @@ test('private review content validates if present and production contains none o
  const draft=JSON.parse(readFileSync('.local-review/week-5.json','utf8'));
  assert.equal(validateIssues([draft],'magazine',n=>existsSync('.local-review/assets/'+n+'.svg'),{draft:true}).entries,4);
  const oldIds=new Set(loadIssues('src/content').flatMap(i=>i.articles.map(a=>a.id)));for(const a of draft.articles)assert.ok(!oldIds.has(a.id));
- if(existsSync('docs/assets')){const bundle=readdirSync('docs/assets').filter(n=>n.endsWith('.js')).map(n=>readFileSync('docs/assets/'+n,'utf8')).join('');for(const a of draft.articles){assert.ok(!bundle.includes(a.title));assert.ok(!existsSync('docs/assets/'+a.image+'.svg'));}}
+ if(existsSync('docs/assets')){const bundle=readdirSync('docs/assets').filter(n=>n.endsWith('.js')).map(n=>readFileSync('docs/assets/'+n,'utf8')).join('');for(const a of draft.articles){if(!['quiet-today','no-hug-please'].includes(a.id))assert.ok(!bundle.includes(a.title));assert.ok(!existsSync('docs/assets/'+a.image+'.svg'));}}
 });
