@@ -1,5 +1,5 @@
 import {normalizeSpeech} from './normalize.ts';
-import {ACCEPTED_RATES} from './preferences.ts';
+import {migrateRate} from './preferences.ts';
 export type Segment = { text: string; lang: 'zh-TW' | 'en-US'; id?: string };
 export type VoiceOption={key:string;name:string;lang:string};
 export type SpeechState = { supported: boolean; status: 'idle' | 'playing' | 'paused' | 'error'; active: string; message: string; canReplay: boolean; rate: number; voices:VoiceOption[] };
@@ -16,7 +16,7 @@ export function chooseVoice(voices: SpeechSynthesisVoice[], lang: string, prefer
 export function gapBetween(current:Segment,next:Segment){return current.lang===next.lang?(current.id===next.id?0:100):current.lang==='en-US'?400:240;}
 // One application-wide queue. Generation checks discard delayed callbacks after cancel.
 export function createSpeech(platform: SpeechPlatform | null) {
-  let state: SpeechState = {supported: !!platform, status: 'idle', active: '', message: '', canReplay: false, rate: 1.2,voices:[]};
+  let state: SpeechState = {supported: !!platform, status: 'idle', active: '', message: '', canReplay: false, rate: 1.1,voices:[]};
   let selectedVoices={zh:'',en:''};
   const listeners = new Set<() => void>();
   let voices: SpeechSynthesisVoice[] = [], queue: Segment[] = [], last: Segment[] = [];
@@ -116,7 +116,7 @@ export function createSpeech(platform: SpeechPlatform | null) {
     subscribe(fn: () => void) { listeners.add(fn); return () => {listeners.delete(fn);}; },
     getSnapshot: () => state, play, pause, resume, cancel,
     replay() { const saved = [...last]; play(saved); },
-    setRate(rate: number) { if(!ACCEPTED_RATES.includes(rate)) return; cancel(false); emit({rate}); },
+    setRate(rate: number) { cancel(false); emit({rate:migrateRate(rate)}); },
     setVoices(zh:string,en:string) { if(zh===selectedVoices.zh&&en===selectedVoices.en)return;cancel(false);selectedVoices={zh,en}; },
     dispose() { cancel(); try { platform?.synth.removeEventListener('voiceschanged',refreshVoices); } catch { /* optional */ } listeners.clear(); }
   };

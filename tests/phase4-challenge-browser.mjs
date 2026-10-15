@@ -29,7 +29,7 @@ async function answer(page,s,wrong=false){
 try{
  for(const [width,height]of [[375,812],[390,844],[768,1024],[1024,768],[1440,1000]]){
   const context=await browser.newContext({viewport:{width,height}});const page=await watch(context);
-  await page.goto(base);await page.locator('.site-header nav a[href="#challenge"]').waitFor();assert.equal(await page.locator('.discovery-stories .story-card').count(),16);
+  await page.goto(base);await page.locator('.site-header nav a[href="#challenge"]').waitFor();assert.equal(await page.locator('.home-grades .reading-levels a').count(),3);
   await page.evaluate(value=>localStorage.setItem('explorer-magazine-v1',JSON.stringify(value)),original);
   await page.locator('.site-header nav a[href="#challenge"]').click();await page.locator('.c-issue-card').first().waitFor();assert.equal(await page.locator('.c-issue-card').count(),4);await layout(page,'home');await page.screenshot({path:output+'/home-'+width+'.png',fullPage:true});
   let steps=0;
@@ -54,7 +54,7 @@ try{
    }
   }
   assert.deepEqual(await page.evaluate(()=>JSON.parse(localStorage.getItem('explorer-magazine-v1'))),original);
-  await page.getByRole('link',{name:'網站首頁',exact:true}).click();await page.locator('.discovery-stories .story-card').first().waitFor();assert.equal(await page.locator('.discovery-stories .story-card').count(),16);
+  await page.getByRole('link',{name:'網站首頁',exact:true}).click();await page.locator('.home-grades .reading-levels a').first().waitFor();assert.equal(await page.locator('.home-grades .reading-levels a').count(),3);
   await page.goto(base+'#read/water/1');await page.getByRole('button',{name:'字級／暖紙',exact:true}).click();assert.equal(await page.getByLabel('文字大小').inputValue(),'25');assert.ok(await page.locator('.proposals.warm').isVisible());assert.equal(await page.getByRole('button',{name:'收藏文章'}).innerText(),'已收藏 ✓');
   await page.goto(base+'#challenge/week-9');await page.locator('.c-complete').waitFor();assert.match(await page.locator('main h1').innerText(),/找不到/);
   results.push({width,height,units:16,steps,status:'passed'});await context.close();
