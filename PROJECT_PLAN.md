@@ -203,3 +203,12 @@ ESLint、TypeScript、31 測試、內容驗證、私人 build 通過。閱讀 48
 
 ## 2026-10-15 第五階段正式整合
 管理者已授權 images6 檢查後公開。32 篇增量稿及原第五期兩篇獨立讀物整合，總計70篇（16／22／16／故事16），心理16篇。沒有新增第五期期刊。原68封面、原425筆稽核及閱讀功能保留。59項單元、五尺寸圖片與語音模擬、正式build及獨立還原通過。正式功能提交9f4d7e3，PR #1已合併，GitHub Actions 38719886010成功部署；公開網站70篇與功能驗證通過。來源、安全、尚待管理者確認及手機限制見audit/phase5/FINAL_RELEASE.md；備份見SOURCE_BACKUP_PHASE5.md。第五階段歸檔，未開始下一階段。
+
+## 2026-10-16 第六階段｜Issue #3 私人預覽
+main protect-main 已完成並查核，規則未更動。從9430a59另開feature/phase6-navigation-private，備份backup/pre-phase6-9430a59。完成精簡首頁、心理分類即時結果、12篇跨組隨機輪播及節制動態；70篇教材及原有閱讀功能維持。僅一張feelings候選圖私人比較，未覆蓋原圖。62項單元、五尺寸與單檔預覽測試通過；實機語音未測。詳見PHASE6_REVIEW.md及audit/phase6/SECURITY_CHECK.json。待管理者審閱，未push、合併或部署。
+
+## 2026-10-16 第六階段第二輪｜展示式目錄
+依管理者補正：心理移除表單改四卡手動輪播、主次導覽重新排序、挑戰首頁2×2、歷期期刊簡化獨立展示與三個工具、指定feelings封面採用既有候選。70篇正文與題目、語音、收藏、進度及首頁隨機核心未改。工作分支feature/phase6-display-round2，回復點backup/phase6-round1-bd16285；65項單元與五尺寸／375×667／單檔驗證通過。詳PHASE6_ROUND2_REVIEW.md。未push、合併或部署。
+
+## 2026-10-16 第六階段正式發布準備
+Issue #3已核准fd678da。保留70篇、全部閱讀資料與既有功能；僅將feelings封面授權狀態更新為已核准公開，B級不變。正式main基準9430a59，protect-main保持Active且無bypass。發布與備份結果另見PHASE6_RELEASE.md；歷史私人審閱紀錄不代表最新發布狀態。

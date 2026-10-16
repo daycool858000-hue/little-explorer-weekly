@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-16",
+  "id": "feelings",
+  "file": "src/planet/media/feelings-cover.png",
+  "sha256": "11641cc2278ff503d66d86d16b9c26a6f959954317f2a5300b33b0d794316852",
+  "scope": "僅三四年級feelings封面（文章及各目錄共用同一封面）。原始期刊與第二頁原圖保留。",
+  "source": "OpenAI image_gen，2026-10-16文字提示生成",
+  "type": "AI虛構情境，不是真人照片",
+  "terms": "https://openai.com/policies/terms-of-use/",
+  "termsEffective": "2026-01-01",
+  "risk": "B",
+  "evidence": "前輪原始輸出與完整提示保留於.local-review/phase6/IMAGE_RIGHTS.json；本圖與候選PNG SHA-256相同。",
+  "authorization": "2026-10-16管理者於Issue #3最新留言核准fd678da及本封面正式發布。",
+  "restrictions": "未做全球作品相似性鑑定；不保證排他著作權。沒有發現具體知名角色、品牌或浮水印。",
+  "attribution": "AI情境圖，非真實人物照片；封面標示B級，文章文末連至圖片來源說明。",
+  "priorAsset": "src/planet/media/feelings.svg：完整保留，不覆寫，既有稽核紀錄不改。",
+  "approvalUrl": "https://github.com/daycool858000-hue/little-explorer-weekly/issues/3#issuecomment-6205988162",
+  "releaseReview": "已核對OpenAI 2026-01-01使用條款之輸出權利與非唯一性限制；有原始輸出和提示。一般剩餘相似性／排他性風險維持B，未發現具體重大權利衝突。不以此替代法律鑑定。"
+}

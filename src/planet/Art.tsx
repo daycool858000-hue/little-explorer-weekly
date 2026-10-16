@@ -1,8 +1,10 @@
+import feelingsCover from './media/feelings-cover.png';
 import moon from './moon-galileo.jpg';
 import records from './media-records.json';
 const files=import.meta.glob<string>('./media/*',{query:'?url',import:'default',eager:true});
 export const visualRecords=records;
 export function Art({id,detail=false}:{id:string;detail?:boolean}){
+ if(id==='feelings'&&!detail)return <figure className="feelings-cover"><img src={feelingsCover} alt="女孩看著受潮的紙船，家人在旁安靜陪伴；AI虛構情境" loading="lazy"/><figcaption>AI 情境圖，非真實人物照片 · 權利 B 級 · OpenAI image_gen</figcaption></figure>;
  const r=records.find(r=>r.id===id);
  const key=detail&&files['./media/'+id+'-detail.svg']?id+'-detail.svg':r?.file||id+'.svg';
  const src=key==='moon-galileo.jpg'?moon:files['./media/'+key];

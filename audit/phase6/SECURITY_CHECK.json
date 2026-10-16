@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-10-16",
+  "repository": "daycool858000-hue/little-explorer-weekly",
+  "mainSha": "9430a59157dc3c7f39023bffe69554e45231f8f5",
+  "protected": true,
+  "ruleset": {
+    "id": 25191007,
+    "name": "protect-main",
+    "target": "branch",
+    "source_type": "Repository",
+    "source": "daycool858000-hue/little-explorer-weekly",
+    "enforcement": "active",
+    "conditions": {
+      "ref_name": {
+        "exclude": [],
+        "include": [
+          "refs/heads/main"
+        ]
+      }
+    },
+    "rules": [
+      {
+        "type": "deletion"
+      },
+      {
+        "type": "non_fast_forward"
+      }
+    ],
+    "node_id": "RRS_lACqUmVwb3NpdG9yec5UA0ejzgGAYl8",
+    "created_at": "2026-10-16T03:14:50.569+08:00",
+    "updated_at": "2026-10-16T03:14:50.592+08:00",
+    "bypass_actors": [],
+    "current_user_can_bypass": "never",
+    "_links": {
+      "self": {
+        "href": "https://api.github.com/repos/daycool858000-hue/little-explorer-weekly/rulesets/25191007"
+      },
+      "html": {
+        "href": "https://github.com/daycool858000-hue/little-explorer-weekly/rules/25191007"
+      }
+    }
+  },
+  "result": "main 保護已完成；本輪未修改規則。正常推送仍可使用，不能防止所有錯誤提交。",
+  "notChecked": [
+    "帳號2FA",
+    "全部協作者",
+    "全部OAuth及GitHub Apps權限"
+  ],
+  "remoteChanges": false
+}
