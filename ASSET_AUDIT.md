@@ -505,3 +505,12 @@ USDA ARS 規範：https://www.ars.usda.gov/oc/images/copyright/
 
 ## 第五階段發布增量（2026-10-15）
 原425筆清冊不變。本輪70篇封面及4張專區圖另列 audit/phase5/IMAGE_RIGHTS_RELEASE.json 與 LIFE_VISUAL_RIGHTS.json。圖片本體保留 images6，採用兩篇獨立稿另有兩張可追溯生成封面。AI一般權利風險維持B，不宣稱排他權利。公開來源告知 public/IMAGE_SOURCES.html。
+
+## 2026-10-16 第六階段私人候選圖
+僅新增《心裡下雨的那一天》一張OpenAI image_gen文字生成候選，沒有替換受保護feelings.svg，沒有新增公開素材。原始PNG、完整提示、條款及B級限制位於.local-review/phase6/IMAGE_RIGHTS.json。現有權利分級不變。候選未經管理者審閱，不包含在網站build，AI輸出不等同排他著作權證明。
+
+## 2026-10-16 feelings封面私人整合
+管理者指定採用前輪候選；僅封面替換，原SVG及所有其他核准圖片保留。新增src/planet/media/feelings-cover.png，與原候選PNG同SHA-256，未重新生成或修改像素。風險B不變，資料見audit/phase6/FEELINGS_COVER.json，來源說明追加public/IMAGE_SOURCES.html，未正式發布。
+
+## 2026-10-16 第六階段正式發布準備
+Issue #3已核准fd678da。保留70篇、全部閱讀資料與既有功能；僅將feelings封面授權狀態更新為已核准公開，B級不變。正式main基準9430a59，protect-main保持Active且無bypass。發布與備份結果另見PHASE6_RELEASE.md；歷史私人審閱紀錄不代表最新發布狀態。
